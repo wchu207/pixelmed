@@ -1,0 +1,2357 @@
+<definecontextgroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.pixelmed.com/schemas/contextgroups.xsd">
+	<definecontextgroup cid="RPH_7001" name="RadPharmClinicalTrialPerformingRoles" keyword="RadPharmClinicalTrialPerformingRoles" extensible="T" version="20101116">
+		<contextgroupcode csd="99RPH" cv="RP-100002" cm="Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101040" cm="Radiology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101041" cm="Post-Radiology PET Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101042" cm="Oncology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101043" cm="Post-Radiology Oncology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101044" cm="Non-Oncology Photography Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-100003" cm="Eligibility Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101049" cm="Eligibility Radiology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101050" cm="Eligibility Oncology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101055" cm="PET Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-100004" cm="Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101045" cm="Radiology Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101046" cm="Oncology Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101051" cm="Eligibility Radiology Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101052" cm="Eligibility Oncology Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101056" cm="PET Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-100005" cm="Reviewer"/>
+		<contextgroupcode csd="99RPH" cv="RP-101031" cm="Designator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101032" cm="Adjudicator Repeating Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101047" cm="Adjudicator Repeating Radiology Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101048" cm="Adjudicator Repeating Oncology Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101053" cm="Adjudicator Repeating Eligibility Radiology Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101054" cm="Adjudicator Repeating Eligibility Oncology Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101057" cm="Adjudicator Repeating PET Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-101033" cm="Quality Control - Images"/>
+		<contextgroupcode csd="99RPH" cv="RP-101034" cm="Quality Control - Results"/>
+		<contextgroupcode csd="99RPH" cv="RP-101037" cm="Quality Control - Radiotherapy Plan"/>
+		<contextgroupcode csd="99RPH" cv="RP-101035" cm="Eligibility Adjudicator"/>
+		<contextgroupcode csd="99RPH" cv="RP-101036" cm="Adjudicator Repeating Eligibility Read"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7001b" name="RadPharmClinicalTrialAdjudicatedRoles" keyword="RadPharmClinicalTrialAdjudicatedRoles" extensible="T" version="20091023">
+		<contextgroupcode csd="99RPH" cv="RP-100002" cm="Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101040" cm="Radiology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101042" cm="Oncology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-100003" cm="Eligibility Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101049" cm="Eligibility Radiology Reader"/>
+		<contextgroupcode csd="99RPH" cv="RP-101050" cm="Eligibility Oncology Reader"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7002" name="RadPharmClinicalTrialWorklistTaskType" keyword="RadPharmClinicalTrialWorklistTaskType" extensible="T" version="20121203">
+		<contextgroupcode csd="99RPH" cv="RP-100800" cm="Radiology"/>
+		<contextgroupcode csd="99RPH" cv="RP-100801" cm="Oncology"/>
+		<contextgroupcode csd="99RPH" cv="RP-100802" cm="PET"/>
+		<contextgroupcode csd="99RPH" cv="RP-100803" cm="Eligibility Radiology"/>
+		<contextgroupcode csd="99RPH" cv="RP-100804" cm="Eligibility Oncology"/>
+		<contextgroupcode csd="99RPH" cv="RP-100805" cm="Eligibility Non-Oncology"/>
+		<contextgroupcode csd="99RPH" cv="RP-100806" cm="Non-Oncology Photo"/>
+		<contextgroupcode csd="99RPH" cv="RP-100807" cm="Radiology/PET"/>
+		<contextgroupcode csd="99RPH" cv="RP-100808" cm="Overall"/>
+		<contextgroupcode csd="99RPH" cv="RP-100809" cm="Review"/>
+		<contextgroupcode csd="99RPH" cv="RP-100810" cm="RTQA"/>
+		<contextgroupcode csd="99RPH" cv="RP-100811" cm="Individual Randomized"/>
+		<contextgroupcode csd="99RPH" cv="RP-100812" cm="Comparison Randomized"/>
+		<contextgroupcode csd="99RPH" cv="RP-100813" cm="Bone Age"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7003" name="RadPharmClinicalTrialWorklistTaskCategory" keyword="RadPharmClinicalTrialWorklistTaskCategory" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100220" cm="Sequential Locked Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-100221" cm="Sequential Unlocked Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-100222" cm="Non-sequential Unlocked Read"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7003b" name="RadPharmClinicalTrialWorklistTaskLevels" keyword="RadPharmClinicalTrialWorklistTaskLevels" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100213" cm="Perform initial task"/>
+		<contextgroupcode csd="99RPH" cv="RP-100214" cm="Perform comparison"/>
+		<contextgroupcode csd="99RPH" cv="RP-100215" cm="Repeat rejected task"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7003c" name="RadPharmClinicalTrialWorklistTaskRepeatTypes" keyword="RadPharmClinicalTrialWorklistTaskRepeatTypes" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100230" cm="Supplemental Read"/>
+		<contextgroupcode csd="99RPH" cv="RP-100231" cm="Repeat Read"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7003d" name="RadPharmClinicalTrialWorklistTaskVariabilityTypes" keyword="RadPharmClinicalTrialWorklistTaskVariabilityTypes" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100234" cm="Intraobserver variability"/>
+		<contextgroupcode csd="99RPH" cv="RP-100235" cm="Interobserver variability"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7004" name="RadPharmLesionType" keyword="RadPharmLesionType" extensible="T" version="20090923">
+		<contextgroupcode csd="99RPH" cv="RP-100029" cm="Target lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100030" cm="Non-target lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100031" cm="New lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100035" cm="Background lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100320" cm="Calibration"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7006" name="RadPharmAnatomicSitesForLesions" keyword="RadPharmAnatomicSitesForLesions" extensible="T" version="20090714">
+		
+		<contextgroupcode csd="99RPANATLOC" cv="27" cm="Brain"/>
+		<contextgroupcode csd="99RPANATLOC" cv="84" cm="Frontal Lobe"/>
+		<contextgroupcode csd="99RPANATLOC" cv="86" cm="Occipital Lobe"/>
+		<contextgroupcode csd="99RPANATLOC" cv="92" cm="Frontoparietal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="93" cm="Frontotemporal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="94" cm="Parietoccipital"/>
+		<contextgroupcode csd="99RPANATLOC" cv="95" cm="Temporaloccipital"/>
+		<contextgroupcode csd="99RPANATLOC" cv="96" cm="Temporalparietal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="85" cm="Parietal Lobe"/>
+		<contextgroupcode csd="99RPANATLOC" cv="87" cm="Temporal Lobe"/>
+		<contextgroupcode csd="99RPANATLOC" cv="98" cm="Fourth Ventricle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="97" cm="Lateral Ventricle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="99" cm="Third Ventricle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="88" cm="Basal Ganglia"/>
+		<contextgroupcode csd="99RPANATLOC" cv="89" cm="Thalamus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="90" cm="Brainstem"/>
+		<contextgroupcode csd="99RPANATLOC" cv="91" cm="Cerebellum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="156" cm="Caudate"/>
+		<contextgroupcode csd="99RPANATLOC" cv="157" cm="Dural"/>
+		<contextgroupcode csd="99RPANATLOC" cv="162" cm="Epidural"/>
+		<contextgroupcode csd="99RPANATLOC" cv="163" cm="Subdural"/>
+		<contextgroupcode csd="99RPANATLOC" cv="164" cm="Spinal Cord"/>
+		<contextgroupcode csd="99RPANATLOC" cv="158" cm="Falx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="159" cm="Corpus Callosum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="160" cm="Hippocampus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="161" cm="Leptomeningeal"/>
+		
+		<contextgroupcode csd="99RPANATLOC" cv="165" cm="Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="1" cm="Waldeyer's Ring"/>
+		<contextgroupcode csd="99RPANATLOC" cv="2" cm="Pre-Auricular Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="25" cm="Submental Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="166" cm="Cervical Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="3" cm="Upper Cervical Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="4" cm="Middle or Lower Cervical Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="5" cm="Post-Cervical Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="6" cm="Supraclavicular Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="7" cm="Infraclavicular Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="26" cm="Subpectoral Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="81" cm="Thoracic Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="8" cm="Paratracheal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="9" cm="Mediastinal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="10" cm="Hilar Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="68" cm="Sub-Carinal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="11" cm="Axillary Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="12" cm="Epitrochlear Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="13" cm="Retrocrural Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="82" cm="Abdominal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="15" cm="Splenic Hilar Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="16" cm="Portal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="17" cm="Celiac Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="32" cm="Paracardiac Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="37" cm="Aorto Caval Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="18" cm="Para-Aortic Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="51" cm="Epicardial Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="69" cm="Cardiophrenic Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="19" cm="Mesenteric Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="70" cm="Peripancreatic Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="71" cm="Retroperitoneal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="83" cm="Pelvic Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="20" cm="Common Iliac Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="72" cm="Internal Iliac Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="21" cm="External Iliac Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="22" cm="Inguinal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="73" cm="Pre-Sacral Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="74" cm="Perirectal Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="23" cm="Femoral Nodes"/>
+		<contextgroupcode csd="99RPANATLOC" cv="24" cm="Popliteal Nodes"/>
+		
+		<contextgroupcode csd="99RPANATLOC" cv="167" cm="Extranodal Viscera"/>
+		<contextgroupcode csd="99RPANATLOC" cv="52" cm="Muscle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="100" cm="Eye/Orbit"/>
+		<contextgroupcode csd="99RPANATLOC" cv="168" cm="Nose"/>
+		<contextgroupcode csd="99RPANATLOC" cv="75" cm="Oral Cavity"/>
+		<contextgroupcode csd="99RPANATLOC" cv="76" cm="Tongue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="77" cm="Parotid"/>
+		<contextgroupcode csd="99RPANATLOC" cv="78" cm="Submandibular"/>
+		<contextgroupcode csd="99RPANATLOC" cv="169" cm="Pharynx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="101" cm="Nasopharynx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="56" cm="Oropharynx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="170" cm="Hypopharynx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="102" cm="Paranasal Sinuses"/>
+		<contextgroupcode csd="99RPANATLOC" cv="172" cm="Maxillary Sinus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="173" cm="Frontal Sinus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="174" cm="Sphenoid Sinus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="175" cm="Ethmoid Sinus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="45" cm="Neck (Soft Tissue)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="57" cm="Larynx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="28" cm="Thyroid"/>
+		<contextgroupcode csd="99RPANATLOC" cv="79" cm="Thoracic"/>
+		<contextgroupcode csd="99RPANATLOC" cv="128" cm="Shoulder Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="131" cm="Upper Arm Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="176" cm="Forearm Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="177" cm="Wrist Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="178" cm="Hand Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="179" cm="Mediastinum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="67" cm="Breast"/>
+		<contextgroupcode csd="99RPANATLOC" cv="59" cm="Axilla"/>
+		<contextgroupcode csd="99RPANATLOC" cv="30" cm="Pleural Cavity"/>
+		<contextgroupcode csd="99RPANATLOC" cv="29" cm="Lung"/>
+		<contextgroupcode csd="99RPANATLOC" cv="14" cm="Trachea/Bronchi"/>
+		<contextgroupcode csd="99RPANATLOC" cv="55" cm="Esophagus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="103" cm="Aorta"/>
+		<contextgroupcode csd="99RPANATLOC" cv="104" cm="Heart"/>
+		<contextgroupcode csd="99RPANATLOC" cv="80" cm="Paracardiac"/>
+		<contextgroupcode csd="99RPANATLOC" cv="114" cm="Cardiophrenic"/>
+		<contextgroupcode csd="99RPANATLOC" cv="105" cm="Pericardium"/>
+		<contextgroupcode csd="99RPANATLOC" cv="115" cm="Epicardium"/>
+		<contextgroupcode csd="99RPANATLOC" cv="106" cm="Superior Vena Cava"/>
+		<contextgroupcode csd="99RPANATLOC" cv="107" cm="Diaphragm"/>
+		<contextgroupcode csd="99RPANATLOC" cv="116" cm="Thoracic Inlet"/>
+		<contextgroupcode csd="99RPANATLOC" cv="180" cm="Paraspinal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="117" cm="Abdomen"/>
+		<contextgroupcode csd="99RPANATLOC" cv="63" cm="Peritoneum/omentum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="33" cm="Liver"/>
+		<contextgroupcode csd="99RPANATLOC" cv="53" cm="Biliary Tract/Gallbladder"/>
+		<contextgroupcode csd="99RPANATLOC" cv="31" cm="Spleen"/>
+		<contextgroupcode csd="99RPANATLOC" cv="118" cm="Mesenteric"/>
+		<contextgroupcode csd="99RPANATLOC" cv="119" cm="Peripancreatic"/>
+		<contextgroupcode csd="99RPANATLOC" cv="54" cm="Pancreas"/>
+		<contextgroupcode csd="99RPANATLOC" cv="34" cm="Stomach"/>
+		<contextgroupcode csd="99RPANATLOC" cv="109" cm="Retroperitoneum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="65" cm="Adrenal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="35" cm="Kidney"/>
+		<contextgroupcode csd="99RPANATLOC" cv="120" cm="Renal Fossa"/>
+		<contextgroupcode csd="99RPANATLOC" cv="121" cm="Pre-Sacral"/>
+		<contextgroupcode csd="99RPANATLOC" cv="50" cm="Small Bowel"/>
+		<contextgroupcode csd="99RPANATLOC" cv="38" cm="Colon"/>
+		<contextgroupcode csd="99RPANATLOC" cv="122" cm="Peri-Cecal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="123" cm="Perirectal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="108" cm="Rectum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="110" cm="Ureter"/>
+		<contextgroupcode csd="99RPANATLOC" cv="111" cm="Bladder"/>
+		<contextgroupcode csd="99RPANATLOC" cv="112" cm="Pelvic Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="61" cm="Uterus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="60" cm="Vagina"/>
+		<contextgroupcode csd="99RPANATLOC" cv="113" cm="Prostate"/>
+		<contextgroupcode csd="99RPANATLOC" cv="39" cm="Gonad"/>
+		<contextgroupcode csd="99RPANATLOC" cv="124" cm="Testicle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="125" cm="Ovary"/>
+		<contextgroupcode csd="99RPANATLOC" cv="145" cm="Upper Leg"/>
+		<contextgroupcode csd="99RPANATLOC" cv="181" cm="Knee"/>
+		<contextgroupcode csd="99RPANATLOC" cv="182" cm="Lower Leg Soft Tissue"/>
+		<contextgroupcode csd="99RPANATLOC" cv="183" cm="Foot Soft Tissue"/>
+		
+		<contextgroupcode csd="99RPANATLOC" cv="126" cm="Skull"/>
+		<contextgroupcode csd="99RPANATLOC" cv="44" cm="Skull Base"/>
+		<contextgroupcode csd="99RPANATLOC" cv="184" cm="Facial Bones"/>
+		<contextgroupcode csd="99RPANATLOC" cv="127" cm="Mandible"/>
+		<contextgroupcode csd="99RPANATLOC" cv="197" cm="Acromioclavicular"/>
+		<contextgroupcode csd="99RPANATLOC" cv="129" cm="Clavicle"/>
+		<contextgroupcode csd="99RPANATLOC" cv="130" cm="Scapula"/>
+		<contextgroupcode csd="99RPANATLOC" cv="198" cm="Sternoclavicular"/>
+		<contextgroupcode csd="99RPANATLOC" cv="132" cm="Humerus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="199" cm="Elbow"/>
+		<contextgroupcode csd="99RPANATLOC" cv="133" cm="Ulna"/>
+		<contextgroupcode csd="99RPANATLOC" cv="134" cm="Radius and Ulna"/>
+		<contextgroupcode csd="99RPANATLOC" cv="135" cm="Radius"/>
+		<contextgroupcode csd="99RPANATLOC" cv="136" cm="Carpus "/>
+		<contextgroupcode csd="99RPANATLOC" cv="137" cm="Metacarpus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="185" cm="Phalanges (fingers)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="46" cm="Cervical Spine"/>
+		<contextgroupcode csd="99RPANATLOC" cv="138" cm="Cervical Spine (multiple)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C1" cm="C1"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C2" cm="C2"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C3" cm="C3"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C4" cm="C4"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C5" cm="C5"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C6" cm="C6"/>
+		<contextgroupcode csd="99RPANATLOC" cv="C7" cm="C7"/>
+		<contextgroupcode csd="99RPANATLOC" cv="139" cm="Sternum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="140" cm="Ribs (multiple)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X1" cm="Rib 1"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X2" cm="Rib 2"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X3" cm="Rib 3"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X4" cm="Rib 4"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X5" cm="Rib 5"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X6" cm="Rib 6"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X7" cm="Rib 7"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X8" cm="Rib 8"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X9" cm="Rib 9"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X10" cm="Rib 10"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X11" cm="Rib 11"/>
+		<contextgroupcode csd="99RPANATLOC" cv="X12" cm="Rib 12"/>
+		<contextgroupcode csd="99RPANATLOC" cv="47" cm="Thoracic Spine"/>
+		<contextgroupcode csd="99RPANATLOC" cv="141" cm="Thoracic Spine (multiple)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T1" cm="T1"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T2" cm="T2"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T3" cm="T3"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T4" cm="T4"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T5" cm="T5"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T6" cm="T6"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T7" cm="T7"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T8" cm="T8"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T9" cm="T9"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T10" cm="T10"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T11" cm="T11"/>
+		<contextgroupcode csd="99RPANATLOC" cv="T12" cm="T12"/>
+		<contextgroupcode csd="99RPANATLOC" cv="48" cm="Lumbar Spine"/>
+		<contextgroupcode csd="99RPANATLOC" cv="142" cm="Lumbar Spine (multiple)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="LS1" cm="L1"/>
+		<contextgroupcode csd="99RPANATLOC" cv="LS2" cm="L2"/>
+		<contextgroupcode csd="99RPANATLOC" cv="LS3" cm="L3"/>
+		<contextgroupcode csd="99RPANATLOC" cv="LS4" cm="L4"/>
+		<contextgroupcode csd="99RPANATLOC" cv="LS5" cm="L5"/>
+		<contextgroupcode csd="99RPANATLOC" cv="49" cm="Sacrum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="143" cm="Sacrum (multiple)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="S1" cm="S1"/>
+		<contextgroupcode csd="99RPANATLOC" cv="S2" cm="S2"/>
+		<contextgroupcode csd="99RPANATLOC" cv="S3" cm="S3"/>
+		<contextgroupcode csd="99RPANATLOC" cv="S4" cm="S4"/>
+		<contextgroupcode csd="99RPANATLOC" cv="S5" cm="S5"/>
+		<contextgroupcode csd="99RPANATLOC" cv="144" cm="Hip"/>
+		<contextgroupcode csd="99RPANATLOC" cv="200" cm="Sacroiliac"/>
+		<contextgroupcode csd="99RPANATLOC" cv="186" cm="Ilium"/>
+		<contextgroupcode csd="99RPANATLOC" cv="187" cm="Acetabulum"/>
+		<contextgroupcode csd="99RPANATLOC" cv="188" cm="Ischium"/>
+		<contextgroupcode csd="99RPANATLOC" cv="189" cm="Pubis"/>
+		<contextgroupcode csd="99RPANATLOC" cv="190" cm="Coccyx"/>
+		<contextgroupcode csd="99RPANATLOC" cv="146" cm="Femur"/>
+		<contextgroupcode csd="99RPANATLOC" cv="191" cm="Femur Neck"/>
+		<contextgroupcode csd="99RPANATLOC" cv="192" cm="Femur Subtrochanter"/>
+		<contextgroupcode csd="99RPANATLOC" cv="193" cm="Femur Midshaft"/>
+		<contextgroupcode csd="99RPANATLOC" cv="194" cm="Femur Distal"/>
+		<contextgroupcode csd="99RPANATLOC" cv="147" cm="Patella"/>
+		<contextgroupcode csd="99RPANATLOC" cv="148" cm="Fibula"/>
+		<contextgroupcode csd="99RPANATLOC" cv="149" cm="Tibia"/>
+		<contextgroupcode csd="99RPANATLOC" cv="150" cm="Tibia and Fibula"/>
+		<contextgroupcode csd="99RPANATLOC" cv="151" cm="Tarsus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="152" cm="Metatarsus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="195" cm="Calcaneus"/>
+		<contextgroupcode csd="99RPANATLOC" cv="196" cm="Phalanges (Toes)"/>
+		<contextgroupcode csd="99RPANATLOC" cv="36" cm="Bone"/>
+		<contextgroupcode csd="99RPANATLOC" cv="153" cm="Bone Marrow"/>
+		
+		<contextgroupcode csd="99RPANATLOC" cv="41" cm="Subcutaneous"/>
+		<contextgroupcode csd="99RPANATLOC" cv="66" cm="Skin"/>
+		<contextgroupcode csd="99RPANATLOC" cv="58" cm="Chest Wall"/>
+		<contextgroupcode csd="99RPANATLOC" cv="154" cm="Abdominal Wall"/>
+		<contextgroupcode csd="99RPANATLOC" cv="155" cm="Back"/>
+		
+		<contextgroupcode csd="99RPANATLOC" cv="62" cm="Pleural Effusion"/>
+		<contextgroupcode csd="99RPANATLOC" cv="64" cm="Pericardial Effusion"/>
+		<contextgroupcode csd="99RPANATLOC" cv="43" cm="Ascites"/>
+	</definecontextgroup>
+	
+	<!-- include RPH_7007b Anatomic Regions for External Photography Procedures in RPH_7007 -->
+	<definecontextgroup cid="RPH_7007" name="RadPharmAnatomicRegionsForProcedures" keyword="RadPharmAnatomicRegionsForProcedures" extensible="T" version="20091117">
+		<contextgroupcode csd="SRT" cv="T-D4000" cm="Abdomen"/>
+		<contextgroupcode csd="SRT" cv="T-B3000" cm="Adrenal gland"/>
+		<contextgroupcode csd="SRT" cv="R-FAB57" cm="Abdomen and Pelvis"/>
+		<contextgroupcode csd="SRT" cv="T-15750" cm="Ankle"/>
+		<contextgroupcode csd="SRT" cv="T-D8100" cm="Axilla"/>
+		<contextgroupcode csd="SRT" cv="T-A9092" cm="Brachial Plexus"/>
+		<contextgroupcode csd="SRT" cv="T-A0100" cm="Brain"/>
+		<contextgroupcode csd="SRT" cv="T-04000" cm="Breast"/>
+		<contextgroupcode csd="SRT" cv="T-12770" cm="Calcaneus"/>
+		<contextgroupcode csd="SRT" cv="T-45010" cm="Carotid Artery"/>
+		<contextgroupcode csd="SRT" cv="T-A010D" cm="Cerebral vessels"/>
+		<contextgroupcode csd="SRT" cv="T-11501" cm="Cervical spine"/>
+		<contextgroupcode csd="SRT" cv="T-D00F7" cm="Cervico-thoracic spine"/>
+		<contextgroupcode csd="SRT" cv="T-D3000" cm="Chest"/>
+		<contextgroupcode csd="SRT" cv="R-FAB55" cm="Chest and Abdomen"/>
+		<contextgroupcode csd="SRT" cv="R-FAB56" cm="Chest, Abdomen and Pelvis"/>
+		<contextgroupcode csd="SRT" cv="T-12310" cm="Clavicle"/>
+		<contextgroupcode csd="SRT" cv="T-11BF0" cm="Coccyx"/>
+		<contextgroupcode csd="SRT" cv="T-43000" cm="Coronary artery "/>
+		<contextgroupcode csd="SRT" cv="T-D8300" cm="Elbow"/>
+		<contextgroupcode csd="SRT" cv="T-11002" cm="Entire bony skeleton"/>
+		<contextgroupcode csd="SRT" cv="T-11196" cm="Facial bones"/>
+		<contextgroupcode csd="SRT" cv="T-12710" cm="Femur"/>
+		<contextgroupcode csd="SRT" cv="T-D9700" cm="Foot"/>
+		<contextgroupcode csd="SRT" cv="T-12402" cm="Forearm"/>
+		<contextgroupcode csd="SRT" cv="T-D0010" cm="Whole body"/>
+		<contextgroupcode csd="SRT" cv="T-D8700" cm="Hand"/>
+		<contextgroupcode csd="SRT" cv="T-D064D" cm="Hand and wrist"/>
+		<contextgroupcode csd="SRT" cv="T-D1100" cm="Head"/>
+		<contextgroupcode csd="SRT" cv="T-D1000" cm="Head and Neck"/>
+		<contextgroupcode csd="SRT" cv="T-32000" cm="Heart"/>
+		<contextgroupcode csd="SRT" cv="T-15710" cm="Hip"/>
+		<contextgroupcode csd="SRT" cv="T-12410" cm="Humerus"/>
+		<contextgroupcode csd="SRT" cv="T-48710" cm="Inferior vena cava"/>
+		<contextgroupcode csd="SRT" cv="T-71000" cm="Kidney"/>
+		<contextgroupcode csd="SRT" cv="T-D9200" cm="Knee"/>
+		<contextgroupcode csd="SRT" cv="T-62000" cm="Liver"/>
+		<contextgroupcode csd="SRT" cv="T-D0680" cm="Lower extremity"/>
+		<contextgroupcode csd="SRT" cv="T-D9400" cm="Lower Leg"/>
+		<contextgroupcode csd="SRT" cv="T-11503" cm="Lumbar spine"/>
+		<contextgroupcode csd="SRT" cv="T-D00F9" cm="Lumbo-sacral spine"/>
+		<contextgroupcode csd="SRT" cv="T-11180" cm="Mandible"/>
+		<contextgroupcode csd="SRT" cv="T-D1600" cm="Neck"/>
+		<contextgroupcode csd="SRT" cv="T-D14AE" cm="Orbit"/>
+		<contextgroupcode csd="SRT" cv="T-22000" cm="Paranasal sinus"/>
+		<contextgroupcode csd="SRT" cv="T-D6000" cm="Pelvis"/>
+		<contextgroupcode csd="SRT" cv="T-9200B" cm="Prostate"/>
+		<contextgroupcode csd="SRT" cv="T-44000" cm="Pulmonary artery"/>
+		<contextgroupcode csd="SRT" cv="T-11300" cm="Rib"/>
+		<contextgroupcode csd="SRT" cv="T-15680" cm="Sacroiliac joint"/>
+		<contextgroupcode csd="SRT" cv="T-11AD0" cm="Sacrum"/>
+		<contextgroupcode csd="SRT" cv="T-12280" cm="Scapula"/>
+		<contextgroupcode csd="SRT" cv="T-D2220" cm="Shoulder"/>
+		<contextgroupcode csd="SRT" cv="T-11100" cm="Skull"/>
+		<contextgroupcode csd="SRT" cv="T-D0146" cm="Spine"/>
+		<contextgroupcode csd="SRT" cv="T-15610" cm="Sternoclavicular joint"/>
+		<contextgroupcode csd="SRT" cv="T-11210" cm="Sternum"/>
+		<contextgroupcode csd="SRT" cv="T-48610" cm="Superior vena cava"/>
+		<contextgroupcode csd="SRT" cv="T-D9100" cm="Thigh"/>
+		<contextgroupcode csd="SRT" cv="T-11502" cm="Thoracic spine"/>
+		<contextgroupcode csd="SRT" cv="T-D00F8" cm="Thoraco-lumbar spine"/>
+		<contextgroupcode csd="SRT" cv="T-B6000" cm="Thyroid"/>
+		<contextgroupcode csd="SRT" cv="T-D8200" cm="Upper arm"/>
+		<contextgroupcode csd="SRT" cv="T-D0677" cm="Upper extremity"/>
+		<contextgroupcode csd="SRT" cv="T-15460" cm="Wrist"/>
+		
+		<contextgroupcode csd="SRT" cv="T-02880" cm="1st Toe"/>
+		<contextgroupcode csd="SRT" cv="T-D8808" cm="2nd (Index) Finger"/>
+		<contextgroupcode csd="SRT" cv="T-02890" cm="2nd Toe"/>
+		<contextgroupcode csd="SRT" cv="T-D8809" cm="3rd (Middle) Finger"/>
+		<contextgroupcode csd="SRT" cv="T-02900" cm="3rd Toe"/>
+		<contextgroupcode csd="SRT" cv="T-D880A" cm="4th (Ring) Finger"/>
+		<contextgroupcode csd="SRT" cv="T-02910" cm="4th Toe"/>
+		<contextgroupcode csd="SRT" cv="T-D880B" cm="5th (Little) Finger"/>
+		<contextgroupcode csd="SRT" cv="T-02920" cm="5th Toe"/>
+		<contextgroupcode csd="SRT" cv="T-D0691" cm="Abdomen"/>
+		<contextgroupcode csd="SRT" cv="T-D9503" cm="Ankle"/>
+		<contextgroupcode csd="SRT" cv="T-D300E" cm="Anterior Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-D1618" cm="Anterior Neck"/>
+		<contextgroupcode csd="SRT" cv="T-D9107" cm="Anterior Thigh"/>
+		<contextgroupcode csd="SRT" cv="T-D06A4" cm="Arm"/>
+		<contextgroupcode csd="SRT" cv="T-D8106" cm="Axilla"/>
+		<contextgroupcode csd="SRT" cv="T-D0690" cm="Back"/>
+		<contextgroupcode csd="SRT" cv="T-0243A" cm="Breast"/>
+		<contextgroupcode csd="SRT" cv="T-D00C9" cm="Buttock"/>
+		<contextgroupcode csd="SRT" cv="T-0212F" cm="Cheek"/>
+		<contextgroupcode csd="SRT" cv="T-D3005" cm="Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-0216D" cm="Chin"/>
+		<contextgroupcode csd="SRT" cv="T-D1617" cm="Clavicular Region"/>
+		<contextgroupcode csd="SRT" cv="T-D9731" cm="Dorsal Foot"/>
+		<contextgroupcode csd="SRT" cv="T-D8731" cm="Dorsal Hand"/>
+		<contextgroupcode csd="SRT" cv="T-0220B" cm="Ear"/>
+		<contextgroupcode csd="SRT" cv="T-D079D" cm="Elbow"/>
+		<contextgroupcode csd="SRT" cv="T-D0303" cm="Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-02138" cm="Eyelid"/>
+		<contextgroupcode csd="SRT" cv="T-02124" cm="Face"/>
+		<contextgroupcode csd="SRT" cv="T-D8807" cm="Finger"/>
+		<contextgroupcode csd="SRT" cv="T-D2312" cm="Flank"/>
+		<contextgroupcode csd="SRT" cv="T-D06AD" cm="Foot"/>
+		<contextgroupcode csd="SRT" cv="T-D1111" cm="Forehead"/>
+		<contextgroupcode csd="SRT" cv="T-02505" cm="Genital Region"/>
+		<contextgroupcode csd="SRT" cv="T-D7002" cm="Groin"/>
+		<contextgroupcode csd="SRT" cv="T-D06A9" cm="Hand"/>
+		<contextgroupcode csd="SRT" cv="T-D067E" cm="Head"/>
+		<contextgroupcode csd="SRT" cv="T-02844" cm="Heel"/>
+		<contextgroupcode csd="SRT" cv="T-D2507" cm="Hip"/>
+		<contextgroupcode csd="SRT" cv="T-D06E8" cm="Jaw"/>
+		<contextgroupcode csd="SRT" cv="T-D9207" cm="Knee"/>
+		<contextgroupcode csd="SRT" cv="T-D300F" cm="Lateral Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-D07AF" cm="Lateral Neck"/>
+		<contextgroupcode csd="SRT" cv="T-D06AA" cm="Leg"/>
+		<contextgroupcode csd="SRT" cv="T-52800" cm="Lips"/>
+		<contextgroupcode csd="SRT" cv="T-D4008" cm="Lower Abdomen"/>
+		<contextgroupcode csd="SRT" cv="T-D06A7" cm="Lower Arm"/>
+		<contextgroupcode csd="SRT" cv="T-D2122" cm="Lower Back"/>
+		<contextgroupcode csd="SRT" cv="T-D300A" cm="Lower Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-D06AA" cm="Lower Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-D06AC" cm="Lower Leg"/>
+		<contextgroupcode csd="SRT" cv="T-52201" cm="Lower Lip"/>
+		<contextgroupcode csd="SRT" cv="T-51000" cm="Mouth"/>
+		<contextgroupcode csd="SRT" cv="T-D067F" cm="Neck"/>
+		<contextgroupcode csd="SRT" cv="T-04104" cm="Nipple"/>
+		<contextgroupcode csd="SRT" cv="T-D07AB" cm="Nose"/>
+		<contextgroupcode csd="SRT" cv="T-D0778" cm="Occipital Region"/>
+		<contextgroupcode csd="SRT" cv="T-D14AF" cm="Orbit"/>
+		<contextgroupcode csd="SRT" cv="T-D8741" cm="Palmar Hand"/>
+		<contextgroupcode csd="SRT" cv="T-D9745" cm="Plantar Foot"/>
+		<contextgroupcode csd="SRT" cv="T-D9311" cm="Popliteal Fossa"/>
+		<contextgroupcode csd="SRT" cv="T-D300B" cm="Posterior Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-D1627" cm="Posterior Neck"/>
+		<contextgroupcode csd="SRT" cv="T-02812" cm="Posterior Thigh"/>
+		<contextgroupcode csd="SRT" cv="T-D1163" cm="Scalp"/>
+		<contextgroupcode csd="SRT" cv="T-D2223" cm="Shoulder"/>
+		<contextgroupcode csd="SRT" cv="T-D0776" cm="Temple"/>
+		<contextgroupcode csd="SRT" cv="T-D06AB" cm="Thigh"/>
+		<contextgroupcode csd="SRT" cv="T-D8817" cm="Thumb"/>
+		<contextgroupcode csd="SRT" cv="T-D0692" cm="Toe"/>
+		<contextgroupcode csd="SRT" cv="T-5300C" cm="Tongue"/>
+		<contextgroupcode csd="SRT" cv="T-D4007" cm="Upper Abdomen"/>
+		<contextgroupcode csd="SRT" cv="T-D06A5" cm="Upper Arm"/>
+		<contextgroupcode csd="SRT" cv="T-D3012" cm="Upper Back"/>
+		<contextgroupcode csd="SRT" cv="T-D3013" cm="Upper Chest Wall"/>
+		<contextgroupcode csd="SRT" cv="T-52104" cm="Upper Lip"/>
+		<contextgroupcode csd="SRT" cv="T-D07AD" cm="Upper Neck"/>
+		<contextgroupcode csd="SRT" cv="T-D8604" cm="Wrist"/>
+		
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7010" name="RadPharmNonTargetLesionResponse" keyword="RadPharmNonTargetLesionResponse" extensible="T" version="20090211">
+		<contextgroupcode csd="RADLEX" cv="RID11515"  cm="PD - Progressive Disease"/>
+		<contextgroupcode csd="RADLEX" cv="RID11514"  cm="SD - Stable Disease"/>
+		<contextgroupcode csd="RADLEX" cv="RID11513"  cm="PR - Partial Response"/>
+		<contextgroupcode csd="RADLEX" cv="RID11511"  cm="CR - Complete Response"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100041" cm="LR - Lesion Removed"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7010b" name="RadPharmPETTargetLesionQualitativeResponse" keyword="RadPharmPETTargetLesionQualitativeResponse" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100270" cm="PMD - Progressive metabolic disease"/>
+		<contextgroupcode csd="99RPH" cv="RP-100271" cm="SMD - Stable metabolic disease"/>
+		<contextgroupcode csd="99RPH" cv="RP-100272" cm="PMR - Partial metabolic response"/>
+		<contextgroupcode csd="99RPH" cv="RP-100273" cm="CMR - Complete metabolic response"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7010c" name="RadPharmPETTargetLesionQualitativeAssessment" keyword="RadPharmPETTargetLesionQualitativeAssessment" extensible="T" version="20090213">
+		<contextgroupcode csd="99RPH" cv="RP-100902" cm="Positive PET Finding"/>
+		<contextgroupcode csd="99RPH" cv="RP-100903" cm="Negative PET Finding"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7011" name="RadPharmReasonsUnableToEvaluateLesion" keyword="RadPharmReasonsUnableToEvaluateLesion" extensible="T" version="20090617">
+		<contextgroupcode csd="DCM"    cv="111235"    cm="Quality renders image unusable"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100045" cm="Lesion obscured"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100046" cm="Improper field of view"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100047" cm="Missing window"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100048" cm="Missing or inconsistent contrast agent or phase"/>
+		<contextgroupcode csd="RADLEX" cv="RID11262"  cm="Missing image"/>
+		<contextgroupcode csd="RADLEX" cv="RID11261"  cm="Missing exam"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100051" cm="Change in reconstruction interval"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100052" cm="Modality changed"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100050" cm="Change in reconstruction method or parameters"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100049" cm="Not distinguishable from other lesions"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100130" cm="Lesion segmentation cannot be performed"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100131" cm="Attenuation Correction map not available"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100132" cm="Attenuation Correction map technically limited"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100133" cm="Poor count statistics"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100134" cm="Not distinguishable from normal physiologic activity"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100135" cm="Parameter(s) required for SUV calculation not provided"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7012" name="RadPharmReasonsUnableToMeasureTargetLesion" keyword="RadPharmReasonsUnableToMeasureTargetLesion" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100055" cm="Too small to measure"/>
+		<contextgroupcode csd="99RPH" cv="RP-100056" cm="Lesion resolved"/>
+		<contextgroupcode csd="99RPH" cv="RP-100057" cm="Lesion removed"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7012b" name="RadPharmReasonsUnableToMeasureNewLesion" keyword="RadPharmReasonsUnableToMeasureNewLesion" extensible="T" version="20090617">
+		<contextgroupcode csd="99RPH"  cv="RP-100055" cm="Too small to measure"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100056" cm="Lesion resolved"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100057" cm="Lesion removed"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100075" cm="Lesion unmeasurable"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7013" name="RadPharmLesionChangeReasons" keyword="RadPharmLesionChangeReasons" extensible="T" version="20120606">
+		<contextgroupcode csd="99RPH"  cv="RP-100350" cm="Correction to lesion label"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100059" cm="DCF correction"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100060" cm="Correction based on CMO review"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100064" cm="Image quality issue - lesion not clearly seen"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100065" cm="Inter-current disease - lesion not clearly seen"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100062" cm="Lesion identified was artifact"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100063" cm="Lesion identified was benign"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100066" cm="Lesion incorrectly measured"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100069" cm="Lesion was in previously irradiated field"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100067" cm="New bone lesion result of flare phenomenon"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100351" cm="Recalibration"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100061" cm="Lesion did not meet qualification requirements"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100077" cm="Resolved lesion inconsistency caused by supplemental read"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7013b" name="RadPharmLesionAdditionReasons" keyword="RadPharmLesionAdditionReasons" extensible="T" version="20090217">
+		<contextgroupcode csd="99RPH"  cv="RP-100068" cm="Lesion was present previously but not Identified"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100072" cm="Measuring a non-target lesion to justify progression"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100071" cm="New clinical data presented"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100070" cm="New images presented"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7013c" name="RadPharmCalibrationChangeReasons" keyword="RadPharmCalibrationChangeReasons" extensible="T" version="20090218">
+		<contextgroupcode csd="99RPH"  cv="RP-100351" cm="Recalibration"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7014" name="RadPharmTimePointChangeReasons" keyword="RadPharmTimePointChangeReasons" extensible="T" version="20130205">
+		<contextgroupcode csd="99RPH"  cv="RP-100059" cm="DCF correction"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100060" cm="Correction based on CMO review"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100076" cm="Source measurement changed"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100078" cm="Post-baseline observation redundant after baseline change"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7014b" name="RadPharmAdjudicationChangeReasons" keyword="RadPharmAdjudicationChangeReasons" extensible="T" version="20090217">
+		<contextgroupcode csd="99RPH"  cv="RP-100059" cm="DCF correction"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100060" cm="Correction based on CMO review"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100071" cm="New clinical data presented"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100070" cm="New images presented"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7014c" name="RadPharmTimePointObservationAdditionReasons" keyword="RadPharmTimePointObservationAdditionReasons" extensible="T" version="20090902">
+		<contextgroupcode csd="99RPH"  cv="RP-100071" cm="New clinical data presented"/>
+		<contextgroupcode csd="99RPH"  cv="RP-100070" cm="New images presented"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7015" name="RadPharmSignatureMeanings" keyword="RadPharmSignatureMeanings" extensible="T" version="20110808">
+		<contextgroupcode csd="99RPH" cv="RP-100330" cm="Radiology Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100331" cm="Adjudication level 1 Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100332" cm="Adjudication level 2 Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100333" cm="Corrections Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100334" cm="Eligibility Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100335" cm="Oncology Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100336" cm="PET Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100337" cm="Substitute Locked Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100338" cm="Substitute Unlocked Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100339" cm="Unlocked Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100340" cm="Nuclear Medicine Review Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100341" cm="CT + PET Read Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100342" cm="CMO Review Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100343" cm="Read Result Quality Control Performed"/>
+		<contextgroupcode csd="99RPH" cv="RP-100344" cm="Image Quality Control Performed"/>
+		
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7016" name="RadPharmAlgorithmType" keyword="RadPharmAlgorithmType" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100087" cm="Segmentation algorithm"/>
+		<contextgroupcode csd="99RPH" cv="RP-100088" cm="Registration algorithm"/>
+		<contextgroupcode csd="99RPH" cv="RP-100089" cm="Propagation algorithm"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7017" name="RadPharmSingleLineSegmentMeasurements" keyword="RadPharmSingleLineSegmentMeasurements" extensible="T" version="20090211">
+		<contextgroupcode csd="SRT" cv="G-A22A"  cm="Length"/>
+		<contextgroupcode csd="DCM" cv="121206"  cm="Distance"/>
+		<contextgroupcode csd="SRT" cv="G-A220"  cm="Width"/>
+		<contextgroupcode csd="SRT" cv="G-D785"  cm="Depth"/>
+		<contextgroupcode csd="SRT" cv="M-02550" cm="Diameter"/>
+		<contextgroupcode csd="SRT" cv="G-A185"  cm="Long Axis"/>
+		<contextgroupcode csd="SRT" cv="G-A186"  cm="Short Axis"/>
+		<contextgroupcode csd="SRT" cv="G-A193"  cm="Major Axis"/>
+		<contextgroupcode csd="SRT" cv="G-A194"  cm="Minor Axis"/>
+		<contextgroupcode csd="SRT" cv="G-A195"  cm="Perpendicular Axis"/>
+		<contextgroupcode csd="SRT" cv="G-A196"  cm="Radius"/>
+		<contextgroupcode csd="DCM" cv="121207"  cm="Height"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7030" name="RadPharmMeasurementDerivationModifiers" keyword="RadPharmMeasurementDerivationModifiers" extensible="T" version="20091023">
+		<contextgroupcode csd="SRT" cv="G-A437"   cm="Maximum"/>
+		<contextgroupcode csd="SRT" cv="R-404FB"  cm="Minimum"/>
+		<contextgroupcode csd="SRT" cv="R-00317"  cm="Mean"/>
+		<contextgroupcode csd="SRT" cv="R-10047"  cm="Standard Deviation"/>
+		<contextgroupcode csd="SRT" cv="R-40507"  cm="Total"/>
+		<contextgroupcode csd="SRT" cv="R-00319"  cm="Median"/>
+		<contextgroupcode csd="SRT" cv="R-0032E"  cm="Mode"/>
+		<contextgroupcode csd="99RPH" cv="RP-101080"  cm="Local Mean"/>
+		<contextgroupcode csd="99RPH" cv="RP-101081"  cm="Local Maximum"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7031" name="TimePointNumericObservations" keyword="TimePointNumericObservations" extensible="T" version="20110808">
+		<contextgroupcode csd="99RPH" cv="RP-100142"  cm="Sum of the Longest Diameters (SLD)"/>
+		<contextgroupcode csd="99RPH" cv="RP-100143"  cm="Sum of the Product of the Short and Long Diameters (SPD)"/>
+		<contextgroupcode csd="99RPH" cv="RP-100144"  cm="Change in Sum of the Longest Diameters (SLD) from Nadir"/>
+		<contextgroupcode csd="99RPH" cv="RP-100145"  cm="Change in Sum of the Product of the Short and Long Diameters (SPD) from Nadir"/>
+		<contextgroupcode csd="99RPH" cv="RP-100146"  cm="Change in Sum of the Longest Diameters (SLD) from Baseline"/>
+		<contextgroupcode csd="99RPH" cv="RP-100147"  cm="Change in Sum of the Product of the Short and Long Diameters (SPD) from Baseline"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7032" name="TimePointNumericObservationUnits" keyword="TimePointNumericObservationUnits" extensible="T" version="20110808">
+		<contextgroupcode csd="UCUM" cv="mm"  cm="mm"/>
+		<contextgroupcode csd="UCUM" cv="mm2"  cm="mm2"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7040" name="RadPharmRegionSegmentationMethods" keyword="RadPharmRegionSegmentationMethods" extensible="T" version="20090731">
+		<contextgroupcode csd="SRT" cv="G-D221"  cm="Manual"/>
+		<contextgroupcode csd="99RPH" cv="RP-101030"  cm="Random Walker 3D"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7041" name="RadPharmAutomation" keyword="RadPharmAutomation" extensible="T" version="20090402">
+		<contextgroupcode csd="SRT"   cv="G-D221"     cm="Manual"/>
+		<contextgroupcode csd="SRT"   cv="G-D231"     cm="Automated"/>
+		<contextgroupcode csd="99RPH" cv="RP-101013"  cm="Semi-automated"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7050a" name="RadPharmAdjudicationChoiceReasons" keyword="RadPharmAdjudicationChoiceReasons" extensible="T" version="20120815">
+		<contextgroupcode csd="99RPH" cv="RP-100311"  cm="Arbitrary choice"/>
+		<contextgroupcode csd="99RPH" cv="RP-100312"  cm="Agree with lesion selection"/>
+		<contextgroupcode csd="99RPH" cv="RP-100313"  cm="Agree new disease is unequivocal"/>
+		<contextgroupcode csd="99RPH" cv="RP-100314"  cm="Disagree new disease is unequivocal"/>
+		<contextgroupcode csd="99RPH" cv="RP-100315"  cm="New lesion identified may be an artifact"/>
+		<contextgroupcode csd="99RPH" cv="RP-100316"  cm="New lesion identified may be benign"/>
+		<contextgroupcode csd="99RPH" cv="RP-100317"  cm="New lesion identified may have been present at baseline"/>
+		<contextgroupcode csd="99RPH" cv="RP-100318"  cm="Agree progression of non-target disease is unequivocal"/>
+		<contextgroupcode csd="99RPH" cv="RP-100319"  cm="Disagree progression of non-target disease is unequivocal"/>
+		<contextgroupcode csd="99RPH" cv="RP-100321"  cm="Agree with qualitative lesion assessment"/>
+		<contextgroupcode csd="99RPH" cv="RP-100322"  cm="Agree with anatomic correlation of lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100323"  cm="Agree with lesion segmentation"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7050b" name="RadPharmAdjudicationDiscordanceReasons" keyword="RadPharmAdjudicationDiscordanceReasons" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100290"  cm="Justifiable Difference in Lesion Selection"/>
+		<contextgroupcode csd="99RPH" cv="RP-100291"  cm="Incorrect lesion selection"/>
+		<contextgroupcode csd="99RPH" cv="RP-100292"  cm="Justifiable Difference in Number of Target Lesions Identified at Baseline "/>
+		<contextgroupcode csd="99RPH" cv="RP-100293"  cm="Incorrect Number of Target Lesions Identified at Baseline"/>
+		<contextgroupcode csd="99RPH" cv="RP-100294"  cm="Missing Image Data Led to a Justifiable Difference Between the Readers"/>
+		<contextgroupcode csd="99RPH" cv="RP-100295"  cm="One Reader Did Not Follow the Charter"/>
+		<contextgroupcode csd="99RPH" cv="RP-100296"  cm="Justifiable Perception Difference in Determining New Lesions"/>
+		<contextgroupcode csd="99RPH" cv="RP-100297"  cm="Incorrect Perception Difference in Determining New Lesions"/>
+		<contextgroupcode csd="99RPH" cv="RP-100298"  cm="Justifiable Perception Difference in Determining Progression on the Basis of Non-Target Lesions"/>
+		<contextgroupcode csd="99RPH" cv="RP-100299"  cm="Incorrect Perception Difference in Determining Progression on the Basis of Non-Target Lesions"/>
+		<contextgroupcode csd="99RPH" cv="RP-100300"  cm="Justifiable Perception Difference in Lesion Measurements "/>
+		<contextgroupcode csd="99RPH" cv="RP-100301"  cm="Incorrect Perception Difference in Lesion Measurements"/>
+		<contextgroupcode csd="99RPH" cv="RP-100305"  cm="Justifiable Difference in qualitative lesion assessment"/>
+		<contextgroupcode csd="99RPH" cv="RP-100306"  cm="Incorrect qualitative lesion assessment"/>
+		<contextgroupcode csd="99RPH" cv="RP-100307"  cm="Justifiable difference in anatomic correlation of lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100308"  cm="Incorrect anatomic correlation of lesion"/>
+		<contextgroupcode csd="99RPH" cv="RP-100309"  cm="Justifiable Difference in Lesion Segmentation"/>
+		<contextgroupcode csd="99RPH" cv="RP-100310"  cm="Incorrect Lesion Segmentation"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7052" name="RadPharmAdjudicationObservationScope" keyword="RadPharmAdjudicationObservationScope" extensible="T" version="20090916">
+		<contextgroupcode csd="99RPH" cv="RP-100278" cm="Current TimePoint"/>
+		<contextgroupcode csd="99RPH" cv="RP-100279" cm="Current and all previous TimePoints"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7060" name="RadPharmMessageDigestAlgorithms" keyword="RadPharmMessageDigestAlgorithms" extensible="T" version="20090211">
+		<contextgroupcode csd="99RPH" cv="RP-100883" cm="MD5"/>
+		<contextgroupcode csd="99RPH" cv="RP-100884" cm="SHA1"/>
+		<contextgroupcode csd="99RPH" cv="RP-100885" cm="RIPEMD160"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7070" name="RadPharmClosedCurveTypes" keyword="RadPharmClosedCurveTypes" extensible="F" version="20090213">
+		<contextgroupcode csd="99RPH" cv="RP-100898" cm="Spline"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7071" name="RadPharmClosedPolygonTypes" keyword="RadPharmClosedPolygonTypes" extensible="F" version="20090213">
+		<contextgroupcode csd="SRT" cv="G-A159" cm="Rectangle"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7080" name="RadPharmProceduresReported" keyword="RadPharmProceduresReported" extensible="F" version="20090213">
+		<contextgroupcode csd="SRT" cv="P5-D1010" cm="Bone Scan"/>
+		<contextgroupcode csd="SRT" cv="P5-D30FA" cm="MUGA"/>
+		<contextgroupcode csd="99RPH" cv="RP-100905" cm="Sestamibi"/>
+		<contextgroupcode csd="SRT" cv="P5-D2500" cm="Ventilation/Perfusion"/>
+		<contextgroupcode csd="SRT" cv="P5-09042" cm="Spectroscopy"/>
+		<contextgroupcode csd="99RPH" cv="RP-100906" cm="Whole Body Composition"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7230" name="RadPharmYesNoOnly" keyword="RadPharmYesNoOnly" extensible="F" version="20090331">
+		<contextgroupcode csd="SRT" cv="R-0038D" cm="Yes"/>
+		<contextgroupcode csd="SRT" cv="R-00339" cm="No"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7231" name="RadPharmYesNoUE" keyword="RadPharmYesNoUE" extensible="F" version="20110822">
+		<contextgroupcode csd="SRT" cv="R-0038D" cm="Yes"/>
+		<contextgroupcode csd="SRT" cv="R-00339" cm="No"/>
+		<contextgroupcode csd="99RPH" cv="RP-100044" cm="Unable to evaluate"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7232" name="RadPharmYesNoUENA" keyword="RadPharmYesNoUENA" extensible="F" version="20130205">
+		<contextgroupcode csd="SRT" cv="R-0038D" cm="Yes"/>
+		<contextgroupcode csd="SRT" cv="R-00339" cm="No"/>
+		<contextgroupcode csd="99RPH" cv="RP-100044" cm="Unable to evaluate"/>
+		<contextgroupcode csd="SRT" cv="R-400F9" cm="Not applicable"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7601" name="RadPharmMeasurementObjectTypes" keyword="RadPharmMeasurementObjectTypes" extensible="F" version="20090331">
+		<contextgroupcode csd="99RPH" cv="RP-100103" cm="Line Segment"/>
+		<contextgroupcode csd="99RPH" cv="RP-100104" cm="Biorthogonal Line Segments"/>
+		<contextgroupcode csd="99RPH" cv="RP-100105" cm="Angle"/>
+		<contextgroupcode csd="DCM"   cv="111041"    cm="Outline"/>
+		<contextgroupcode csd="SRT"   cv="G-D705"    cm="Volume"/>
+		<contextgroupcode csd="99RPH" cv="RP-100106" cm="Text Annotation"/>
+		<contextgroupcode csd="99RPH" cv="RP-100111" cm="Measurements Derived From Other Measurements"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7702" name="Multiplicity" keyword="Multiplicity" extensible="T" version="20090616">
+		<contextgroupcode csd="SRT" cv="G-A224" cm="Singular"/>
+		<contextgroupcode csd="SRT" cv="G-A445" cm="Multiple"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7710" name="BaselineTimePointObservationTypesWithYesNoAnswers" keyword="BaselineTimePointObservationTypesWithYesNoAnswers" extensible="T" version="20110822">
+		<contextgroupcode csd="99RPH" cv="RP-101019" cm="Baseline fluid collection is present"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7711" name="PostBaselineTimePointObservationTypesWithYesNoAnswers" keyword="PostBaselineTimePointObservationTypesWithYesNoAnswers" extensible="T" version="20110822">
+		<contextgroupcode csd="99RPH" cv="RP-101018" cm="Pseudo-progression"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7712" name="PostBaselineTimePointObservationTypesWithYesNoUEAnswers" keyword="PostBaselineTimePointObservationTypesWithYesNoUEAnswers" extensible="T" version="20130205">
+		<contextgroupcode csd="99RPH" cv="RP-101021" cm="New fluid collection is present"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="RPH_7713" name="PostBaselineTimePointObservationTypesWithYesNoUENAAnswers" keyword="PostBaselineTimePointObservationTypesWithYesNoUENAAnswers" extensible="T" version="20130205">
+		<contextgroupcode csd="99RPH" cv="RP-101020" cm="Baseline fluid collection has increased"/>
+	</definecontextgroup>
+
+    
+    <!-- Dummy empty context groups for those that are "constructed" from an external value set, such as various procedure coding schemes -->
+    
+    <definecontextgroup cid="102" name="LOINC-RSNA Radiology Imaging Procedure" keyword="LOINCRSNARadiologyImagingProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="103" name="NICIP Short Code Imaging Procedure" keyword="NICIPShortCodeImagingProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="104" name="NICIP SNOMED Imaging Procedure" keyword="NICIPSNOMEDImagingProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="105" name="ICD-10-PCS Imaging Procedure" keyword="ICD10PCSImagingProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="106" name="ICD-10-PCS Nuclear Medicine Procedure" keyword="ICD10PCSNuclearMedicineProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="107" name="ICD-10-PCS Radiation Therapy Procedure" keyword="ICD10PCSRadiationTherapyProcedure" extensible="F" version="Not versioned">
+    </definecontextgroup>
+    
+    <definecontextgroup cid="4010_4014" name="DXViewAndViewForMammography" keyword="DXViewAndViewForMammography" extensible="T" version="20160314">
+        <include cid="4010"/>
+        <include cid="4014"/>
+    </definecontextgroup>
+
+    <definecontextgroup cid="4011_4015" name="DXViewModifierOrViewModifierForMammography" keyword="DXViewModifierOrViewModifierForMammography" extensible="T" version="20090717">
+        <include cid="4011"/>
+        <include cid="4015"/>
+    </definecontextgroup>
+    
+	<!-- extended with pre-coordinated regions from https://gist.github.com/msikma/8912e62ed866778ff8cd (001167) -->
+	<definecontextgroup cid="5000" name="Languages" keyword="Languages" extensible="T">
+		<contextgroupcode csd="RFC5646" cv="ab" cm="azian"/>
+		<contextgroupcode csd="RFC5646" cv="aa" cm="Afar"/>	<!-- not "aar" -->
+		<contextgroupcode csd="RFC5646" cv="af" cm="Afrikaans"/>	<!-- not afr -->
+		<contextgroupcode csd="RFC5646" cv="af-ZA" cm="Afrikaans (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="ak" cm="Akan"/>	<!-- not aka" -->
+		<contextgroupcode csd="RFC5646" cv="sq" cm="Albanian"/>	<!-- not "sqi" -->
+		<contextgroupcode csd="RFC5646" cv="sq-AL" cm="Albanian (Albania)"/>
+		<contextgroupcode csd="RFC5646" cv="am" cm="Amharic"/>	<!-- not "amh" -->
+		<contextgroupcode csd="RFC5646" cv="ar" cm="Arabic"/>	<!-- not "ara" -->
+		<contextgroupcode csd="RFC5646" cv="ar-AE" cm="Arabic (U.A.E.)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-BH" cm="Arabic (Bahrain)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-DZ" cm="Arabic (Algeria)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-EG" cm="Arabic (Egypt)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-IQ" cm="Arabic (Iraq)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-JO" cm="Arabic (Jordan)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-KW" cm="Arabic (Kuwait)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-LB" cm="Arabic (Lebanon)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-LY" cm="Arabic (Libya)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-MA" cm="Arabic (Morocco)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-OM" cm="Arabic (Oman)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-QA" cm="Arabic (Qatar)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-SA" cm="Arabic (Saudi Arabia)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-SY" cm="Arabic (Syria)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-TN" cm="Arabic (Tunisia)"/>
+		<contextgroupcode csd="RFC5646" cv="ar-YE" cm="Arabic (Yemen)"/>
+		<contextgroupcode csd="RFC5646" cv="an" cm="Aragonese"/>
+		<contextgroupcode csd="RFC5646" cv="hy" cm="Armenian"/>	<!-- not "hye" -->
+		<contextgroupcode csd="RFC5646" cv="hy-AM" cm="Armenian (Armenia)"/>
+		<contextgroupcode csd="RFC5646" cv="as" cm="Assamese"/>	<!-- not "asm" -->
+		<contextgroupcode csd="RFC5646" cv="av" cm="Avaric"/>	<!-- not "ava"-->
+		<contextgroupcode csd="RFC5646" cv="ae" cm="Avestan"/>	<!-- not "ave" -->
+		<contextgroupcode csd="RFC5646" cv="ay" cm="Aymara"/>	<!-- not "aym" -->
+		<contextgroupcode csd="RFC5646" cv="az" cm="Azerbaijani"/>
+		<contextgroupcode csd="RFC5646" cv="az-AZ" cm="Azeri (Latin) (Azerbaijan)"/>
+		<contextgroupcode csd="RFC5646" cv="az-Cyrl-AZ" cm="Azeri (Cyrillic) (Azerbaijan)"/>
+		<contextgroupcode csd="RFC5646" cv="bm" cm="Bambara"/>	<!-- not "bam" -->
+		<contextgroupcode csd="RFC5646" cv="ba" cm="Bashkir"/>	<!-- not "bak" -->
+		<contextgroupcode csd="RFC5646" cv="eu" cm="Basque"/>	<!-- not "eus" -->
+		<contextgroupcode csd="RFC5646" cv="eu-ES" cm="Basque (Spain)"/>
+		<contextgroupcode csd="RFC5646" cv="be" cm="Belarusian"/>
+		<contextgroupcode csd="RFC5646" cv="be-BY" cm="Belarusian (Belarus)"/>
+		<contextgroupcode csd="RFC5646" cv="bn" cm="Bengali"/>	<!-- not ben -->
+		<contextgroupcode csd="RFC5646" cv="bh" cm="Bihari"/>	<!-- not "bih" -->
+		<contextgroupcode csd="RFC5646" cv="bi" cm="Bislama"/>	<!-- not "bis" -->
+		<contextgroupcode csd="RFC5646" cv="bs" cm="Bosnian"/>
+		<contextgroupcode csd="RFC5646" cv="bs-BA" cm="Bosnian (Bosnia and Herzegovina)"/>
+		<contextgroupcode csd="RFC5646" cv="br" cm="Breton"/>	<!-- not "bre" -->
+		<contextgroupcode csd="RFC5646" cv="bg" cm="Bulgarian"/>	<!-- not "bul" -->
+		<contextgroupcode csd="RFC5646" cv="bg-BG" cm="Bulgarian (Bulgaria)"/>
+		<contextgroupcode csd="RFC5646" cv="my" cm="Burmese"/>	<!-- not "mya" -->
+		<contextgroupcode csd="RFC5646" cv="ca" cm="Catalan"/>	<!-- not "cat" -->	<!-- cm="Valencian" -->
+		<contextgroupcode csd="RFC5646" cv="ca-ES" cm="Catalan (Spain)"/>
+		<contextgroupcode csd="RFC5646" cv="km" cm="Central Khmer"/>	<!-- not "khm" -->
+		<contextgroupcode csd="RFC5646" cv="ch" cm="Chamorro"/>	<!-- not "cha" -->
+		<contextgroupcode csd="RFC5646" cv="ce" cm="Chechen"/>	<!-- not "che" -->
+		<contextgroupcode csd="RFC5646" cv="ny" cm="Chichewa"/>
+		<contextgroupcode csd="RFC5646" cv="zh" cm="Chinese"/>	<!-- not "zho" -->
+		<contextgroupcode csd="RFC5646" cv="zh-CN" cm="Chinese (S)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-HK" cm="Chinese (Hong Kong)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-MO" cm="Chinese (Macau)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-SG" cm="Chinese (Singapore)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-TW" cm="Chinese (T)"/>
+		<contextgroupcode csd="RFC5646" cv="za" cm="Chuang"/>	<!-- not "XXX" -->	<!-- cm="Zhuang" -->
+		<contextgroupcode csd="RFC5646" cv="cu" cm="Church Slavic"/>	<!-- not "chu" -->	<!-- cm="Church Slavonic" -->	<!-- cm="Old Bulgarian" -->
+		<contextgroupcode csd="RFC5646" cv="cv" cm="Chuvash"/>	<!-- not "chv" -->
+		<contextgroupcode csd="RFC5646" cv="kw" cm="Cornish"/>	<!-- not "cor" -->
+		<contextgroupcode csd="RFC5646" cv="co" cm="Corsican"/>	<!-- not "cos" -->
+		<contextgroupcode csd="RFC5646" cv="cr" cm="Cree"/>	<!-- not "cre" -->
+		<contextgroupcode csd="RFC5646" cv="hr" cm="Croatian"/>
+		<contextgroupcode csd="RFC5646" cv="hr-BA" cm="Croatian (Bosnia and Herzegovina)"/>
+		<contextgroupcode csd="RFC5646" cv="hr-HR" cm="Croatian (Croatia)"/>
+		<contextgroupcode csd="RFC5646" cv="cs" cm="Czech"/>	<!-- not "ces" -->
+		<contextgroupcode csd="RFC5646" cv="cs-CZ" cm="Czech (Czech Republic)"/>
+		<contextgroupcode csd="RFC5646" cv="da" cm="Danish"/>	<!-- not "dan" -->
+		<contextgroupcode csd="RFC5646" cv="da-DK" cm="Danish (Denmark)"/>
+		<contextgroupcode csd="RFC5646" cv="dv" cm="Divehi"/>	<!-- not "div" -->	<!-- cm="Dhivehi" -->	<!-- cm="Maldivian" -->
+		<contextgroupcode csd="RFC5646" cv="dv-MV" cm="Divehi (Maldives)"/>
+		<contextgroupcode csd="RFC5646" cv="nl" cm="Dutch"/>	<!-- not "nla" -->	<!-- cm="Flemish" -->
+		<contextgroupcode csd="RFC5646" cv="nl-BE" cm="Dutch (Belgium)"/>
+		<contextgroupcode csd="RFC5646" cv="nl-NL" cm="Dutch (Netherlands)"/>
+		<contextgroupcode csd="RFC5646" cv="dz" cm="Dzongkha"/>	<!-- not "dzo" -->
+		<contextgroupcode csd="RFC5646" cv="en" cm="English"/>	<!-- not "eng" -->
+		<contextgroupcode csd="RFC5646" cv="en-AU" cm="English (Australia)"/>
+		<contextgroupcode csd="RFC5646" cv="en-BZ" cm="English (Belize)"/>
+		<contextgroupcode csd="RFC5646" cv="en-CA" cm="English (Canada)"/>
+		<contextgroupcode csd="RFC5646" cv="en-CB" cm="English (Caribbean)"/>
+		<contextgroupcode csd="RFC5646" cv="en-GB" cm="English (United Kingdom)"/>
+		<contextgroupcode csd="RFC5646" cv="en-IE" cm="English (Ireland)"/>
+		<contextgroupcode csd="RFC5646" cv="en-JM" cm="English (Jamaica)"/>
+		<contextgroupcode csd="RFC5646" cv="en-NZ" cm="English (New Zealand)"/>
+		<contextgroupcode csd="RFC5646" cv="en-PH" cm="English (Republic of the Philippines)"/>
+		<contextgroupcode csd="RFC5646" cv="en-TT" cm="English (Trinidad and Tobago)"/>
+		<contextgroupcode csd="RFC5646" cv="en-US" cm="English (United States)"/>
+		<contextgroupcode csd="RFC5646" cv="en-ZA" cm="English (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="en-ZW" cm="English (Zimbabwe)"/>
+		<contextgroupcode csd="RFC5646" cv="eo" cm="Esperanto"/>	<!-- not "epo" -->
+		<contextgroupcode csd="RFC5646" cv="et" cm="Estonian"/>	<!-- not "est" -->
+		<contextgroupcode csd="RFC5646" cv="et-EE" cm="Estonian (Estonia)"/>
+		<contextgroupcode csd="RFC5646" cv="ee" cm="Ewe"/>	<!-- not "ewe" -->
+		<contextgroupcode csd="RFC5646" cv="fa" cm="Farsi"/>	<!-- not "fas" -->	<!-- cm="Persian" -->
+		<contextgroupcode csd="RFC5646" cv="fa-IR" cm="Farsi (Iran)"/>
+		<contextgroupcode csd="RFC5646" cv="fo" cm="Faroese"/>	<!-- not "fao" -->
+		<contextgroupcode csd="RFC5646" cv="fo-FO" cm="Faroese (Faroe Islands)"/>
+		<contextgroupcode csd="RFC5646" cv="fj" cm="Fijian"/>	<!-- not "fij" -->
+		<contextgroupcode csd="RFC5646" cv="fi" cm="Finnish"/>	<!-- not "fin" -->
+		<contextgroupcode csd="RFC5646" cv="fi-FI" cm="Finnish (Finland)"/>
+		<contextgroupcode csd="RFC5646" cv="fr" cm="French"/>	<!-- not "fra" -->
+		<contextgroupcode csd="RFC5646" cv="fr-BE" cm="French (Belgium)"/>
+		<contextgroupcode csd="RFC5646" cv="fr-CA" cm="French (Canada)"/>
+		<contextgroupcode csd="RFC5646" cv="fr-CH" cm="French (Switzerland)"/>
+		<contextgroupcode csd="RFC5646" cv="fr-FR" cm="French (France)"/>
+		<contextgroupcode csd="RFC5646" cv="fr-LU" cm="French (Luxembourg)"/>
+		<contextgroupcode csd="RFC5646" cv="fr-MC" cm="French (Principality of Monaco)"/>
+		<contextgroupcode csd="RFC5646" cv="ff" cm="Fulah"/>	<!-- not "ful" -->
+		<contextgroupcode csd="RFC5646" cv="gd" cm="Gaelic"/>	<!-- not "gdh" -->	<!-- cm="Scottish Gaelic" -->
+		<contextgroupcode csd="RFC5646" cv="gl" cm="Galician"/>
+		<contextgroupcode csd="RFC5646" cv="gl-ES" cm="Galician (Spain)"/>
+		<contextgroupcode csd="RFC5646" cv="lg" cm="Ganda"/>	<!-- not "lug" -->
+		<contextgroupcode csd="RFC5646" cv="ka" cm="Georgian"/>	<!-- not "kat" -->
+		<contextgroupcode csd="RFC5646" cv="ka-GE" cm="Georgian (Georgia)"/>
+		<contextgroupcode csd="RFC5646" cv="de" cm="German"/>	<!-- not "deu" -->
+		<contextgroupcode csd="RFC5646" cv="de-AT" cm="German (Austria)"/>
+		<contextgroupcode csd="RFC5646" cv="de-CH" cm="German (Switzerland)"/>
+		<contextgroupcode csd="RFC5646" cv="de-DE" cm="German (Germany)"/>
+		<contextgroupcode csd="RFC5646" cv="de-LI" cm="German (Liechtenstein)"/>
+		<contextgroupcode csd="RFC5646" cv="de-LU" cm="German (Luxembourg)"/>
+		<contextgroupcode csd="RFC5646" cv="ki" cm="Gikuyu"/>
+		<contextgroupcode csd="RFC5646" cv="el" cm="Greek, Modern (1453-)"/>	<!-- not "ell" -->
+		<contextgroupcode csd="RFC5646" cv="el-GR" cm="Greek (Greece)"/>
+		<contextgroupcode csd="RFC5646" cv="kl" cm="Greenlandic"/>	<!-- not "kal" -->
+		<contextgroupcode csd="RFC5646" cv="gn" cm="Guarani"/>	<!-- not grn -->
+		<contextgroupcode csd="RFC5646" cv="gu" cm="Gujarati"/>	<!-- not "guj" -->
+		<contextgroupcode csd="RFC5646" cv="gu-IN" cm="Gujarati (India)"/>
+		<contextgroupcode csd="RFC5646" cv="ht" cm="Haitian"/>
+		<contextgroupcode csd="RFC5646" cv="ha" cm="Hausa"/>	<!-- not "hau" -->
+		<contextgroupcode csd="RFC5646" cv="he" cm="Hebrew"/>	<!-- not "heb" -->
+		<contextgroupcode csd="RFC5646" cv="he-IL" cm="Hebrew (Israel)"/>
+		<contextgroupcode csd="RFC5646" cv="hz" cm="Herero"/>	<!-- not "her" -->
+		<contextgroupcode csd="RFC5646" cv="hi" cm="Hindi"/>	<!-- not "hin" -->
+		<contextgroupcode csd="RFC5646" cv="hi-IN" cm="Hindi (India)"/>
+		<contextgroupcode csd="RFC5646" cv="ho" cm="Hiri Motu"/>	<!-- not "hmo" -->
+		<contextgroupcode csd="RFC5646" cv="hu" cm="Hungarian"/>	<!-- not "hun" -->
+		<contextgroupcode csd="RFC5646" cv="hu-HU" cm="Hungarian (Hungary)"/>
+		<contextgroupcode csd="RFC5646" cv="is" cm="Icelandic"/>	<!-- not "isl" -->
+		<contextgroupcode csd="RFC5646" cv="is-IS" cm="Icelandic (Iceland)"/>
+		<contextgroupcode csd="RFC5646" cv="io" cm="Ido"/>
+		<contextgroupcode csd="RFC5646" cv="ig" cm="Igbo"/>	<!-- not "ibo" -->
+		<contextgroupcode csd="RFC5646" cv="id" cm="Indonesian"/>	<!-- not "ind" -->
+		<contextgroupcode csd="RFC5646" cv="id-ID" cm="Indonesian (Indonesia)"/>
+		<contextgroupcode csd="RFC5646" cv="ia" cm="Interlingua"/>	<!-- not "ina" -->
+		<contextgroupcode csd="RFC5646" cv="ie" cm="Interlingue"/>	<!-- not "ile" -->
+		<contextgroupcode csd="RFC5646" cv="iu" cm="Inuktitut"/>	<!-- not "iku" -->
+		<contextgroupcode csd="RFC5646" cv="ik" cm="Inupiaq"/>	<!-- not "ipk" -->	<!-- cm="Inupiak" -->
+		<contextgroupcode csd="RFC5646" cv="ga" cm="Irish"/>	<!-- not "gai" -->
+		<contextgroupcode csd="RFC5646" cv="it" cm="Italian"/>	<!-- not "ita" -->
+		<contextgroupcode csd="RFC5646" cv="it-CH" cm="Italian (Switzerland)"/>
+		<contextgroupcode csd="RFC5646" cv="it-IT" cm="Italian (Italy)"/>
+		<contextgroupcode csd="RFC5646" cv="ja" cm="Japanese"/>	<!-- not "jpn" -->
+		<contextgroupcode csd="RFC5646" cv="ja-JP" cm="Japanese (Japan)"/>
+		<contextgroupcode csd="RFC5646" cv="jv" cm="Javanese"/>	<!-- not "jaw" -->
+		<contextgroupcode csd="RFC5646" cv="kl" cm="Kalaallisut"/>
+		<contextgroupcode csd="RFC5646" cv="kn" cm="Kannada"/>	<!-- not "kan" -->
+		<contextgroupcode csd="RFC5646" cv="kn-IN" cm="Kannada (India)"/>
+		<contextgroupcode csd="RFC5646" cv="kr" cm="Kanuri"/>	<!-- not "kau" -->
+		<contextgroupcode csd="RFC5646" cv="ks" cm="Kashmiri"/>	<!-- not "kas" -->
+		<contextgroupcode csd="RFC5646" cv="kk" cm="Kazakh"/>	<!-- not "kaz" -->
+		<contextgroupcode csd="RFC5646" cv="kk-KZ" cm="Kazakh (Kazakhstan)"/>
+		<contextgroupcode csd="RFC5646" cv="ki" cm="Kikuyu"/>	<!-- not "kik" -->
+		<contextgroupcode csd="RFC5646" cv="rw" cm="Kinyarwanda"/>	<!-- not "kin" -->
+		<contextgroupcode csd="RFC5646" cv="ky" cm="Kirghiz"/>	<!-- not "kir" -->
+		<contextgroupcode csd="RFC5646" cv="kv" cm="Komi"/>	<!-- not "kom" -->
+		<contextgroupcode csd="RFC5646" cv="kg" cm="Kongo"/>	<!-- not "kon" -->
+		<contextgroupcode csd="RFC5646" cv="ko" cm="Korean"/>	<!-- not "kor" -->
+		<contextgroupcode csd="RFC5646" cv="ko-KR" cm="Korean (Korea)"/>
+		<contextgroupcode csd="RFC5646" cv="kj" cm="Kuanyama"/>	<!-- not "kua" -->
+		<contextgroupcode csd="RFC5646" cv="ku" cm="Kurdish"/>	<!-- not "kur" -->
+		<contextgroupcode csd="RFC5646" cv="kj" cm="Kwanyama"/>
+		<contextgroupcode csd="RFC5646" cv="ky" cm="Kyrgyz"/>
+		<contextgroupcode csd="RFC5646" cv="ky-KG" cm="Kyrgyz (Kyrgyzstan)"/>
+		<contextgroupcode csd="RFC5646" cv="lo" cm="Lao"/>	<!-- not "lao" -->
+		<contextgroupcode csd="RFC5646" cv="la" cm="Latin"/>	<!-- not "lat" -->
+		<contextgroupcode csd="RFC5646" cv="lv" cm="Latvian"/>	<!-- not "lav" -->
+		<contextgroupcode csd="RFC5646" cv="lv-LV" cm="Latvian (Latvia)"/>
+		<contextgroupcode csd="RFC5646" cv="lb" cm="Letzeburgesch"/>	<!-- not "ltz" -->
+		<contextgroupcode csd="RFC5646" cv="li" cm="Limburgan"/>	<!-- cm="Limburger" -->		<!-- cm="Limburgish" -->
+		<contextgroupcode csd="RFC5646" cv="ln" cm="Lingala"/>	<!-- not "lin" -->
+		<contextgroupcode csd="RFC5646" cv="lt" cm="Lithuanian"/>	<!-- not "lit" -->
+		<contextgroupcode csd="RFC5646" cv="lt-LT" cm="Lithuanian (Lithuania)"/>
+		<contextgroupcode csd="RFC5646" cv="lu" cm="Luba-Katanga"/>	<!-- not "lub" -->
+		<contextgroupcode csd="RFC5646" cv="lb" cm="Luxembourgish"/>	<!-- not "i-lux" -->
+		<contextgroupcode csd="RFC5646" cv="mk" cm="Macedonian"/>	<!-- not "mac" -->	<!-- not "mak" -->
+		<contextgroupcode csd="RFC5646" cv="mk-MK" cm="Macedonian (Former Yugoslav Republic of Macedonia)"/>
+		<contextgroupcode csd="RFC5646" cv="mg" cm="Malagasy"/>	<!-- not "mlg" -->
+		<contextgroupcode csd="RFC5646" cv="ms" cm="Malay"/>	<!-- not "may" -->	<!-- not "msa" -->
+		<contextgroupcode csd="RFC5646" cv="ms-BN" cm="Malay (Brunei Darussalam)"/>
+		<contextgroupcode csd="RFC5646" cv="ms-MY" cm="Malay (Malaysia)"/>
+		<contextgroupcode csd="RFC5646" cv="ml" cm="Malayalam"/>	<!-- not "mal" -->
+		<contextgroupcode csd="RFC5646" cv="mt" cm="Maltese"/>	<!-- not "mlt" -->
+		<contextgroupcode csd="RFC5646" cv="mt-MT" cm="Maltese (Malta)"/>
+		<contextgroupcode csd="RFC5646" cv="gv" cm="Manx"/>	<!-- not "max" -->
+		<contextgroupcode csd="RFC5646" cv="mi" cm="Maori"/>	<!-- not "mao" -->	<!-- not "mri" -->
+		<contextgroupcode csd="RFC5646" cv="mi-NZ" cm="Maori (New Zealand)"/>
+		<contextgroupcode csd="RFC5646" cv="mr" cm="Marathi"/>	<!-- not "mar" -->
+		<contextgroupcode csd="RFC5646" cv="mr-IN" cm="Marathi (India)"/>
+		<contextgroupcode csd="RFC5646" cv="mh" cm="Marshallese"/>	<!-- not "mah" -->
+		<contextgroupcode csd="RFC5646" cv="ro" cm="Moldavian"/>	<!-- not "mol" -->
+		<contextgroupcode csd="RFC5646" cv="mn" cm="Mongolian"/>	<!-- not "mon" -->
+		<contextgroupcode csd="RFC5646" cv="mn-MN" cm="Mongolian (Mongolia)"/>
+		<contextgroupcode csd="RFC5646" cv="na" cm="Nauru"/>	<!-- not "nau" -->
+		<contextgroupcode csd="RFC5646" cv="nv" cm="Navaho"/>	<!-- not "i-navajo" -->	<!-- not "nav" -->	<!-- cm="Navajo" -->
+		<contextgroupcode csd="RFC5646" cv="nd" cm="Ndebele, North"/>	<!-- not "nde" -->	<!-- cm="North Ndebele" -->
+		<contextgroupcode csd="RFC5646" cv="nr" cm="Ndebele, South"/>	<!-- not "nbl" -->	<!-- cm="South Ndebele" -->
+		<contextgroupcode csd="RFC5646" cv="ng" cm="Ndonga"/>
+		<contextgroupcode csd="RFC5646" cv="ne" cm="Nepali"/>	<!-- not "nep" -->
+		<contextgroupcode csd="RFC5646" cv="ns" cm="Northern Sotho"/>	<!-- not "nso" -->
+		<contextgroupcode csd="RFC5646" cv="ns-ZA" cm="Northern Sotho (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="no" cm="Norwegian"/>	<!-- not "nor" -->
+ 		<contextgroupcode csd="RFC5646" cv="no-bok" cm="Norwegian (Book language)"/>
+ 		<contextgroupcode csd="RFC5646" cv="no-nyn" cm="Norwegian (New Norwegian)"/>
+		<contextgroupcode csd="RFC5646" cv="nb" cm="Norwegian Bokmål"/>
+		<contextgroupcode csd="RFC5646" cv="nb-NO" cm="Norwegian (Bokmål) (Norway)"/>
+		<contextgroupcode csd="RFC5646" cv="nn" cm="Norwegian Nynorsk"/>	<!-- not "nno"-->
+		<contextgroupcode csd="RFC5646" cv="nn-NO" cm="Norwegian (Nynorsk) (Norway)"/>
+		<contextgroupcode csd="RFC5646" cv="ii" cm="Nuosu"/>
+		<contextgroupcode csd="RFC5646" cv="ny" cm="Nyanja"/>	<!-- not "nya" -->
+		<contextgroupcode csd="RFC5646" cv="ie" cm="Occidental"/>
+		<contextgroupcode csd="RFC5646" cv="oc" cm="Occitan (post 1500)"/>
+		<contextgroupcode csd="RFC5646" cv="oj" cm="Ojibwa"/>	<!-- not "oji" -->
+		<contextgroupcode csd="RFC5646" cv="or" cm="Oriya"/>	<!-- not "ori" -->
+		<contextgroupcode csd="RFC5646" cv="om" cm="Oromo"/>	<!-- not "orm" -->
+		<contextgroupcode csd="RFC5646" cv="os" cm="Ossetian"/>	<!-- not "oss" -->
+		<contextgroupcode csd="RFC5646" cv="pi" cm="Pali"/>	<!-- not "pli" -->
+		<contextgroupcode csd="RFC5646" cv="ps" cm="Pashto"/>
+		<contextgroupcode csd="RFC5646" cv="ps-AR" cm="Pashto (Afghanistan)"/>
+		<contextgroupcode csd="RFC5646" cv="pl" cm="Polish"/>	<!-- not "pol" -->
+		<contextgroupcode csd="RFC5646" cv="pl-PL" cm="Polish (Poland)"/>
+		<contextgroupcode csd="RFC5646" cv="pt" cm="Portuguese"/>	<!-- not "por" -->
+		<contextgroupcode csd="RFC5646" cv="pt-BR" cm="Portuguese (Brazil)"/>
+		<contextgroupcode csd="RFC5646" cv="pt-PT" cm="Portuguese (Portugal)"/>
+		<contextgroupcode csd="RFC5646" cv="pa" cm="Punjabi"/>
+		<contextgroupcode csd="RFC5646" cv="pa-IN" cm="Punjabi (India)"/>
+		<contextgroupcode csd="RFC5646" cv="qu" cm="Quechua"/>	<!-- not "que" -->
+		<contextgroupcode csd="RFC5646" cv="qu-BO" cm="Quechua (Bolivia)"/>
+		<contextgroupcode csd="RFC5646" cv="qu-EC" cm="Quechua (Ecuador)"/>
+		<contextgroupcode csd="RFC5646" cv="qu-PE" cm="Quechua (Peru)"/>
+		<contextgroupcode csd="RFC5646" cv="ro" cm="Romanian"/>	<!-- not "ron" -->	<!-- not "rum" -->
+		<contextgroupcode csd="RFC5646" cv="ro-RO" cm="Romanian (Romania)"/>
+		<contextgroupcode csd="RFC5646" cv="rm" cm="Romansh"/>
+		<contextgroupcode csd="RFC5646" cv="rn" cm="Rundi"/>	<!-- not "run" -->
+		<contextgroupcode csd="RFC5646" cv="ru" cm="Russian"/>	<!-- not "rus" -->
+		<contextgroupcode csd="RFC5646" cv="ru-RU" cm="Russian (Russia)"/>
+		<contextgroupcode csd="RFC5646" cv="sm" cm="Samoan"/>	<!-- not "smo" -->
+		<contextgroupcode csd="RFC5646" cv="se" cm="Sami"/>	<!-- not "smi" -->	<!--cm="Northern Sami" -->
+		<contextgroupcode csd="RFC5646" cv="se-FI" cm="Sami (Finland)"/>
+		<contextgroupcode csd="RFC5646" cv="se-NO" cm="Sami (Norway)"/>
+		<contextgroupcode csd="RFC5646" cv="se-SE" cm="Sami (Sweden)"/>
+		<contextgroupcode csd="RFC5646" cv="sg" cm="Sango"/>	<!-- not "sag" -->
+		<contextgroupcode csd="RFC5646" cv="sa" cm="Sanskrit"/>	<!-- not "san" -->
+		<contextgroupcode csd="RFC5646" cv="sa-IN" cm="Sanskrit (India)"/>
+		<contextgroupcode csd="RFC5646" cv="sc" cm="Sardinian"/>	<!-- not "srd" -->
+		<contextgroupcode csd="RFC5646" cv="sr" cm="Serbian"/>
+		<contextgroupcode csd="RFC5646" cv="sr-BA" cm="Serbian (Latin) (Bosnia and Herzegovina)"/>
+		<contextgroupcode csd="RFC5646" cv="sr-Cyrl-BA" cm="Serbian (Cyrillic) (Bosnia and Herzegovina)"/>
+		<contextgroupcode csd="RFC5646" cv="sr-SP" cm="Serbian (Latin) (Serbia and Montenegro)"/>
+		<contextgroupcode csd="RFC5646" cv="sr-Cyrl-SP" cm="Serbian (Cyrillic) (Serbia and Montenegro)"/>
+		<contextgroupcode csd="RFC5646" cv="sn" cm="Shona"/>	<!-- not "sna" -->
+		<contextgroupcode csd="RFC5646" cv="ii" cm="Sichuan Yi"/>
+		<contextgroupcode csd="RFC5646" cv="sd" cm="Sindhi"/>	<!-- not "snd" -->
+		<contextgroupcode csd="RFC5646" cv="si" cm="Sinhala"/>
+		<contextgroupcode csd="RFC5646" cv="sk" cm="Slovak"/>	<!-- not "slk" -->
+		<contextgroupcode csd="RFC5646" cv="sk-SK" cm="Slovak (Slovakia)"/>
+		<contextgroupcode csd="RFC5646" cv="sl" cm="Slovenian"/>	<!-- not "slv" -->
+		<contextgroupcode csd="RFC5646" cv="sl-SI" cm="Slovenian (Slovenia)"/>
+		<contextgroupcode csd="RFC5646" cv="so" cm="Somali"/>	<!-- not "som" -->
+		<contextgroupcode csd="RFC5646" cv="st" cm="Sotho, Southern"/>	<!-- not "sot" -->
+		<contextgroupcode csd="RFC5646" cv="es" cm="Spanish"/>	<!-- not "esl" -->
+		<contextgroupcode csd="RFC5646" cv="es-AR" cm="Spanish (Argentina)"/>
+		<contextgroupcode csd="RFC5646" cv="es-BO" cm="Spanish (Bolivia)"/>
+		<contextgroupcode csd="RFC5646" cv="es-CL" cm="Spanish (Chile)"/>
+		<contextgroupcode csd="RFC5646" cv="es-CO" cm="Spanish (Colombia)"/>
+		<contextgroupcode csd="RFC5646" cv="es-CR" cm="Spanish (Costa Rica)"/>
+		<contextgroupcode csd="RFC5646" cv="es-DO" cm="Spanish (Dominican Republic)"/>
+		<contextgroupcode csd="RFC5646" cv="es-EC" cm="Spanish (Ecuador)"/>
+		<contextgroupcode csd="RFC5646" cv="es-ES" cm="Spanish (Spain)"/>
+		<contextgroupcode csd="RFC5646" cv="es-GT" cm="Spanish (Guatemala)"/>
+		<contextgroupcode csd="RFC5646" cv="es-HN" cm="Spanish (Honduras)"/>
+		<contextgroupcode csd="RFC5646" cv="es-MX" cm="Spanish (Mexico)"/>
+		<contextgroupcode csd="RFC5646" cv="es-NI" cm="Spanish (Nicaragua)"/>
+		<contextgroupcode csd="RFC5646" cv="es-PA" cm="Spanish (Panama)"/>
+		<contextgroupcode csd="RFC5646" cv="es-PE" cm="Spanish (Peru)"/>
+		<contextgroupcode csd="RFC5646" cv="es-PR" cm="Spanish (Puerto Rico)"/>
+		<contextgroupcode csd="RFC5646" cv="es-PY" cm="Spanish (Paraguay)"/>
+		<contextgroupcode csd="RFC5646" cv="es-SV" cm="Spanish (El Salvador)"/>
+		<contextgroupcode csd="RFC5646" cv="es-UY" cm="Spanish (Uruguay)"/>
+		<contextgroupcode csd="RFC5646" cv="es-VE" cm="Spanish (Venezuela)"/>
+		<contextgroupcode csd="RFC5646" cv="su" cm="Sundanese"/>
+		<contextgroupcode csd="RFC5646" cv="sw" cm="Swahili"/>	<!-- not "swa" -->
+		<contextgroupcode csd="RFC5646" cv="sw-KE" cm="Swahili (Kenya)"/>
+		<contextgroupcode csd="RFC5646" cv="ss" cm="Swati"/>
+		<contextgroupcode csd="RFC5646" cv="sv" cm="Swedish"/>	<!-- not "sve" -->
+		<contextgroupcode csd="RFC5646" cv="sv-FI" cm="Swedish (Finland)"/>
+		<contextgroupcode csd="RFC5646" cv="sv-SE" cm="Swedish (Sweden)"/>
+		<contextgroupcode csd="RFC5646" cv="tl" cm="Tagalog"/>	<!-- not "tgl" -->
+		<contextgroupcode csd="RFC5646" cv="tl-PH" cm="Tagalog (Philippines)"/>
+		<contextgroupcode csd="RFC5646" cv="ty" cm="Tahitian"/>	<!-- not "tah" -->
+		<contextgroupcode csd="RFC5646" cv="tg" cm="Tajik"/>	<!-- not "tgk" -->
+		<contextgroupcode csd="RFC5646" cv="ta" cm="Tamil"/>	<!-- not "tam" -->
+		<contextgroupcode csd="RFC5646" cv="ta-IN" cm="Tamil (India)"/>
+		<contextgroupcode csd="RFC5646" cv="tt" cm="Tatar"/>	<!-- not "tat" -->
+		<contextgroupcode csd="RFC5646" cv="tt-RU" cm="Tatar (Russia)"/>
+		<contextgroupcode csd="RFC5646" cv="te" cm="Telugu"/>	<!-- not "tel" -->
+		<contextgroupcode csd="RFC5646" cv="te-IN" cm="Telugu (India)"/>
+		<contextgroupcode csd="RFC5646" cv="th" cm="Thai"/>	<!-- not "tha" -->
+		<contextgroupcode csd="RFC5646" cv="th-TH" cm="Thai (Thailand)"/>
+		<contextgroupcode csd="RFC5646" cv="bo" cm="Tibetan"/>	<!-- not "bod" -->
+		<contextgroupcode csd="RFC5646" cv="ti" cm="Tigrinya"/>	<!-- not "tir" -->
+		<contextgroupcode csd="RFC5646" cv="to" cm="Tonga (Tonga Islands)"/>	<!-- not "ton" -->
+		<contextgroupcode csd="RFC5646" cv="ts" cm="Tsonga"/>	<!-- not "tso" -->
+		<contextgroupcode csd="RFC5646" cv="tn" cm="Tswana"/>	<!-- not "tsn" -->
+		<contextgroupcode csd="RFC5646" cv="tn-ZA" cm="Tswana (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="tr" cm="Turkish"/>	<!-- not "tur" -->
+		<contextgroupcode csd="RFC5646" cv="tr-TR" cm="Turkish (Turkey)"/>
+		<contextgroupcode csd="RFC5646" cv="tk" cm="Turkmen"/>	<!-- not "tuk" -->
+		<contextgroupcode csd="RFC5646" cv="tw" cm="Twi"/>	<!-- not "twi" -->
+		<contextgroupcode csd="RFC5646" cv="ug" cm="Uighur"/>	<!-- not "uig" -->	<!-- cm="Uyghur" -->
+		<contextgroupcode csd="RFC5646" cv="uk" cm="Ukrainian"/>	<!-- not "ukr" -->
+		<contextgroupcode csd="RFC5646" cv="uk-UA" cm="Ukrainian (Ukraine)"/>
+		<contextgroupcode csd="RFC5646" cv="ur" cm="Urdu"/>	<!-- not "urd" -->
+		<contextgroupcode csd="RFC5646" cv="ur-PK" cm="Urdu (Islamic Republic of Pakistan)"/>
+		<contextgroupcode csd="RFC5646" cv="uz" cm="Uzbek"/>	<!-- not uzb -->
+		<contextgroupcode csd="RFC5646" cv="uz-UZ" cm="Uzbek (Latin) (Uzbekistan)"/>
+		<contextgroupcode csd="RFC5646" cv="uz-Cyrl-UZ" cm="Uzbek (Cyrillic) (Uzbekistan)"/>
+		<contextgroupcode csd="RFC5646" cv="ve" cm="Venda"/>	<!-- not "ven" -->
+		<contextgroupcode csd="RFC5646" cv="vi" cm="Vietnamese"/>	<!-- not "vie" -->
+		<contextgroupcode csd="RFC5646" cv="vi-VN" cm="Vietnamese (Viet Nam)"/>
+		<contextgroupcode csd="RFC5646" cv="vo" cm="Volapük"/>	<!-- not "vol" -->
+		<contextgroupcode csd="RFC5646" cv="wa" cm="Walloon"/>
+		<contextgroupcode csd="RFC5646" cv="cy" cm="Welsh"/>	<!-- not "cym" -->
+		<contextgroupcode csd="RFC5646" cv="cy-GB" cm="Welsh (United Kingdom)"/>
+		<contextgroupcode csd="RFC5646" cv="fy" cm="Western Frisian"/>	<!-- not "fry" -->
+		<contextgroupcode csd="RFC5646" cv="wo" cm="Wolof"/>	<!-- not "wol" -->
+		<contextgroupcode csd="RFC5646" cv="xh" cm="Xhosa"/>	<!-- not "xho" -->
+		<contextgroupcode csd="RFC5646" cv="xh-ZA" cm="Xhosa (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="yi" cm="Yiddish"/>	<!-- not "yid" -->
+		<contextgroupcode csd="RFC5646" cv="yo" cm="Yoruba"/>	<!-- not "yor" -->
+		<contextgroupcode csd="RFC5646" cv="zu" cm="Zulu"/>	<!-- not "zul" -->
+		<contextgroupcode csd="RFC5646" cv="zu-ZA" cm="Zulu (South Africa)"/>
+		<contextgroupcode csd="RFC5646" cv="abk" cm="Abkhazian"/>
+		<contextgroupcode csd="RFC5646" cv="ace" cm="Achinese"/>
+		<contextgroupcode csd="RFC5646" cv="ach" cm="Acoli"/>
+		<contextgroupcode csd="RFC5646" cv="ada" cm="Adangme"/>
+		<contextgroupcode csd="RFC5646" cv="afh" cm="Afrihili"/>
+		<contextgroupcode csd="RFC5646" cv="afa" cm="Afro-Asiatic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="akk" cm="Akkadian"/>
+		<contextgroupcode csd="RFC5646" cv="ale" cm="Aleut"/>
+		<contextgroupcode csd="RFC5646" cv="alg" cm="Algonquian languages"/>
+		<contextgroupcode csd="RFC5646" cv="tut" cm="Altaic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="i-ami" cm="Amis"/>
+		<contextgroupcode csd="RFC5646" cv="zh-min" cm="Amoy"/>
+		<contextgroupcode csd="RFC5646" cv="apa" cm="Apache languages"/>
+		<contextgroupcode csd="RFC5646" cv="arc" cm="Aramaic"/>
+		<contextgroupcode csd="RFC5646" cv="arp" cm="Arapaho"/>
+		<contextgroupcode csd="RFC5646" cv="arn" cm="Araucanian"/>
+		<contextgroupcode csd="RFC5646" cv="arw" cm="Arawak"/>
+		<contextgroupcode csd="RFC5646" cv="art" cm="Artificial (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ath" cm="Athapascan languages"/>
+		<contextgroupcode csd="RFC5646" cv="map" cm="Austronesian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="awa" cm="Awadhi"/>
+		<contextgroupcode csd="RFC5646" cv="aze" cm="Azerbaijani"/>
+		<contextgroupcode csd="RFC5646" cv="nah" cm="Aztec"/>
+		<contextgroupcode csd="RFC5646" cv="ban" cm="Balinese"/>
+		<contextgroupcode csd="RFC5646" cv="bat" cm="Baltic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="bal" cm="Baluchi"/>
+		<contextgroupcode csd="RFC5646" cv="bai" cm="Bamileke languages"/>
+		<contextgroupcode csd="RFC5646" cv="bad" cm="Banda"/>
+		<contextgroupcode csd="RFC5646" cv="bnt" cm="Bantu (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="bas" cm="Basa"/>
+		<contextgroupcode csd="RFC5646" cv="bej" cm="Beja"/>
+		<contextgroupcode csd="RFC5646" cv="bem" cm="Bemba"/>
+		<contextgroupcode csd="RFC5646" cv="ber" cm="Berber (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="bho" cm="Bhojpuri"/>
+		<contextgroupcode csd="RFC5646" cv="bik" cm="Bikol"/>
+		<contextgroupcode csd="RFC5646" cv="bin" cm="Bini"/>
+		<contextgroupcode csd="RFC5646" cv="bra" cm="Braj"/>
+		<contextgroupcode csd="RFC5646" cv="bug" cm="Buginese"/>
+		<contextgroupcode csd="RFC5646" cv="i-bnn" cm="Bunun"/>
+		<contextgroupcode csd="RFC5646" cv="bua" cm="Buriat"/>
+		<contextgroupcode csd="RFC5646" cv="bel" cm="Byelorussian"/>
+		<contextgroupcode csd="RFC5646" cv="cad" cm="Caddo"/>
+		<contextgroupcode csd="RFC5646" cv="zh-yue" cm="Cantonese"/>
+		<contextgroupcode csd="RFC5646" cv="car" cm="Carib"/>
+		<contextgroupcode csd="RFC5646" cv="cau" cm="Caucasian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ceb" cm="Cebuano"/>
+		<contextgroupcode csd="RFC5646" cv="cel" cm="Celtic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="cai" cm="Central American Indian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="chg" cm="Chagatai"/>
+		<contextgroupcode csd="RFC5646" cv="chr" cm="Cherokee"/>
+		<contextgroupcode csd="RFC5646" cv="chy" cm="Cheyenne"/>
+		<contextgroupcode csd="RFC5646" cv="chb" cm="Chibcha"/>
+		<contextgroupcode csd="RFC5646" cv="chn" cm="Chinookjargon"/>
+		<contextgroupcode csd="RFC5646" cv="cho" cm="Choctaw"/>
+		<contextgroupcode csd="RFC5646" cv="cop" cm="Coptic"/>
+		<contextgroupcode csd="RFC5646" cv="mus" cm="Creek"/>
+		<contextgroupcode csd="RFC5646" cv="crp" cm="Creolesand Pidgins (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="cpe" cm="Creolesand Pidgins, English-based (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="cpf" cm="Creolesand Pidgins, French-based (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="cpp" cm="Creolesand Pidgins, Portuguese-based (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="cus" cm="Cushitic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="dak" cm="Dakota"/>
+		<contextgroupcode csd="RFC5646" cv="del" cm="Delaware"/>
+		<contextgroupcode csd="RFC5646" cv="din" cm="Dinka"/>
+		<contextgroupcode csd="RFC5646" cv="doi" cm="Dogri"/>
+		<contextgroupcode csd="RFC5646" cv="dra" cm="Dravidian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="dua" cm="Duala"/>
+		<contextgroupcode csd="RFC5646" cv="dum" cm="Dutch, Middle (ca.1050-1350)"/>
+		<contextgroupcode csd="RFC5646" cv="dyu" cm="Dyula"/>
+		<contextgroupcode csd="RFC5646" cv="efi" cm="Efik"/>
+		<contextgroupcode csd="RFC5646" cv="egy" cm="Egyptian (Ancient)"/>
+		<contextgroupcode csd="RFC5646" cv="eka" cm="Ekajuk"/>
+		<contextgroupcode csd="RFC5646" cv="elx" cm="Elamite"/>
+		<contextgroupcode csd="RFC5646" cv="enm" cm="English, Middle (ca.1100-1500)"/>
+		<contextgroupcode csd="RFC5646" cv="ang" cm="English, Old (ca.450-1100)"/>
+		<contextgroupcode csd="RFC5646" cv="esk" cm="Eskimo (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ewo" cm="Ewondo"/>
+		<contextgroupcode csd="RFC5646" cv="fan" cm="Fang"/>
+		<contextgroupcode csd="RFC5646" cv="fat" cm="Fanti"/>
+		<contextgroupcode csd="RFC5646" cv="fiu" cm="Finno-Ugrian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="fon" cm="Fon"/>
+		<contextgroupcode csd="RFC5646" cv="frm" cm="French, Middle (ca.1400-1600)"/>
+		<contextgroupcode csd="RFC5646" cv="fro" cm="French, Old (842-ca.1400)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-min" cm="Fuzhou"/>
+		<contextgroupcode csd="RFC5646" cv="gaa" cm="Ga"/>
+		<contextgroupcode csd="RFC5646" cv="glg" cm="Gallegan"/>
+		<contextgroupcode csd="RFC5646" cv="zh-gan" cm="Gan"/>
+		<contextgroupcode csd="RFC5646" cv="gay" cm="Gayo"/>
+		<contextgroupcode csd="RFC5646" cv="gez" cm="Geez"/>
+		<contextgroupcode csd="RFC5646" cv="gmh" cm="German, Middle High (ca. 1050-1500)"/>
+		<contextgroupcode csd="RFC5646" cv="goh" cm="German, Old High (ca. 750-1050)"/>
+		<contextgroupcode csd="RFC5646" cv="gem" cm="Germanic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="gil" cm="Gilbertese"/>
+		<contextgroupcode csd="RFC5646" cv="gon" cm="Gondi"/>
+		<contextgroupcode csd="RFC5646" cv="got" cm="Gothic"/>
+		<contextgroupcode csd="RFC5646" cv="grb" cm="Grebo"/>
+		<contextgroupcode csd="RFC5646" cv="grc" cm="Greek, Ancient (to 1453)"/>
+		<contextgroupcode csd="RFC5646" cv="hai" cm="Haida"/>
+		<contextgroupcode csd="RFC5646" cv="i-hak" cm="Hakka"/>
+		<contextgroupcode csd="RFC5646" cv="zh-hakka" cm="Hakka"/>
+		<contextgroupcode csd="RFC5646" cv="haw" cm="Hawaiian"/>
+		<contextgroupcode csd="RFC5646" cv="hil" cm="Hiligaynon"/>
+		<contextgroupcode csd="RFC5646" cv="him" cm="Himachali"/>
+		<contextgroupcode csd="RFC5646" cv="zh-min" cm="Hokkien"/>
+		<contextgroupcode csd="RFC5646" cv="zh-xiang" cm="Hunanese"/>
+		<contextgroupcode csd="RFC5646" cv="hup" cm="Hupa"/>
+		<contextgroupcode csd="RFC5646" cv="iba" cm="Iban"/>
+		<contextgroupcode csd="RFC5646" cv="ijo" cm="Ijo"/>
+		<contextgroupcode csd="RFC5646" cv="ilo" cm="Iloko"/>
+		<contextgroupcode csd="RFC5646" cv="inc" cm="Indic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ine" cm="Indo-European (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ira" cm="Iranian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="mga" cm="Irish, Middle (900-1200)"/>
+		<contextgroupcode csd="RFC5646" cv="sga" cm="Irish, Old (to900)"/>
+		<contextgroupcode csd="RFC5646" cv="iro" cm="Iroquoian languages"/>
+		<contextgroupcode csd="RFC5646" cv="jrb" cm="Judeo-Arabic"/>
+		<contextgroupcode csd="RFC5646" cv="jpr" cm="Judeo-Persian"/>
+		<contextgroupcode csd="RFC5646" cv="kab" cm="Kabyle"/>
+		<contextgroupcode csd="RFC5646" cv="kac" cm="Kachin"/>
+		<contextgroupcode csd="RFC5646" cv="kam" cm="Kamba"/>
+		<contextgroupcode csd="RFC5646" cv="zh-gan" cm="Kan"/>
+		<contextgroupcode csd="RFC5646" cv="kaa" cm="Kara-Kalpak"/>
+		<contextgroupcode csd="RFC5646" cv="kar" cm="Karen"/>
+		<contextgroupcode csd="RFC5646" cv="kaw" cm="Kawi"/>
+		<contextgroupcode csd="RFC5646" cv="kha" cm="Khasi"/>
+		<contextgroupcode csd="RFC5646" cv="khi" cm="Khoisan (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="kho" cm="Khotanese"/>
+		<contextgroupcode csd="RFC5646" cv="i-klingon" cm="Klingon"/>
+		<contextgroupcode csd="RFC5646" cv="kok" cm="Konkani"/>
+		<contextgroupcode csd="RFC5646" cv="kok-IN" cm="Konkani (India)"/>
+		<contextgroupcode csd="RFC5646" cv="kpe" cm="Kpelle"/>
+		<contextgroupcode csd="RFC5646" cv="kro" cm="Kru"/>
+		<contextgroupcode csd="RFC5646" cv="kum" cm="Kumyk"/>
+		<contextgroupcode csd="RFC5646" cv="kru" cm="Kurukh"/>
+		<contextgroupcode csd="RFC5646" cv="kus" cm="Kusaie"/>
+		<contextgroupcode csd="RFC5646" cv="kut" cm="Kutenai"/>
+		<contextgroupcode csd="RFC5646" cv="lad" cm="Ladino"/>
+		<contextgroupcode csd="RFC5646" cv="lah" cm="Lahnda"/>
+		<contextgroupcode csd="RFC5646" cv="lam" cm="Lamba"/>
+		<contextgroupcode csd="RFC5646" cv="oci" cm="Langued'Oc (post 1500)"/>
+		<contextgroupcode csd="RFC5646" cv="lez" cm="Lezghian"/>
+		<contextgroupcode csd="RFC5646" cv="loz" cm="Lozi"/>
+		<contextgroupcode csd="RFC5646" cv="lui" cm="Luiseno"/>
+		<contextgroupcode csd="RFC5646" cv="lun" cm="Lunda"/>
+		<contextgroupcode csd="RFC5646" cv="luo" cm="Luo (Kenyaand Tanzania)"/>
+		<contextgroupcode csd="RFC5646" cv="mad" cm="Madurese"/>
+		<contextgroupcode csd="RFC5646" cv="mag" cm="Magahi"/>
+		<contextgroupcode csd="RFC5646" cv="mai" cm="Maithili"/>
+		<contextgroupcode csd="RFC5646" cv="mak" cm="Makasar"/>
+		<contextgroupcode csd="RFC5646" cv="man" cm="Mandingo"/>
+		<contextgroupcode csd="RFC5646" cv="mni" cm="Manipuri"/>
+		<contextgroupcode csd="RFC5646" cv="mno" cm="Manobo languages"/>
+		<contextgroupcode csd="RFC5646" cv="chm" cm="Mari"/>
+		<contextgroupcode csd="RFC5646" cv="mwr" cm="Marwari"/>
+		<contextgroupcode csd="RFC5646" cv="mas" cm="Masai"/>
+		<contextgroupcode csd="RFC5646" cv="myn" cm="Mayan languages"/>
+		<contextgroupcode csd="RFC5646" cv="men" cm="Mende"/>
+		<contextgroupcode csd="RFC5646" cv="mic" cm="Micmac"/>
+		<contextgroupcode csd="RFC5646" cv="zh-min" cm="Min"/>
+		<contextgroupcode csd="RFC5646" cv="min" cm="Minangkabau"/>
+		<contextgroupcode csd="RFC5646" cv="i-mingo" cm="Mingo"/>
+		<contextgroupcode csd="RFC5646" cv="mis" cm="Miscellaneous (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="moh" cm="Mohawk"/>
+		<contextgroupcode csd="RFC5646" cv="lol" cm="Mongo"/>
+		<contextgroupcode csd="RFC5646" cv="mkh" cm="Mon-Kmer (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="mos" cm="Mossi"/>
+		<contextgroupcode csd="RFC5646" cv="mul" cm="Multiple languages"/>
+		<contextgroupcode csd="RFC5646" cv="mun" cm="Munda languages"/>
+		<contextgroupcode csd="RFC5646" cv="ndo" cm="Ndongo"/>
+		<contextgroupcode csd="RFC5646" cv="new" cm="Newari"/>
+		<contextgroupcode csd="RFC5646" cv="nic" cm="Niger-Kordofanian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="ssa" cm="Nilo-Saharan (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="niu" cm="Niuean"/>
+		<contextgroupcode csd="RFC5646" cv="non" cm="Norse, Old"/>
+		<contextgroupcode csd="RFC5646" cv="nai" cm="North American Indian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="nub" cm="Nubian languages"/>
+		<contextgroupcode csd="RFC5646" cv="nym" cm="Nyamwezi"/>
+		<contextgroupcode csd="RFC5646" cv="nyn" cm="Nyankole"/>
+		<contextgroupcode csd="RFC5646" cv="nyo" cm="Nyoro"/>
+		<contextgroupcode csd="RFC5646" cv="nzi" cm="Nzima"/>
+		<contextgroupcode csd="RFC5646" cv="osa" cm="Osage"/>
+		<contextgroupcode csd="RFC5646" cv="oto" cm="Otomian languages"/>
+		<contextgroupcode csd="RFC5646" cv="pal" cm="Pahlavi"/>
+		<contextgroupcode csd="RFC5646" cv="i-pwn" cm="Paiwan"/>
+		<contextgroupcode csd="RFC5646" cv="pau" cm="Palauan"/>
+		<contextgroupcode csd="RFC5646" cv="pam" cm="Pampanga"/>
+		<contextgroupcode csd="RFC5646" cv="pag" cm="Pangasinan"/>
+		<contextgroupcode csd="RFC5646" cv="pan" cm="Panjabi"/>
+		<contextgroupcode csd="RFC5646" cv="pap" cm="Papiamento"/>
+		<contextgroupcode csd="RFC5646" cv="paa" cm="Papuan-Australian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="peo" cm="Persian, Old (ca 600-400 B.C.)"/>
+		<contextgroupcode csd="RFC5646" cv="phn" cm="Phoenician"/>
+		<contextgroupcode csd="RFC5646" cv="pon" cm="Ponape"/>
+		<contextgroupcode csd="RFC5646" cv="pra" cm="Prakrit languages"/>
+		<contextgroupcode csd="RFC5646" cv="pro" cm="Provencal, Old (to1500)"/>
+		<contextgroupcode csd="RFC5646" cv="pus" cm="Pushto"/>
+		<contextgroupcode csd="RFC5646" cv="raj" cm="Rajasthani"/>
+		<contextgroupcode csd="RFC5646" cv="rar" cm="Rarotongan"/>
+		<contextgroupcode csd="RFC5646" cv="roh" cm="Rhaeto-Romance"/>
+		<contextgroupcode csd="RFC5646" cv="roa" cm="Romance (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="rom" cm="Romany"/>
+		<contextgroupcode csd="RFC5646" cv="sal" cm="Salishan languages"/>
+		<contextgroupcode csd="RFC5646" cv="sam" cm="Samaritan Aramaic"/>
+		<contextgroupcode csd="RFC5646" cv="smo" cm="Samoan"/>
+		<contextgroupcode csd="RFC5646" cv="sad" cm="Sandawe"/>
+		<contextgroupcode csd="RFC5646" cv="sco" cm="Scots"/>
+		<contextgroupcode csd="RFC5646" cv="sel" cm="Selkup"/>
+		<contextgroupcode csd="RFC5646" cv="sem" cm="Semitic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="srr" cm="Serer"/>
+		<contextgroupcode csd="RFC5646" cv="shn" cm="Shan"/>
+		<contextgroupcode csd="RFC5646" cv="zh-wuu" cm="Shanghaiese"/>
+		<contextgroupcode csd="RFC5646" cv="sid" cm="Sidamo"/>
+		<contextgroupcode csd="RFC5646" cv="bla" cm="Siksika"/>
+		<contextgroupcode csd="RFC5646" cv="sin" cm="Singhalese"/>
+		<contextgroupcode csd="RFC5646" cv="sit" cm="Sino-Tibetan (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="sio" cm="Siouan languages"/>
+		<contextgroupcode csd="RFC5646" cv="ssw" cm="Siswant"/>
+		<contextgroupcode csd="RFC5646" cv="sla" cm="Slavic (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="sog" cm="Sogdian"/>
+		<contextgroupcode csd="RFC5646" cv="son" cm="Songhai"/>
+		<contextgroupcode csd="RFC5646" cv="wen" cm="Sorbian languages"/>
+		<contextgroupcode csd="RFC5646" cv="sai" cm="South American Indian (Other)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-guoyu" cm="Standard Chinese"/>
+		<contextgroupcode csd="RFC5646" cv="sun" cm="Sudanese"/>
+		<contextgroupcode csd="RFC5646" cv="suk" cm="Sukuma"/>
+		<contextgroupcode csd="RFC5646" cv="sux" cm="Sumerian"/>
+		<contextgroupcode csd="RFC5646" cv="sus" cm="Susu"/>
+		<contextgroupcode csd="RFC5646" cv="ssw" cm="Swazi"/>
+		<contextgroupcode csd="RFC5646" cv="syr" cm="Syriac"/>
+		<contextgroupcode csd="RFC5646" cv="syr-SY" cm="Syriac (Syria)"/>
+		<contextgroupcode csd="RFC5646" cv="zh-min" cm="Taiwanese"/>
+		<contextgroupcode csd="RFC5646" cv="tmh" cm="Tamashek"/>
+		<contextgroupcode csd="RFC5646" cv="i-tao" cm="Tao"/>
+		<contextgroupcode csd="RFC5646" cv="i-tay" cm="Tayal"/>
+		<contextgroupcode csd="RFC5646" cv="ter" cm="Tereno"/>
+		<contextgroupcode csd="RFC5646" cv="tig" cm="Tigre"/>
+		<contextgroupcode csd="RFC5646" cv="tem" cm="Timne"/>
+		<contextgroupcode csd="RFC5646" cv="tiv" cm="Tivi"/>
+		<contextgroupcode csd="RFC5646" cv="tli" cm="Tlingit"/>
+		<contextgroupcode csd="RFC5646" cv="tog" cm="Tonga (Nyasa)"/>
+		<contextgroupcode csd="RFC5646" cv="tru" cm="Truk"/>
+		<contextgroupcode csd="RFC5646" cv="tsi" cm="Tsimshian"/>
+		<contextgroupcode csd="RFC5646" cv="i-tsu" cm="Tsou"/>
+		<contextgroupcode csd="RFC5646" cv="tum" cm="Tumbuka"/>
+		<contextgroupcode csd="RFC5646" cv="ota" cm="Turkish, Ottoman (1500-1928)"/>
+		<contextgroupcode csd="RFC5646" cv="tyv" cm="Tuvinian"/>
+		<contextgroupcode csd="RFC5646" cv="uga" cm="Ugaritic"/>
+		<contextgroupcode csd="RFC5646" cv="umb" cm="Umbundu"/>
+		<contextgroupcode csd="RFC5646" cv="und" cm="Undetermined"/>
+		<contextgroupcode csd="RFC5646" cv="vai" cm="Vai"/>
+		<contextgroupcode csd="RFC5646" cv="vot" cm="Votic"/>
+		<contextgroupcode csd="RFC5646" cv="wak" cm="Wakashan languages"/>
+		<contextgroupcode csd="RFC5646" cv="wal" cm="Walamo"/>
+		<contextgroupcode csd="RFC5646" cv="war" cm="Waray"/>
+		<contextgroupcode csd="RFC5646" cv="was" cm="Washo"/>
+		<contextgroupcode csd="RFC5646" cv="zh-wuu" cm="Wu"/>
+		<contextgroupcode csd="RFC5646" cv="zh-xiang" cm="Xiang"/>
+		<contextgroupcode csd="RFC5646" cv="sah" cm="Yakut"/>
+		<contextgroupcode csd="RFC5646" cv="yao" cm="Yao"/>
+		<contextgroupcode csd="RFC5646" cv="yap" cm="Yap"/>
+		<contextgroupcode csd="RFC5646" cv="zap" cm="Zapotec"/>
+		<contextgroupcode csd="RFC5646" cv="zen" cm="Zenaga"/>
+		<contextgroupcode csd="RFC5646" cv="zha" cm="Zhuang"/>
+		<contextgroupcode csd="RFC5646" cv="zun" cm="Zuni"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="5001" name="Countries" keyword="Countries" extensible="T">
+		<contextgroupcode csd="ISO3166_1" cv="AF" cm="Afghanistan"/>
+		<contextgroupcode csd="ISO3166_1" cv="AL" cm="Albania"/>
+		<contextgroupcode csd="ISO3166_1" cv="DZ" cm="Algeria"/>
+		<contextgroupcode csd="ISO3166_1" cv="AS" cm="American Samoa"/>
+		<contextgroupcode csd="ISO3166_1" cv="AD" cm="Andorra"/>
+		<contextgroupcode csd="ISO3166_1" cv="AO" cm="Angola"/>
+		<contextgroupcode csd="ISO3166_1" cv="AI" cm="Anguilla"/>
+		<contextgroupcode csd="ISO3166_1" cv="AQ" cm="Antarctica"/>
+		<contextgroupcode csd="ISO3166_1" cv="AG" cm="Antigua And Barbuda"/>
+		<contextgroupcode csd="ISO3166_1" cv="AR" cm="Argentina"/>
+		<contextgroupcode csd="ISO3166_1" cv="AM" cm="Armenia"/>
+		<contextgroupcode csd="ISO3166_1" cv="AW" cm="Aruba"/>
+		<contextgroupcode csd="ISO3166_1" cv="AU" cm="Australia"/>
+		<contextgroupcode csd="ISO3166_1" cv="AT" cm="Austria"/>
+		<contextgroupcode csd="ISO3166_1" cv="AZ" cm="Azerbaijan"/>
+		<contextgroupcode csd="ISO3166_1" cv="BS" cm="Bahamas"/>
+		<contextgroupcode csd="ISO3166_1" cv="BH" cm="Bahrain"/>
+		<contextgroupcode csd="ISO3166_1" cv="BD" cm="Bangladesh"/>
+		<contextgroupcode csd="ISO3166_1" cv="BB" cm="Barbados"/>
+		<contextgroupcode csd="ISO3166_1" cv="BY" cm="Belarus"/>
+		<contextgroupcode csd="ISO3166_1" cv="BE" cm="Belgium"/>
+		<contextgroupcode csd="ISO3166_1" cv="BZ" cm="Belize"/>
+		<contextgroupcode csd="ISO3166_1" cv="BJ" cm="Benin"/>
+		<contextgroupcode csd="ISO3166_1" cv="BM" cm="Bermuda"/>
+		<contextgroupcode csd="ISO3166_1" cv="BT" cm="Bhutan"/>
+		<contextgroupcode csd="ISO3166_1" cv="BO" cm="Bolivia"/>
+		<contextgroupcode csd="ISO3166_1" cv="BA" cm="Bosnia And Herzegovina"/>
+		<contextgroupcode csd="ISO3166_1" cv="BW" cm="Botswana"/>
+		<contextgroupcode csd="ISO3166_1" cv="BV" cm="Bouvet Island"/>
+		<contextgroupcode csd="ISO3166_1" cv="BR" cm="Brazil"/>
+		<contextgroupcode csd="ISO3166_1" cv="IO" cm="British Indian Ocean Territory"/>
+		<contextgroupcode csd="ISO3166_1" cv="BN" cm="Brunei Darussalam"/>
+		<contextgroupcode csd="ISO3166_1" cv="BG" cm="Bulgaria"/>
+		<contextgroupcode csd="ISO3166_1" cv="BF" cm="Burkina Faso"/>
+		<contextgroupcode csd="ISO3166_1" cv="BI" cm="Burundi"/>
+		<contextgroupcode csd="ISO3166_1" cv="KH" cm="Cambodia"/>
+		<contextgroupcode csd="ISO3166_1" cv="CM" cm="Cameroon"/>
+		<contextgroupcode csd="ISO3166_1" cv="CA" cm="Canada"/>
+		<contextgroupcode csd="ISO3166_1" cv="CV" cm="Cape Verde"/>
+		<contextgroupcode csd="ISO3166_1" cv="KY" cm="Cayman Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="CF" cm="Central African Republic"/>
+		<contextgroupcode csd="ISO3166_1" cv="TD" cm="Chad"/>
+		<contextgroupcode csd="ISO3166_1" cv="CL" cm="Chile"/>
+		<contextgroupcode csd="ISO3166_1" cv="CN" cm="China"/>
+		<contextgroupcode csd="ISO3166_1" cv="CX" cm="Christmas Island"/>
+		<contextgroupcode csd="ISO3166_1" cv="CC" cm="Cocos (Keeling) Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="CO" cm="Colombia"/>
+		<contextgroupcode csd="ISO3166_1" cv="KM" cm="Comoros"/>
+		<contextgroupcode csd="ISO3166_1" cv="CG" cm="Congo"/>
+		<contextgroupcode csd="ISO3166_1" cv="CD" cm="Congo, The Democratic Republic Of The"/>
+		<contextgroupcode csd="ISO3166_1" cv="CK" cm="Cook Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="CR" cm="Costa Rica"/>
+		<contextgroupcode csd="ISO3166_1" cv="CI" cm="Côte D'ivoire"/>
+		<contextgroupcode csd="ISO3166_1" cv="HR" cm="Croatia"/>
+		<contextgroupcode csd="ISO3166_1" cv="CU" cm="Cuba"/>
+		<contextgroupcode csd="ISO3166_1" cv="CY" cm="Cyprus"/>
+		<contextgroupcode csd="ISO3166_1" cv="CZ" cm="Czech Republic"/>
+		<contextgroupcode csd="ISO3166_1" cv="DK" cm="Denmark"/>
+		<contextgroupcode csd="ISO3166_1" cv="DJ" cm="Djibouti"/>
+		<contextgroupcode csd="ISO3166_1" cv="DM" cm="Dominica"/>
+		<contextgroupcode csd="ISO3166_1" cv="DO" cm="Dominican Republic"/>
+		<contextgroupcode csd="ISO3166_1" cv="TP" cm="East Timor"/>
+		<contextgroupcode csd="ISO3166_1" cv="EC" cm="Ecuador"/>
+		<contextgroupcode csd="ISO3166_1" cv="EG" cm="Egypt"/>
+		<contextgroupcode csd="ISO3166_1" cv="SV" cm="El Salvador"/>
+		<contextgroupcode csd="ISO3166_1" cv="GQ" cm="Equatorial Guinea"/>
+		<contextgroupcode csd="ISO3166_1" cv="ER" cm="Eritrea"/>
+		<contextgroupcode csd="ISO3166_1" cv="EE" cm="Estonia"/>
+		<contextgroupcode csd="ISO3166_1" cv="ET" cm="Ethiopia"/>
+		<contextgroupcode csd="ISO3166_1" cv="FK" cm="Falkland Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="FO" cm="Faroe Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="FJ" cm="Fiji"/>
+		<contextgroupcode csd="ISO3166_1" cv="FI" cm="Finland"/>
+		<contextgroupcode csd="ISO3166_1" cv="FR" cm="France"/>
+		<contextgroupcode csd="ISO3166_1" cv="GF" cm="French Guiana"/>
+		<contextgroupcode csd="ISO3166_1" cv="PF" cm="French Polynesia"/>
+		<contextgroupcode csd="ISO3166_1" cv="TF" cm="French Southern Territories"/>
+		<contextgroupcode csd="ISO3166_1" cv="GA" cm="Gabon"/>
+		<contextgroupcode csd="ISO3166_1" cv="GM" cm="Gambia"/>
+		<contextgroupcode csd="ISO3166_1" cv="GE" cm="Georgia"/>
+		<contextgroupcode csd="ISO3166_1" cv="DE" cm="Germany"/>
+		<contextgroupcode csd="ISO3166_1" cv="GH" cm="Ghana"/>
+		<contextgroupcode csd="ISO3166_1" cv="GI" cm="Gibraltar"/>
+		<contextgroupcode csd="ISO3166_1" cv="GR" cm="Greece"/>
+		<contextgroupcode csd="ISO3166_1" cv="GL" cm="Greenland"/>
+		<contextgroupcode csd="ISO3166_1" cv="GD" cm="Grenada"/>
+		<contextgroupcode csd="ISO3166_1" cv="GP" cm="Guadeloupe"/>
+		<contextgroupcode csd="ISO3166_1" cv="GU" cm="Guam"/>
+		<contextgroupcode csd="ISO3166_1" cv="GT" cm="Guatemala"/>
+		<contextgroupcode csd="ISO3166_1" cv="GN" cm="Guinea"/>
+		<contextgroupcode csd="ISO3166_1" cv="GW" cm="Guinea-Bissau"/>
+		<contextgroupcode csd="ISO3166_1" cv="GY" cm="Guyana"/>
+		<contextgroupcode csd="ISO3166_1" cv="HT" cm="Haiti"/>
+		<contextgroupcode csd="ISO3166_1" cv="HM" cm="Heard Island And Mcdonald Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="VA" cm="Holy See (Vatican City State)"/>
+		<contextgroupcode csd="ISO3166_1" cv="HN" cm="Honduras"/>
+		<contextgroupcode csd="ISO3166_1" cv="HK" cm="Hong Kong"/>
+		<contextgroupcode csd="ISO3166_1" cv="HU" cm="Hungary"/>
+		<contextgroupcode csd="ISO3166_1" cv="IS" cm="Iceland"/>
+		<contextgroupcode csd="ISO3166_1" cv="IN" cm="India"/>
+		<contextgroupcode csd="ISO3166_1" cv="ID" cm="Indonesia"/>
+		<contextgroupcode csd="ISO3166_1" cv="IR" cm="Iran, Islamic Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="IQ" cm="Iraq"/>
+		<contextgroupcode csd="ISO3166_1" cv="IE" cm="Ireland"/>
+		<contextgroupcode csd="ISO3166_1" cv="IL" cm="Israel"/>
+		<contextgroupcode csd="ISO3166_1" cv="IT" cm="Italy"/>
+		<contextgroupcode csd="ISO3166_1" cv="JM" cm="Jamaica"/>
+		<contextgroupcode csd="ISO3166_1" cv="JP" cm="Japan"/>
+		<contextgroupcode csd="ISO3166_1" cv="JO" cm="Jordan"/>
+		<contextgroupcode csd="ISO3166_1" cv="KZ" cm="Kazakstan"/>
+		<contextgroupcode csd="ISO3166_1" cv="KE" cm="Kenya"/>
+		<contextgroupcode csd="ISO3166_1" cv="KI" cm="Kiribati"/>
+		<contextgroupcode csd="ISO3166_1" cv="KP" cm="Korea, Democratic People's Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="KR" cm="Korea, Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="KW" cm="Kuwait"/>
+		<contextgroupcode csd="ISO3166_1" cv="KG" cm="Kyrgyzstan"/>
+		<contextgroupcode csd="ISO3166_1" cv="LA" cm="Lao People's Democratic Republic"/>
+		<contextgroupcode csd="ISO3166_1" cv="LV" cm="Latvia"/>
+		<contextgroupcode csd="ISO3166_1" cv="LB" cm="Lebanon"/>
+		<contextgroupcode csd="ISO3166_1" cv="LS" cm="Lesotho"/>
+		<contextgroupcode csd="ISO3166_1" cv="LR" cm="Liberia"/>
+		<contextgroupcode csd="ISO3166_1" cv="LY" cm="Libyan Arab Jamahiriya"/>
+		<contextgroupcode csd="ISO3166_1" cv="LI" cm="Liechtenstein"/>
+		<contextgroupcode csd="ISO3166_1" cv="LT" cm="Lithuania"/>
+		<contextgroupcode csd="ISO3166_1" cv="LU" cm="Luxembourg"/>
+		<contextgroupcode csd="ISO3166_1" cv="MO" cm="Macau"/>
+		<contextgroupcode csd="ISO3166_1" cv="MK" cm="Macedonia, The Former Yugoslav Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="MG" cm="Madagascar"/>
+		<contextgroupcode csd="ISO3166_1" cv="MW" cm="Malawi"/>
+		<contextgroupcode csd="ISO3166_1" cv="MY" cm="Malaysia"/>
+		<contextgroupcode csd="ISO3166_1" cv="MV" cm="Maldives"/>
+		<contextgroupcode csd="ISO3166_1" cv="ML" cm="Mali"/>
+		<contextgroupcode csd="ISO3166_1" cv="MT" cm="Malta"/>
+		<contextgroupcode csd="ISO3166_1" cv="MH" cm="Marshall Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="MQ" cm="Martinique"/>
+		<contextgroupcode csd="ISO3166_1" cv="MR" cm="Mauritania"/>
+		<contextgroupcode csd="ISO3166_1" cv="MU" cm="Mauritius"/>
+		<contextgroupcode csd="ISO3166_1" cv="YT" cm="Mayotte"/>
+		<contextgroupcode csd="ISO3166_1" cv="MX" cm="Mexico"/>
+		<contextgroupcode csd="ISO3166_1" cv="FM" cm="Micronesia, Federated States Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="MD" cm="Moldova, Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="MC" cm="Monaco"/>
+		<contextgroupcode csd="ISO3166_1" cv="MN" cm="Mongolia"/>
+		<contextgroupcode csd="ISO3166_1" cv="MS" cm="Montserrat"/>
+		<contextgroupcode csd="ISO3166_1" cv="MA" cm="Morocco"/>
+		<contextgroupcode csd="ISO3166_1" cv="MZ" cm="Mozambique"/>
+		<contextgroupcode csd="ISO3166_1" cv="MM" cm="Myanmar"/>
+		<contextgroupcode csd="ISO3166_1" cv="NA" cm="Namibia"/>
+		<contextgroupcode csd="ISO3166_1" cv="NR" cm="Nauru"/>
+		<contextgroupcode csd="ISO3166_1" cv="NP" cm="Nepal"/>
+		<contextgroupcode csd="ISO3166_1" cv="NL" cm="Netherlands"/>
+		<contextgroupcode csd="ISO3166_1" cv="AN" cm="Netherlands Antilles"/>
+		<contextgroupcode csd="ISO3166_1" cv="NC" cm="New Caledonia"/>
+		<contextgroupcode csd="ISO3166_1" cv="NZ" cm="New Zealand"/>
+		<contextgroupcode csd="ISO3166_1" cv="NI" cm="Nicaragua"/>
+		<contextgroupcode csd="ISO3166_1" cv="NE" cm="Niger"/>
+		<contextgroupcode csd="ISO3166_1" cv="NG" cm="Nigeria"/>
+		<contextgroupcode csd="ISO3166_1" cv="NU" cm="Niue"/>
+		<contextgroupcode csd="ISO3166_1" cv="NF" cm="Norfolk Island"/>
+		<contextgroupcode csd="ISO3166_1" cv="MP" cm="Northern Mariana Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="NO" cm="Norway"/>
+		<contextgroupcode csd="ISO3166_1" cv="OM" cm="Oman"/>
+		<contextgroupcode csd="ISO3166_1" cv="PK" cm="Pakistan"/>
+		<contextgroupcode csd="ISO3166_1" cv="PW" cm="Palau"/>
+		<contextgroupcode csd="ISO3166_1" cv="PS" cm="Palestinian Territory, Occupied"/>
+		<contextgroupcode csd="ISO3166_1" cv="PA" cm="Panama"/>
+		<contextgroupcode csd="ISO3166_1" cv="PG" cm="Papua New Guinea"/>
+		<contextgroupcode csd="ISO3166_1" cv="PY" cm="Paraguay"/>
+		<contextgroupcode csd="ISO3166_1" cv="PE" cm="Peru"/>
+		<contextgroupcode csd="ISO3166_1" cv="PH" cm="Philippines"/>
+		<contextgroupcode csd="ISO3166_1" cv="PN" cm="Pitcairn"/>
+		<contextgroupcode csd="ISO3166_1" cv="PL" cm="Poland"/>
+		<contextgroupcode csd="ISO3166_1" cv="PT" cm="Portugal"/>
+		<contextgroupcode csd="ISO3166_1" cv="PR" cm="Puerto Rico"/>
+		<contextgroupcode csd="ISO3166_1" cv="QA" cm="Qatar"/>
+		<contextgroupcode csd="ISO3166_1" cv="RE" cm="Réunion"/>
+		<contextgroupcode csd="ISO3166_1" cv="RO" cm="Romania"/>
+		<contextgroupcode csd="ISO3166_1" cv="RU" cm="Russian Federation"/>
+		<contextgroupcode csd="ISO3166_1" cv="RW" cm="Rwanda"/>
+		<contextgroupcode csd="ISO3166_1" cv="SH" cm="Saint Helena"/>
+		<contextgroupcode csd="ISO3166_1" cv="KN" cm="Saint Kitts And Nevis"/>
+		<contextgroupcode csd="ISO3166_1" cv="LC" cm="Saint Lucia"/>
+		<contextgroupcode csd="ISO3166_1" cv="PM" cm="Saint Pierre And Miquelon"/>
+		<contextgroupcode csd="ISO3166_1" cv="VC" cm="Saint Vincent And The Grenadines"/>
+		<contextgroupcode csd="ISO3166_1" cv="WS" cm="Samoa"/>
+		<contextgroupcode csd="ISO3166_1" cv="SM" cm="San Marino"/>
+		<contextgroupcode csd="ISO3166_1" cv="ST" cm="Sao Tome And Principe"/>
+		<contextgroupcode csd="ISO3166_1" cv="SA" cm="Saudi Arabia"/>
+		<contextgroupcode csd="ISO3166_1" cv="SN" cm="Senegal"/>
+		<contextgroupcode csd="ISO3166_1" cv="SC" cm="Seychelles"/>
+		<contextgroupcode csd="ISO3166_1" cv="SL" cm="Sierra Leone"/>
+		<contextgroupcode csd="ISO3166_1" cv="SG" cm="Singapore"/>
+		<contextgroupcode csd="ISO3166_1" cv="SK" cm="Slovakia"/>
+		<contextgroupcode csd="ISO3166_1" cv="SI" cm="Slovenia"/>
+		<contextgroupcode csd="ISO3166_1" cv="SB" cm="Solomon Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="SO" cm="Somalia"/>
+		<contextgroupcode csd="ISO3166_1" cv="ZA" cm="South Africa"/>
+		<contextgroupcode csd="ISO3166_1" cv="GS" cm="South Georgia And The South Sandwich Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="ES" cm="Spain"/>
+		<contextgroupcode csd="ISO3166_1" cv="LK" cm="Sri Lanka"/>
+		<contextgroupcode csd="ISO3166_1" cv="SD" cm="Sudan"/>
+		<contextgroupcode csd="ISO3166_1" cv="SR" cm="Suriname"/>
+		<contextgroupcode csd="ISO3166_1" cv="SJ" cm="Svalbard And Jan Mayen"/>
+		<contextgroupcode csd="ISO3166_1" cv="SZ" cm="Swaziland"/>
+		<contextgroupcode csd="ISO3166_1" cv="SE" cm="Sweden"/>
+		<contextgroupcode csd="ISO3166_1" cv="CH" cm="Switzerland"/>
+		<contextgroupcode csd="ISO3166_1" cv="SY" cm="Syrian Arab Republic"/>
+		<contextgroupcode csd="ISO3166_1" cv="TW" cm="Taiwan, Province Of China"/>
+		<contextgroupcode csd="ISO3166_1" cv="TJ" cm="Tajikistan"/>
+		<contextgroupcode csd="ISO3166_1" cv="TZ" cm="Tanzania, United Republic Of"/>
+		<contextgroupcode csd="ISO3166_1" cv="TH" cm="Thailand"/>
+		<contextgroupcode csd="ISO3166_1" cv="TG" cm="Togo"/>
+		<contextgroupcode csd="ISO3166_1" cv="TK" cm="Tokelau"/>
+		<contextgroupcode csd="ISO3166_1" cv="TO" cm="Tonga"/>
+		<contextgroupcode csd="ISO3166_1" cv="TT" cm="Trinidad And Tobago"/>
+		<contextgroupcode csd="ISO3166_1" cv="TN" cm="Tunisia"/>
+		<contextgroupcode csd="ISO3166_1" cv="TR" cm="Turkey"/>
+		<contextgroupcode csd="ISO3166_1" cv="TM" cm="Turkmenistan"/>
+		<contextgroupcode csd="ISO3166_1" cv="TC" cm="Turks And Caicos Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="TV" cm="Tuvalu"/>
+		<contextgroupcode csd="ISO3166_1" cv="UG" cm="Uganda"/>
+		<contextgroupcode csd="ISO3166_1" cv="UA" cm="Ukraine"/>
+		<contextgroupcode csd="ISO3166_1" cv="AE" cm="United Arab Emirates"/>
+		<contextgroupcode csd="ISO3166_1" cv="GB" cm="United Kingdom"/>
+		<contextgroupcode csd="ISO3166_1" cv="US" cm="United States"/>
+		<contextgroupcode csd="ISO3166_1" cv="UM" cm="United States Minor Outlying Islands"/>
+		<contextgroupcode csd="ISO3166_1" cv="UY" cm="Uruguay"/>
+		<contextgroupcode csd="ISO3166_1" cv="UZ" cm="Uzbekistan"/>
+		<contextgroupcode csd="ISO3166_1" cv="VU" cm="Vanuatu"/>
+		<contextgroupcode csd="ISO3166_1" cv="VE" cm="Venezuela"/>
+		<contextgroupcode csd="ISO3166_1" cv="VN" cm="Vietnam"/>
+		<contextgroupcode csd="ISO3166_1" cv="VG" cm="Virgin Islands, British"/>
+		<contextgroupcode csd="ISO3166_1" cv="VI" cm="Virgin Islands, U.S."/>
+		<contextgroupcode csd="ISO3166_1" cv="WF" cm="Wallis And Futuna"/>
+		<contextgroupcode csd="ISO3166_1" cv="EH" cm="Western Sahara"/>
+		<contextgroupcode csd="ISO3166_1" cv="YE" cm="Yemen"/>
+		<contextgroupcode csd="ISO3166_1" cv="YU" cm="Yugoslavia"/>
+		<contextgroupcode csd="ISO3166_1" cv="ZM" cm="Zambia"/>
+		<contextgroupcode csd="ISO3166_1" cv="ZW" cm="Zimbabwe"/>
+	</definecontextgroup>
+	
+    <definecontextgroup cid="7010_WithTCE" extensible="T" name="KeyObjectSelectionDocumentTitlesExtendedWithIHETCE" keyword="KeyObjectSelectionDocumentTitlesExtendedWithIHETCE" version="20241120">
+        <include cid="7010"/>
+        <!-- not in DICOM alternate code for document title :(-->
+        <contextgroupcode csd="IHERADTF" cv="TCE001" cm="For Teaching File Export"/>
+    </definecontextgroup>
+    
+    <definecontextgroup cid="7473_7474" name="GeneralAreaAndVolumeCalculationMethods" keyword="GeneralAreaAndVolumeCalculationMethods" extensible="T" version="20241120">
+        <include cid="7473"/>
+        <include cid="7474"/>
+    </definecontextgroup>
+	
+	<!-- "Anonymous" context groups specific to PixelMed Toolkit to handle parameterization of templates with single codes -->
+	
+	<definecontextgroup cid="PMP_1000A" name="QuotationMode" keyword="QuotationMode" extensible="T" version="20150211">	<!-- used in TID 1000 row 1 -->
+		<contextgroupcode csd="DCM" cv="121003" cm="Document"/>
+		<contextgroupcode csd="DCM" cv="121004" cm="Verbal"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_1020A" name="PersonProcedureRoleIsIrradiationAdministering" keyword="PersonProcedureRoleIsIrradiationAdministering" extensible="T" version="20131223">	<!-- used when invoking TID 1020 -->
+		<contextgroupcode csd="DCM" cv="113850" cm="Irradiation Authorizing"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_1020B" name="PersonProcedureRoleIsIrradiationAdministering" keyword="PersonProcedureRoleIsIrradiationAdministering" extensible="T" version="20131223">	<!-- used when invoking TID 1020 -->
+		<contextgroupcode csd="DCM" cv="113851" cm="Irradiation Administering"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_1021" name="DeviceProcedureRoleIsIrradiatingDevice" keyword="DeviceProcedureRoleIsIrradiatingDevice" extensible="T" version="20131223">	<!-- used when invoking TID 1021 and  TID 10003a -->
+		<contextgroupcode csd="DCM" cv="113859" cm="Irradiating Device"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_10001" name="XRayRadiationDoseReportProcedureReported" keyword="XRayRadiationDoseReportProcedureReported" extensible="T" version="20131223">	<!-- used when invoking TID 10001 -->
+		<contextgroupcode csd="DCM" cv="113704" cm="Projection X-Ray"/>
+		<contextgroupcode csd="SRT" cv="P5-40010" cm="Mammography"/>
+		<contextgroupcode csd="SCT" cv="71651007" cm="Mammography"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_10011" name="CTRadiationDoseReportProcedureReported" keyword="CTRadiationDoseReportProcedureReported" extensible="T" version="20240816">	<!-- used when invoking TID 10011 -->
+		<contextgroupcode csd="SRT" cv="P5-08000" cm="Computed Tomography X-Ray"/>
+		<contextgroupcode csd="SCT" cv="77477000" cm="Computed Tomography X-Ray"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_10002A" name="AccumulatedXRayDoseDataAcquisitionPlanes" keyword="AccumulatedXRayDoseDataAcquisitionPlanes" extensible="T" version="20131223">	<!-- used when invoking TID 10002 -->
+		<contextgroupcode csd="DCM" cv="113622" cm="Single Plane"/>
+		<contextgroupcode csd="DCM" cv="113620" cm="Plane A"/>
+		<contextgroupcode csd="DCM" cv="113621" cm="Plane B"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_10003A" name="NumberOfPulsesDerivation" keyword="NumberOfPulsesDerivation" extensible="T" version="20131223">	<!-- used when invoking TID 10003 -->
+		<contextgroupcode csd="SRT" cv="R-10260" cm="Estimated"/>
+		<contextgroupcode csd="SCT" cv="414135002" cm="Estimated"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_10003Aa" name="DeviceProcedureRoleIsXRayReadingDeviceDevice" keyword="DeviceProcedureRoleIsXRayReadingDeviceDevice" extensible="T" version="20131223">	<!-- used when invoking TID 10003a -->
+		<contextgroupcode csd="DCM" cv="113942" cm="Irradiating Device"/>
+	</definecontextgroup>
+	
+	
+	<!-- "Anonymous" context groups specific to PixelMed Toolkit to handle unit combinations -->
+	
+	<definecontextgroup cid="PMP_RPH_0007ROW11" name="ProductOfTwoDistancesUnits" keyword="ProductOfTwoDistancesUnits" extensible="T" version="20131223">	<!-- used when invoking RPH_0007 Row 11 -->
+		<contextgroupcode csd="UCUM" cv="mm2" cm="mm2"/>
+		<contextgroupcode csd="UCUM" cv="{pixels}" cm="pixels"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_RPH_0007ROW12" name="ProductOfThreeDistancesUnits" keyword="ProductOfThreeDistancesUnits" extensible="T" version="20131223">	<!-- used when invoking RPH_0007 Row 12 -->
+		<contextgroupcode csd="UCUM" cv="mm3" cm="mm3"/>
+		<contextgroupcode csd="UCUM" cv="{pixels}" cm="pixels"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_4020ROW1112" name="ImageLibraryPixelSpacingUnits" keyword="ImageLibraryPixelSpacingUnits" extensible="F" version="20131223">	<!-- used when invoking 4020 Rows 11 and 12 -->
+		<contextgroupcode csd="UCUM" cv="um" cm="micrometer"/>
+		<contextgroupcode csd="UCUM" cv="mm" cm="millimeter"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_4023ROW1" name="CADOperatingPointsAribtraryUnitsNeedQuoteEscaped" keyword="CADOperatingPointsAribtraryUnitsNeedQuoteEscaped" extensible="F" version="20131223">	<!-- used when invoking 4023 Row 1 for units -->
+		<contextgroupcode csd="UCUM" cv="[arb'U]" cm="arbitrary unit"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_10034_PLUS_7011" name="ReasonForRepeatingAcquisitionRejectedForQualityReasons" keyword="ReasonForRepeatingAcquisitionRejectedForQualityReasons" extensible="F" version="20240817">	<!-- used when invoking 10003 Row 5b, 5d and 10013 Row 6e, 6e3 for values -->
+		<contextgroupcode csd="DCM" cv="128553" cm="Patient motion"/>
+		<contextgroupcode csd="DCM" cv="128554" cm="Suboptimal contrast timing"/>
+
+		<contextgroupcode csd="DCM" cv="111207" cm="Image artifact(s)"/>
+		<contextgroupcode csd="DCM" cv="111208" cm="Grid artifact(s)"/>
+		<contextgroupcode csd="DCM" cv="111209" cm="Positioning"/>
+		<contextgroupcode csd="DCM" cv="111210" cm="Motion blur"/>
+		<contextgroupcode csd="DCM" cv="111211" cm="Under exposed"/>
+		<contextgroupcode csd="DCM" cv="111212" cm="Over exposed"/>
+		<contextgroupcode csd="DCM" cv="111213" cm="No image"/>
+		<contextgroupcode csd="DCM" cv="111214" cm="Detector artifact(s)"/>
+		<contextgroupcode csd="DCM" cv="111215" cm="Artifact(s) other than grid or detector artifact"/>
+		<contextgroupcode csd="DCM" cv="111216" cm="Mechanical failure"/>
+		<contextgroupcode csd="DCM" cv="111217" cm="Electrical failure"/>
+		<contextgroupcode csd="DCM" cv="111218" cm="Software failure"/>
+		<contextgroupcode csd="DCM" cv="111219" cm="Inappropriate image processing"/>
+		<contextgroupcode csd="DCM" cv="111220" cm="Other failure"/>
+		<contextgroupcode csd="DCM" cv="111221" cm="Unknown failure"/>
+		<contextgroupcode csd="DCM" cv="113026" cm="Double exposure"/>
+	</definecontextgroup>
+		
+	<definecontextgroup cid="PMP_12259_thru_12277" name="CardiacUltrasoundMeasurementType" keyword="CardiacUltrasoundMeasurementType" extensible="T" version="20240817">	<!-- used when invoking TID 300 from TID  5223 -->
+		<include cid="12259"/>
+		<include cid="12260"/>
+		<include cid="12261"/>
+	    <include cid="12262"/>
+	    <include cid="12263"/>
+	    <include cid="12264"/>
+	    <include cid="12265"/>
+	    <include cid="12266"/>
+	    <include cid="12267"/>
+	    <include cid="12268"/>
+	    <include cid="12269"/>
+	    <include cid="12270"/>
+	    <include cid="12271"/>
+	    <include cid="12272"/>
+	    <include cid="12273"/>
+	    <include cid="12274"/>
+	    <include cid="12275"/>
+	    <include cid="12276"/>
+	    <include cid="12277"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12282_thru_12294" name="CardiacUltrasoundCombinedFindingSite" keyword="CardiacUltrasoundCombinedFindingSite" extensible="T" version="20170914">	<!-- used when invoking TID 5222 from TID 5221 (and since 2024d, from TID 5228) -->
+	    <include cid="12282"/>
+	    <include cid="12283"/>
+	    <include cid="12284"/>
+	    <include cid="12285"/>
+	    <include cid="12286"/>
+	    <include cid="12287"/>
+	    <include cid="12288"/>
+	    <include cid="12289"/>
+	    <include cid="12290"/>
+	    <include cid="12291"/>
+	    <include cid="12292"/>
+	    <include cid="12293"/>
+	    <include cid="12294"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_12279_12218" name="CardiacUltrasoundMeasurementType" keyword="CardiacUltrasoundMeasurementType" extensible="T" version="20240817">	<!-- used when invoking TID 300 from TID 5228 -->
+	    <include cid="12279"/>
+	    <include cid="12218"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID5222FET_SectionHeading" name="SectionHeading" keyword="SectionHeading" extensible="T" version="20240818">
+		<contextgroupcode csd="SCT" cv="4432005" cm="Ductus arteriosus"/>
+		<contextgroupcode csd="SRT" cv="T-F6845" cm="Ductus arteriosus"/>
+		<contextgroupcode csd="DCM" cv="131021" cm="Ductus arteriosus arch"/>
+		<contextgroupcode csd="SCT" cv="32672002" cm="Descending Thoracic Aorta"/>
+		<contextgroupcode csd="SRT" cv="T-42400" cm="Descending Thoracic Aorta"/>
+		<contextgroupcode csd="SCT" cv="367624001" cm="Ductus venosus"/>
+		<contextgroupcode csd="SRT" cv="T-F680F" cm="Ductus venosus"/>
+		<contextgroupcode csd="SCT" cv="50536004" cm="Umbilical artery"/>
+		<contextgroupcode csd="SRT" cv="T-F1810" cm="Umbilical artery"/>
+		<contextgroupcode csd="SCT" cv="367567000" cm="Umbilical vein"/>
+		<contextgroupcode csd="SRT" cv="T-D03B4" cm="Umbilical vein"/>
+		<contextgroupcode csd="SCT" cv="17232002" cm="Middle cerebral artery"/>
+		<contextgroupcode csd="SRT" cv="T-45600" cm="Middle cerebral artery"/>
+		<!-- since 2024d Sup 242 added TID 5221 inside TID 5222, and we implement as single invocation, need to include PMP_12282_thru_12294 herein too -->
+	    <include cid="12282"/>
+	    <include cid="12283"/>
+	    <include cid="12284"/>
+	    <include cid="12285"/>
+	    <include cid="12286"/>
+	    <include cid="12287"/>
+	    <include cid="12288"/>
+	    <include cid="12289"/>
+	    <include cid="12290"/>
+	    <include cid="12291"/>
+	    <include cid="12292"/>
+	    <include cid="12293"/>
+	    <include cid="12294"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID5203_MeasType_invokedFromTID5200" name="TID5203_MeasType_invokedFromTID5200" keyword="TID5203_MeasType_invokedFromTID5200" extensible="T" version="20241004">	<!-- used for FindingSite value specified as SectionSubject parameter when invoking TID 5202 from 5200 -->
+		<include cid="12200"/>
+		<include cid="12204"/>
+		<include cid="12205"/>
+		<include cid="12206"/>
+		<include cid="12211"/>
+		<include cid="12207"/>
+		<include cid="12209"/>
+		<include cid="12208"/>
+		<include cid="12212"/>
+		<include cid="12210"/>
+		<include cid="12215"/>
+		<include cid="12214"/>
+		<include cid="12250"/>
+		<include cid="12217"/>
+		<include cid="12218"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_TID_5200_SectionSubjectFor5202" name="TID_5200_SectionSubjectFor5202" keyword="TID_5200_SectionSubjectFor5202" extensible="T" version="20241004">	<!-- used for FindingSite value specified as SectionSubject parameter when invoking TID 5202 from 5200 -->
+		<contextgroupcode csd="SCT" cv="87878005" cm="Left Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32600" cm="Left Ventricle"/>
+		<contextgroupcode csd="SCT" cv="53085002" cm="Right Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32500" cm="Right Ventricle"/>
+		<contextgroupcode csd="SCT" cv="82471001" cm="Left Atrium"/>
+		<contextgroupcode csd="SRT" cv="T-32300" cm="Left Atrium"/>
+		<contextgroupcode csd="SCT" cv="73829009" cm="Right Atrium"/>
+		<contextgroupcode csd="SRT" cv="T-32200" cm="Right Atrium"/>
+		<contextgroupcode csd="SCT" cv="34202007" cm="Aortic Valve"/>
+		<contextgroupcode csd="SRT" cv="T-35400" cm="Aortic Valve"/>
+		<contextgroupcode csd="SCT" cv="91134007" cm="Mitral Valve"/>
+		<contextgroupcode csd="SRT" cv="T-35300" cm="Mitral Valve"/>
+		<contextgroupcode csd="SCT" cv="39057004" cm="Pulmonic Valve"/>
+		<contextgroupcode csd="SRT" cv="T-35200" cm="Pulmonic Valve"/>
+		<contextgroupcode csd="SCT" cv="46030003" cm="Tricuspid Valve"/>
+		<contextgroupcode csd="SRT" cv="T-35100" cm="Tricuspid Valve"/>
+		<contextgroupcode csd="SCT" cv="15825003" cm="Aorta"/>
+		<contextgroupcode csd="SRT" cv="T-42000" cm="Aorta"/>
+		<contextgroupcode csd="SCT" cv="81040000" cm="Pulmonary artery"/>
+		<contextgroupcode csd="SRT" cv="T-44000" cm="Pulmonary artery"/>
+		<contextgroupcode csd="SCT" cv="35532006" cm="Vena Cava"/>
+		<contextgroupcode csd="SRT" cv="T-48600" cm="Vena Cava"/>
+		<contextgroupcode csd="SCT" cv="122972007" cm="Pulmonary Venous Structure"/>
+		<contextgroupcode csd="SRT" cv="T-48581" cm="Pulmonary Venous Structure"/>
+		<contextgroupcode csd="SCT" cv="25489000" cm="Pericardial cavity"/>
+		<contextgroupcode csd="SRT" cv="T-39050" cm="Pericardial cavity"/>
+		<contextgroupcode csd="SCT" cv="241213007" cm="Cardiac Shunt Study"/>
+		<contextgroupcode csd="SRT" cv="P5-30031" cm="Cardiac Shunt Study"/>
+		<contextgroupcode csd="SCT" cv="9904008" cm="Congenital Anomaly of Cardiovascular System"/>
+		<contextgroupcode csd="SRT" cv="D4-30000" cm="Congenital Anomaly of Cardiovascular System"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_Units_HU" name="HounsfieldUnit" keyword="HounsfieldUnit" extensible="F" version="20241201">	<!-- used since cannot include apostrophe in cvUnits or cmUnits match in template -->
+		<contextgroupcode csd="UCUM" cv="[hnsf'U]" cm="Hounsfield unit"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_Units_MassPerHUVolume" name="MassPerHUVolumeUnit" keyword="MassPerHUVolumeUnit" extensible="F" version="20241201">	<!-- used since cannot include apostrophe in cvUnits or cmUnits match in template -->
+		<contextgroupcode csd="UCUM" cv="mg/[hnsf'U].cm3" cm="mg/[hnsf'U].cm3"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_ProblemProperties_Therapy" name="ProblemProperties_Therapy" keyword="ProblemProperties_Therapy" extensible="F" version="20241202">
+		<include cid="3722"/>
+		<include cid="3760"/>
+		<include cid="3761"/>
+		<include cid="3762"/>
+		<include cid="3764"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_3906_ConceptName" name="TID_3906_ConceptName" keyword="TID_3906_ConceptName" extensible="F" version="20241202">
+		<contextgroupcode csd="SCT" cv="281231009" cm="Blood Vessel of Head"/>
+		<contextgroupcode csd="SCT" cv="119568004" cm="Artery of Neck"/>
+		<contextgroupcode csd="SCT" cv="70791007" cm="Artery of Lower Extremity"/>
+		<contextgroupcode csd="SCT" cv="122774002" cm="Vein of Lower Extremity"/>
+		<contextgroupcode csd="SCT" cv="75531005" cm="Artery of Upper Extremity"/>
+		<contextgroupcode csd="SCT" cv="122775001" cm="Vein of Upper Extremity"/>
+		<contextgroupcode csd="SCT" cv="303402001" cm="Vascular Structure of Kidney"/>
+		<contextgroupcode csd="SCT" cv="118634008" cm="Artery of Abdomen"/>
+		<contextgroupcode csd="SCT" cv="84421000" cm="Vein of Abdomen"/>
+		<contextgroupcode csd="SCT" cv="81040000" cm="Pulmonary Artery Structure"/>
+		<contextgroupcode csd="SCT" cv="41801008" cm="Coronary Artery Structure"/>
+		<contextgroupcode csd="SCT" cv="85439003" cm="Cardiac Vein Structure"/>
+		<contextgroupcode csd="SCT" cv="122972007" cm="Pulmonary Venous Structure"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_3902_AnalysisPerformed_Values" name="TID_3902_AnalysisPerformed_Values" keyword="TID_3902_AnalysisPerformed_Values" extensible="F" version="20241202">
+		<contextgroupcode csd="DCM" cv="122605" cm="Vascular Morphological Analysis"/>
+		<contextgroupcode csd="DCM" cv="122606" cm="Vascular Functional Analysis"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_3921_Ventricles" name="TID_3921_Ventricles" keyword="TID_3921_Ventricles" extensible="F" version="20241202">
+		<contextgroupcode csd="SCT" cv="87878005" cm="Left Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32600" cm="Left Ventricle"/>
+		<contextgroupcode csd="SCT" cv="53085002" cm="Right Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32500" cm="Right Ventricle"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_300_AbsoluteValuesOfVentricularMeasurements_Concepts" name="TID_300_AbsoluteValuesOfVentricularMeasurements_Concepts" keyword="TID_300_AbsoluteValuesOfVentricularMeasurements_Concepts" extensible="F" version="20241202">
+		<include cid="3833"/>
+		<include cid="3835"/>
+		<contextgroupcode csd="SCT" cv="82799009" cm="Cardiac Output"/>
+		<contextgroupcode csd="SRT" cv="F-32100" cm="Cardiac Output"/>
+		<contextgroupcode csd="DCM" cv="122447" cm="Wall Mass"/>
+		<contextgroupcode csd="DCM" cv="122616" cm="Peak Ejection Rate"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_300_AbsoluteValuesOfVentricularMeasurements_Units" name="TID_300_AbsoluteValuesOfVentricularMeasurements_Units" keyword="TID_300_AbsoluteValuesOfVentricularMeasurements_Units" extensible="F" version="20241202">
+		<contextgroupcode csd="UCUM" cv="%" cm="%"/>
+		<contextgroupcode csd="UCUM" cv="ml" cm="ml"/>
+		<contextgroupcode csd="UCUM" cv="l/min" cm="l/min"/>
+		<contextgroupcode csd="UCUM" cv="g" cm="g"/>
+		<contextgroupcode csd="UCUM" cv="ml/s" cm="ml/s"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_300_ThickeningAnalysis_Concepts" name="TID_300_ThickeningAnalysis_Concepts" keyword="TID_300_ThickeningAnalysis_Concepts" extensible="F" version="20241206">
+		<contextgroupcode csd="DCM" cv="122445" cm="Wall Thickness"/>
+		<contextgroupcode csd="DCM" cv="122624" cm="Wall Thickness Ratio end-systolic to end-diastolic"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_300_ThickeningAnalysis_Units" name="TID_300_ThickeningAnalysis_Units" keyword="TID_300_ThickeningAnalysis_Units" extensible="F" version="20241206">
+		<contextgroupcode csd="UCUM" cv="mm" cm="mm"/>
+		<contextgroupcode csd="UCUM" cv="%" cm="%"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_300_ThickeningAnalysis_CardiacCyclePointValues" name="TID_300_ThickeningAnalysis_CardiacCyclePointValues" keyword="TID_300_ThickeningAnalysis_CardiacCyclePointValues" extensible="F" version="20241206">
+		<contextgroupcode csd="SCT" cv="416190007" cm="End-Diastolic"/>
+		<contextgroupcode csd="DCM" cv="109070" cm="End-Systolic"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_7001_WithDCM"
+                        name="DiagnosticImagingReportHeading"
+                        extensible="T"
+                        version="20150324"
+                        uid="1.2.840.10008.6.1.482"
+                        keyword="DiagnosticImagingReportHeading"
+                        fhirkeyword="dicom-cid-7001-DiagnosticImagingReportHeading">
+      <contextgroupcode csd="LN" cv="11329-0" cm="History"/>
+      <contextgroupcode csd="DCM" cv="121060" cm="History"/>
+      <contextgroupcode csd="LN" cv="55115-0" cm="Request"/>
+      <contextgroupcode csd="DCM" cv="121062" cm="Request"/>
+      <contextgroupcode csd="LN" cv="55111-9" cm="Current Procedure Descriptions"/>
+      <contextgroupcode csd="DCM" cv="121064" cm="Current Procedure Descriptions"/>
+      <contextgroupcode csd="LN" cv="55114-3" cm="Prior Procedure Descriptions"/>
+      <contextgroupcode csd="DCM" cv="121066" cm="Prior Procedure Descriptions"/>
+      <contextgroupcode csd="LN" cv="18834-2" cm="Previous Findings"/>
+      <contextgroupcode csd="DCM" cv="121068" cm="Previous Findings"/>
+      <contextgroupcode csd="LN" cv="59776-5" cm="Findings"/>
+      <contextgroupcode csd="DCM" cv="121070" cm="Findings"/>
+      <contextgroupcode csd="LN" cv="19005-8" cm="Impressions"/>
+      <contextgroupcode csd="DCM" cv="121072" cm="Impressions"/>
+      <contextgroupcode csd="LN" cv="18783-1" cm="Recommendations"/>
+      <contextgroupcode csd="DCM" cv="121072" cm="Recommendations"/>
+      <contextgroupcode csd="LN" cv="55110-1" cm="Conclusions"/>
+      <contextgroupcode csd="DCM" cv="121076" cm="Conclusions"/>
+      <contextgroupcode csd="LN" cv="55107-7" cm="Addendum"/>
+      <contextgroupcode csd="DCM" cv="121078" cm="Addendum"/>
+      <contextgroupcode csd="LN" cv="18785-6" cm="Indications for Procedure"/>
+      <contextgroupcode csd="DCM" cv="121109" cm="Indications for Procedure"/>
+      <contextgroupcode csd="LN" cv="55108-5" cm="Patient Presentation"/>
+      <contextgroupcode csd="DCM" cv="121110" cm="Patient Presentation"/>
+      <contextgroupcode csd="LN" cv="55109-3" cm="Complications"/>
+      <contextgroupcode csd="DCM" cv="121113" cm="Complications"/>
+      <contextgroupcode csd="LN" cv="55112-7" cm="Summary"/>
+      <contextgroupcode csd="DCM" cv="121111" cm="Summary"/>
+      <contextgroupcode csd="LN" cv="55113-5" cm="Key Images"/>
+      <contextgroupcode csd="DCM" cv="121180" cm="Key Images"/>
+      <contextgroupcode csd="LN" cv="73569-6" cm="Radiation Exposure and Protection Information"/>
+      <contextgroupcode csd="DCM" cv="113923" cm="Radiation Exposure and Protection Information"/>
+      <contextgroupcode csd="LN" cv="55752-0" cm="Clinical Information"/>
+      <contextgroupcode csd="LN" cv="29549-3" cm="Medications Administered"/>
+      <contextgroupcode csd="LN" cv="73568-8" cm="Communication of Critical Results"/>
+   </definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_3921_Ventricles" name="TID_3921_Ventricles" keyword="TID_3921_Ventricles" extensible="F" version="20241202">
+		<contextgroupcode csd="SCT" cv="87878005" cm="Left Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32600" cm="Left Ventricle"/>
+		<contextgroupcode csd="SCT" cv="53085002" cm="Right Ventricle"/>
+		<contextgroupcode csd="SRT" cv="T-32500" cm="Right Ventricle"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_Finding_Value_ContrastMediaSeenInPlaque" name="Finding_Value_ContrastMediaSeenInPlaque" keyword="Finding_Value_ContrastMediaSeenInPlaque" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="413912008" cm="Contrast Media Seen in Plaque"/>
+		<contextgroupcode csd="SRT" cv="R-102DA" cm="Contrast Media Seen in Plaque"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_ReferencePoint_Value_EndDiastolic" name="ReferencePoint_Value_EndDiastolic" keyword="ReferencePoint_Value_EndDiastolic" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="416190007" cm="End-Diastolic"/>
+		<contextgroupcode csd="SRT" cv="R-FAB5C" cm="End-Diastolic"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_DrugMisuseBehavior_Value_CocaineAbuse" name="DrugMisuseBehavior_Value_CocaineAbuse" keyword="DrugMisuseBehavior_Value_CocaineAbuse" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="78267003" cm="Cocaine Abuse"/>
+		<contextgroupcode csd="SRT" cv="D9-30400" cm="Cocaine Abuse"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_FindingSite_Value_MyocardialWall" name="FindingSite_Value_MyocardialWall" keyword="FindingSite_Value_MyocardialWall" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="272657006" cm="Myocardial Wall"/>
+		<contextgroupcode csd="SRT" cv="T-D075D" cm="Myocardial Wall"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_FindingSite_Value_EmbryonicVascularStructure" name="FindingSite_Value_EmbryonicVascularStructure" keyword="FindingSite_Value_EmbryonicVascularStructure" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="51852003" cm="Embryonic Vascular Structure"/>
+		<contextgroupcode csd="SRT" cv="T-F6800" cm="Embryonic Vascular Structure"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_FindingSite_Value_PelvicVascularStructure" name="FindingSite_Value_PelvicVascularStructure" keyword="FindingSite_Value_PelvicVascularStructure" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="281496003" cm="Pelvic Vascular Structure"/>
+		<contextgroupcode csd="SRT" cv="T-D6007" cm="Pelvic Vascular Structure"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_FindingSite_Value_AmnioticSac" name="FindingSite_Value_AmnioticSac" keyword="FindingSite_Value_AmnioticSac" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="70847004" cm="Amniotic Sac"/>
+		<contextgroupcode csd="SRT" cv="T-F1300" cm="Amniotic Sac"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_FindingSite_Value_Ovary" name="FindingSite_Value_Ovary" keyword="FindingSite_Value_Ovary" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="15497006" cm="Ovary"/>
+		<contextgroupcode csd="SRT" cv="T-87000" cm="Ovary"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_FindingSite_Value_OvarianFollicle" name="FindingSite_Value_OvarianFollicle" keyword="FindingSite_Value_OvarianFollicle" extensible="F" version="20241207">
+		<contextgroupcode csd="SCT" cv="24162005" cm="Ovarian Follicle"/>
+		<contextgroupcode csd="SRT" cv="T-87600" cm="Ovarian Follicle"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_CID7460LinearMeasurementUnitAndCID7462VolumeMeasurementUnit" name="LinearAndVolumeMeasurementUnit" keyword="LinearAndVolumeMeasurementUnit" extensible="F" version="20241207">
+        <include cid="7460"/>
+        <include cid="7462"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_TID_5016_LeftOvary_Measurement" name="TID_5016_LeftOvary_Measurement" keyword="TID_5016_LeftOvary_Measurement" extensible="F" version="20241207">
+		<contextgroupcode csd="LN" cv="11829-9" cm="Left Ovary Width"/>
+		<contextgroupcode csd="LN" cv="11840-6" cm="Left Ovary Length"/>
+		<contextgroupcode csd="LN" cv="11857-0" cm="Left Ovary Height"/>
+		<contextgroupcode csd="LN" cv="12164-0" cm="Left Ovary Volume"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_TID_5016_RightOvary_Measurement" name="TID_5016_RightOvary_Measurement" keyword="TID_5016_RightOvary_Measurement" extensible="F" version="20241207">
+		<contextgroupcode csd="LN" cv="11830-7" cm="Right Ovary Width"/>
+		<contextgroupcode csd="LN" cv="11841-4" cm="Right Ovary Length"/>
+		<contextgroupcode csd="LN" cv="11858-8" cm="Right Ovary Height"/>
+		<contextgroupcode csd="LN" cv="12165-7" cm="Right Ovary Volume"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_Laterality_Value_Left" name="Laterality_Value_Left" keyword="Laterality_Value_Left" extensible="F" version="20241209">
+		<contextgroupcode csd="SCT" cv="7771000" cm="Left"/>
+		<contextgroupcode csd="SRT" cv="G-A101" cm="Left"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_Laterality_Value_Right" name="Laterality_Value_Right" keyword="Laterality_Value_Right" extensible="F" version="20241209">
+		<contextgroupcode csd="SCT" cv="24028007" cm="Right"/>
+		<contextgroupcode csd="SRT" cv="G-A100" cm="Right"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_7230_and_12025" name="AutomationOfMeasurement_UltrasoundBeamPath" keyword="AutomationOfMeasurement_UltrasoundBeamPath" extensible="F" version="20241207">
+        <include cid="7230"/>
+        <include cid="12025"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12100_WithDCM" name="VascularUltrasoundReportDocumentTitle_WithDCMRetiredConcepts" keyword="VascularUltrasoundReportDocumentTitle_WithDCMRetiredConcepts" extensible="F" version="20241215">
+        <include cid="12100"/>
+		<contextgroupcode csd="DCM" cv="125100" cm="Vascular Ultrasound Procedure Report"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_TID_5103_VascularUltrasoundSection_SectionScope" name="VascularUltrasoundSection_SectionScope" keyword="VascularUltrasoundSection_SectionScope" extensible="F" version="20241215">
+		<contextgroupcode csd="SCT" cv="281231009" cm="Blood Vessel of Head"/>
+		<contextgroupcode csd="SCT" cv="119568004" cm="Artery of neck"/>
+		<contextgroupcode csd="SCT" cv="70791007" cm="Artery of Lower Extremity"/>
+		<contextgroupcode csd="SCT" cv="122774002" cm="Vein of Lower Extremity"/>
+		<contextgroupcode csd="SCT" cv="75531005" cm="Artery Of Upper Extremity"/>
+		<contextgroupcode csd="SCT" cv="122775001" cm="Vein Of Upper Extremity"/>
+		<contextgroupcode csd="SCT" cv="303402001" cm="Vascular Structure Of Kidney"/>
+		<contextgroupcode csd="SCT" cv="118634008" cm="Artery of Abdomen"/>
+		<contextgroupcode csd="SCT" cv="84421000" cm="Vein of Abdomen"/>
+		<contextgroupcode csd="SCT" cv="846654004" cm="Abdominal and pelvic vessels"/>
+		<contextgroupcode csd="SRT" cv="T-40501" cm="Blood Vessel of Head"/>
+		<contextgroupcode csd="SRT" cv="T-45005" cm="Artery of neck"/>
+		<contextgroupcode csd="SRT" cv="T-47040" cm="Artery of Lower Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-49403" cm="Vein of Lower Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-47020" cm="Artery Of Upper Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-49103" cm="Vein Of Upper Extremity"/>
+		<contextgroupcode csd="SRT" cv="T-71019" cm="Vascular Structure Of Kidney"/>
+		<contextgroupcode csd="SRT" cv="T-46002" cm="Artery of Abdomen"/>
+		<contextgroupcode csd="SRT" cv="T-487A0" cm="Vein of Abdomen"/>
+		<!-- no SRT equivalent of cv="846654004" cm="Abdominal and pelvic vessels" -->
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_TID_5103_VascularUltrasoundSection_Laterality" name="VascularUltrasoundSection_Laterality" keyword="VascularUltrasoundSection_Laterality" extensible="F" version="20241215">
+      <contextgroupcode csd="SCT" cv="24028007" cm="Right"/>
+      <contextgroupcode csd="SRT" cv="G-A100" cm="Right"/>
+      <contextgroupcode csd="SCT" cv="7771000" cm="Left"/>
+      <contextgroupcode csd="SRT" cv="G-A101" cm="Left"/>
+      <contextgroupcode csd="SCT" cv="66459002" cm="Unilateral"/>
+      <contextgroupcode csd="SRT" cv="G-A103" cm="Unilateral"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_TID_5104_VascularUltrasoundMeasurementGroup_Anatomy" name="VascularUltrasoundMeasurementGroup_Anatomy" keyword="VascularUltrasoundMeasurementGroup_Anatomy" extensible="F" version="20241215">
+        <include cid="12104"/>
+        <include cid="12105"/>
+        <include cid="12106"/>
+        <include cid="12107"/>
+        <include cid="PMP_12108_WithRetiredSRT"/>
+        <include cid="PMP_12109_WithRetiredSRT"/>
+        <include cid="12110"/>
+        <include cid="12111"/>
+        <include cid="PMP_12112_WithRetiredSRT"/>
+        <include cid="12113"/>
+        <include cid="PMP_12114_WithRetiredSRT"/>
+        <include cid="12115"/>
+        <include cid="12125"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12108_WithRetiredSRT" name="UpperExtremityVein_WithRetiredSRT" keyword="UpperExtremityVein_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12108"/>
+      <contextgroupcode csd="SRT" cv="T-48052" cm="Basilic vein"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12109_WithRetiredSRT" name="LowerExtremityArtery_WithRetiredSRT" keyword="LowerExtremityArtery_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12109"/>
+      <contextgroupcode csd="SRT" cv="T-47400" cm="Common Femoral Artery"/>
+      <contextgroupcode csd="SRT" cv="T-47741" cm="Dorsalis Pedis Artery"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12112_WithRetiredSRT" name="AbdominopelvicArteryUnpaired_WithRetiredSRT" keyword="AbdominopelvicArteryUnpaired_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12112"/>
+      <contextgroupcode csd="SRT" cv="T-42000" cm="Aorta"/>
+      <contextgroupcode csd="SRT" cv="T-46960" cm="Lumbar Artery"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12114_WithRetiredSRT" name="AbdominopelvicVeinUnpaired_WithRetiredSRT" keyword="AbdominopelvicVeinUnpaired_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12114"/>
+      <contextgroupcode csd="SRT" cv="T-4881F" cm="Left Main Branch of Portal Vein"/>
+      <contextgroupcode csd="SRT" cv="T-4882A" cm="Right Main Branch of Portal Vein"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12116_WithRetiredSRT" name="VesselSegmentModifier_WithRetiredSRT" keyword="VesselSegmentModifier_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12116"/>
+        <contextgroupcode csd="SRT" cv="G-A188" cm="Mid-longitudinal"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12117_WithRetiredSRT" name="VesselBranchModifier_WithRetiredSRT" keyword="VesselBranchModifier_WithRetiredSRT" extensible="F" version="20241215">
+        <include cid="12117"/>
+        <contextgroupcode csd="SRT" cv="G-A115" cm="Inferior"/>
+        <contextgroupcode csd="SRT" cv="G-A109" cm="Medial"/>
+        <contextgroupcode csd="SRT" cv="G-A116" cm="Superior"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12119_WithRetiredSCT" name="VascularUltrasoundProperty_WithRetiredSRT" keyword="VascularUltrasoundProperty_WithRetiredSRT" extensible="F" version="20241215">
+      <include cid="12120"/>
+      <include cid="PMP_12121_WithRetiredSCT"/>
+      <include cid="12122"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="PMP_12121_WithRetiredSCT" name="VascularIndexRatio_WithRetiredSRT" keyword="VascularIndexRatio_WithRetiredSRT" extensible="F" version="20241215">
+      <include cid="12121"/>
+        <contextgroupcode csd="SRT" cv="G-0371" cm="% Area Reduction"/>
+        <contextgroupcode csd="SRT" cv="G-0372" cm="% Diameter Reduction"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="PMP_12123_12124_AnatomyRatio" name="AnatomyRati" keyword="AnatomyRati" extensible="F" version="20241215">
+        <include cid="12123"/>
+        <include cid="12124"/>
+	</definecontextgroup>
+
+	<definecontextgroup cid="QIICR_2001" name="RacialGroup" keyword="RacialGroup" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="S-0004E" cm="African race"/>
+		<contextgroupcode csd="SRT" cv="S-00051" cm="Asian race"/>
+		<contextgroupcode csd="SRT" cv="S-0003D" cm="Caucasian race"/>
+		<contextgroupcode csd="SRT" cv="S-0004F" cm="American Indian race"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2002" name="Performed" keyword="Performed" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="R-42514" cm="Performed"/>
+		<contextgroupcode csd="SRT" cv="R-4135B" cm="Not performed"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2003" name="AlcoholIntake" keyword="AlcoholIntake" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="F-60018" cm="Alcohol intake above recommended sensible limits"/>
+		<contextgroupcode csd="SRT" cv="F-60019" cm="Alcohol intake within recommended sensible limits"/>
+		<contextgroupcode csd="SRT" cv="R-40775" cm="None"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2004" name="TobaccoChewing" keyword="TobaccoChewing" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="S-32060" cm="Chews tobacco"/>
+		<contextgroupcode csd="SRT" cv="F-9321B" cm="Ex-tobacco chewer"/>
+		<contextgroupcode csd="SRT" cv="F-93219" cm="Does not chew tobacco"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2005" name="ClinicalStage" keyword="ClinicalStage" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-E100" cm="Clinical Stage I"/>
+		<contextgroupcode csd="SRT" cv="G-E200" cm="Clinical Stage II"/>
+		<contextgroupcode csd="SRT" cv="G-E300" cm="Clinical Stage III"/>
+		<contextgroupcode csd="SRT" cv="G-E400" cm="Clinical Stage IV"/>
+		<contextgroupcode csd="SRT" cv="G-E410" cm="Clinical Stage IV A"/>
+		<contextgroupcode csd="SRT" cv="G-E420" cm="Clinical Stage IV B"/>
+		<contextgroupcode csd="SRT" cv="G-E430" cm="Clinical Stage IV C"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2006" name="TNMTStage" keyword="TNMTStage" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-F152" cm="Tumor Stage T0"/>
+		<contextgroupcode csd="SRT" cv="G-F153" cm="Tumor Stage T1"/>
+		<contextgroupcode csd="SRT" cv="G-F158" cm="Tumor Stage T1a"/>
+		<contextgroupcode csd="SRT" cv="G-F15B" cm="Tumor Stage T1b"/>
+		<contextgroupcode csd="SRT" cv="G-F154" cm="Tumor Stage T2"/>
+		<contextgroupcode csd="SRT" cv="G-F15D" cm="Tumor Stage T2a"/>
+		<contextgroupcode csd="SRT" cv="G-F15E" cm="Tumor Stage T2b"/>
+		<contextgroupcode csd="SRT" cv="G-F155" cm="Tumor Stage T3"/>
+		<contextgroupcode csd="SRT" cv="G-F16D" cm="Tumor Stage T3a"/>
+		<contextgroupcode csd="SRT" cv="G-F16E" cm="Tumor Stage T3b"/>
+		<contextgroupcode csd="SRT" cv="G-F156" cm="Tumor Stage T4"/>
+		<contextgroupcode csd="SRT" cv="G-F176" cm="Tumor Stage T4a"/>
+		<contextgroupcode csd="SRT" cv="G-F177" cm="Tumor Stage T4b"/>
+		<contextgroupcode csd="SRT" cv="G-F157" cm="Tumor Stage TX"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2007" name="TNMNStage" keyword="TNMNStage" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-F160" cm="Node Stage N0"/>
+		<contextgroupcode csd="SRT" cv="G-F161" cm="Node Stage N1"/>
+		<contextgroupcode csd="SRT" cv="G-F166" cm="Node Stage N1a"/>
+		<contextgroupcode csd="SRT" cv="G-F167" cm="Node Stage N1b"/>
+		<contextgroupcode csd="SRT" cv="G-F162" cm="Node Stage N2"/>
+		<contextgroupcode csd="SRT" cv="G-F17E" cm="Node Stage N2a"/>
+		<contextgroupcode csd="SRT" cv="G-F17F" cm="Node Stage N2b"/>
+		<contextgroupcode csd="SRT" cv="G-F188" cm="Node Stage N2c"/>
+		<contextgroupcode csd="SRT" cv="G-F163" cm="Node Stage N3"/>
+		<contextgroupcode csd="SRT" cv="G-F165" cm="Node Stage NX"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2008" name="TNMMStage" keyword="TNMMStage" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-F170" cm="Metastasis Stage M0"/>
+		<contextgroupcode csd="SRT" cv="G-F171" cm="Metastasis Stage M1"/>
+		<contextgroupcode csd="SRT" cv="G-F175" cm="Metastasis Stage MX"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2009" name="MalignancyHistory" keyword="MalignancyHistory" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-0529" cm="History of malignant neoplasm of head and/or neck"/>
+		<contextgroupcode csd="SRT" cv="G-0133" cm="History of malignant neoplasm"/>
+		<contextgroupcode csd="SRT" cv="R-FB75F" cm="No history of malignant neoplastic disease"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2010" name="ExtracapsularExtensionofNodalTumor" keyword="ExtracapsularExtensionofNodalTumor" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="F-004F1" cm="Extra-capsular extension of nodal tumor present"/>
+		<contextgroupcode csd="SRT" cv="F-004EF" cm="Extra-capsular extension of nodal tumor absent"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2011" name="FollowupStatus" keyword="FollowupStatus" extensible="T" version="20150228">
+		<contextgroupcode csd="UMLS" cv="C1518340" cm="No evidence of disease"/>
+		<contextgroupcode csd="SRT" cv="DF-00280" cm="Local disease"/>
+		<contextgroupcode csd="UMLS" cv="C3641061" cm="Distant metastases"/>
+		<contextgroupcode csd="99PMP" cv="300010" cm="Local disease and distant metastases"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2012" name="CauseofDeath" keyword="CauseofDeath" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="DD-60001" cm="Complication"/>
+		<contextgroupcode csd="SRT" cv="DF-00280" cm="Local disease"/>
+		<contextgroupcode csd="UMLS" cv="C3641061" cm="Distant metastases"/>
+		<contextgroupcode csd="99PMP" cv="300010" cm="Local disease and distant metastases"/>
+		<contextgroupcode csd="SRT" cv="DF-00170" cm="Intercurrent disease"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2013" name="&gt;LocationofRecurrentTumor" keyword="&gt;LocationofRecurrentTumor" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="DF-00280" cm="Local disease"/>
+		<contextgroupcode csd="SRT" cv="G-A16D" cm="Region"/>
+		<contextgroupcode csd="UMLS" cv="C3641061" cm="Distant metastases"/>
+		<contextgroupcode csd="99PMP" cv="300014" cm="Local and regional"/>
+		<contextgroupcode csd="99PMP" cv="300010" cm="Local disease and distant metastases"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2014" name="ExtentofResection" keyword="ExtentofResection" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="P1-03002" cm="Complete excision"/>
+		<contextgroupcode csd="SRT" cv="P1-03001" cm="Partial excision"/>
+		<contextgroupcode csd="SRT" cv="R-4135B" cm="Not performed"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2015" name="AntineoplasticAgent" keyword="AntineoplasticAgent" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="F-61F04" cm="Cetuximab"/>
+		<contextgroupcode csd="SRT" cv="C-15310" cm="Platinum"/>
+		<contextgroupcode csd="SRT" cv="C-3013D" cm="Taxane"/>
+		<contextgroupcode csd="SRT" cv="C-780F0" cm="5FU"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2016" name="HistologicGrade" keyword="HistologicGrade" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-F211" cm="Grade 1: well differentiated"/>
+		<contextgroupcode csd="SRT" cv="G-F212" cm="Grade 2: moderately differentiated"/>
+		<contextgroupcode csd="SRT" cv="G-F213" cm="Grade 3: poorly differentiated"/>
+		<contextgroupcode csd="SRT" cv="R-41DC5" cm="Grade 4: undifferentiated"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2017" name="MalignancyType" keyword="MalignancyType" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="D1-F3502" cm="Carcinoma in situ"/>
+		<contextgroupcode csd="UMLS" cv="C1334274" cm="Invasive carcinoma"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2018" name="TumorMarginStatus" keyword="TumorMarginStatus" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-8DA4" cm="Surgical margin involved by tumor"/>
+		<contextgroupcode csd="99PMP" cv="300004" cm="Surgical margin close to tumor"/>
+		<contextgroupcode csd="SRT" cv="M-09400" cm="Surgical margin uninvolved by tumor"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2019" name="PerineuralInvasion" keyword="PerineuralInvasion" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="G-F538" cm="Perineural invasion by tumor present"/>
+		<contextgroupcode csd="SRT" cv="G-F7A3" cm="Perineural invasion by tumor absent"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2020" name="VascularInvasion" keyword="VascularInvasion" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="R-002A7" cm="Vascular invasion by tumor present"/>
+		<contextgroupcode csd="SRT" cv="G-F519" cm="Vascular invasion by tumor absent"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2021" name="LymphNodeGroup" keyword="LymphNodeGroup" extensible="T" version="20150228">
+		<contextgroupcode csd="99PMP" cv="300005" cm="Level I - Submental and submandibular lymph node group"/>
+		<contextgroupcode csd="SRT" cv="T-C420B" cm="Level II - Upper jugular lymph node group"/>
+		<contextgroupcode csd="SRT" cv="T-C420C" cm="Level III - Middle jugular lymph node group"/>
+		<contextgroupcode csd="SRT" cv="T-C420D" cm="Level IV - Lower jugular lymph node group"/>
+		<contextgroupcode csd="SRT" cv="T-C420E" cm="Level V - Posterior triangle cervical lymph node group"/>
+		<contextgroupcode csd="99PMP" cv="300006" cm="Cervical lymph node outside level I through V"/>
+	</definecontextgroup>
+	<definecontextgroup cid="QIICR_2022" name="SameorDifferentSide" keyword="SameorDifferentSide" extensible="T" version="20150228">
+		<contextgroupcode csd="SRT" cv="R-40356" cm="Ipsilateral"/>
+		<contextgroupcode csd="SRT" cv="R-40357" cm="Contralateral"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="IHETFH2" name="CategoriesOfTeachingFiles" keyword="CategoriesOfTeachingFiles" extensible="T" version="">
+		<contextgroupcode csd="IHERADTF" cv="TCE301" cm="Musculoskeletal"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE302" cm="Pulmonary"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE303" cm="Cardiovascular"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE304" cm="Gastrointestinal"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE305" cm="Genitourinary"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE306" cm="Neuro"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE307" cm="Vascular and Interventional"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE308" cm="Nuclear"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE309" cm="Ultrasound"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE310" cm="Pediatric"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE311" cm="Breast"/>
+	</definecontextgroup>
+	
+	<definecontextgroup cid="IHETFH3" name="CategoriesOfTeachingFiles" keyword="CategoriesOfTeachingFiles" extensible="T" version="">
+		<contextgroupcode csd="IHERADTF" cv="TCE201" cm="Primary"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE202" cm="Intermediate"/>
+		<contextgroupcode csd="IHERADTF" cv="TCE203" cm="Advanced"/>
+	</definecontextgroup>
+
+</definecontextgroups>

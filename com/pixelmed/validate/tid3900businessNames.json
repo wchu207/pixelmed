@@ -1,0 +1,910 @@
+[
+  {
+    "CardiovascularAnalysisReport": {
+      "_cv": "122600",
+      "_csd": "DCM",
+      "_cm": "Cardiovascular Analysis Report",
+      "_vt": [ "CONTAINER" ]
+    }
+  },
+  {
+    "ProcedureReported": {
+      "_cv": "121058",
+      "_csd": "DCM",
+      "_cm": "Procedure Reported",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "CardiovascularCT": {
+      "_cv": "303680000",
+      "_csd": "SCT",
+      "_cm": "cardiovascular CT"
+    }
+  },
+  {
+    "LanguageOfContentItemAndDescendants": {
+      "_cv": "121049",
+      "_csd": "DCM",
+      "_cm": "Language of Content Item and Descendants",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "English": {
+      "_cv": "en",
+      "_csd": "RFC5646",
+      "_cm": "English"
+    }
+  },
+  {
+    "ObserverType": {
+      "_cv": "121005",
+      "_csd": "DCM",
+      "_cm": "Observer Type",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS OBS CONTEXT" ]
+    }
+  },
+  {
+    "Device": {
+      "_cv": "121007",
+      "_csd": "DCM",
+      "_cm": "Device"
+    }
+  },
+  {
+    "DeviceObserverUID": {
+      "_cv": "121012",
+      "_csd": "DCM",
+      "_cm": "Device Observer UID",
+      "_vt": [ "UIDREF" ],
+      "_rel": [ "HAS OBS CONTEXT" ]
+    }
+  },
+  {
+    "PatientCharacteristics": {
+      "_cv": "121118",
+      "_csd": "DCM",
+      "_cm": "Patient Characteristics",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SubjectAge": {
+      "_cv": "121033",
+      "_csd": "DCM",
+      "_cm": "Subject Age",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "a": {
+      "_cv": "a",
+      "_csd": "UCUM",
+      "_cm": "year"
+    }
+  },
+  {
+    "SubjectSex": {
+      "_cv": "121032",
+      "_csd": "DCM",
+      "_cm": "Subject Sex",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "Female": {
+      "_cv": "F",
+      "_csd": "DCM",
+      "_cm": "Female"
+    }
+  },
+  {
+    "PatientHeight": {
+      "_cv": "8302-2",
+      "_csd": "LN",
+      "_cm": "Patient Height",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "cm": {
+      "_cv": "cm",
+      "_csd": "UCUM",
+      "_cm": "cm"
+    }
+  },
+  {
+    "PatientWeight": {
+      "_cv": "29463-7",
+      "_csd": "LN",
+      "_cm": "Patient Weight",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "kg": {
+      "_cv": "kg",
+      "_csd": "UCUM",
+      "_cm": "kg"
+    }
+  },
+  {
+    "History": {
+      "_cv": "11329-0",
+      "_csd": "LN",
+      "_cm": "History",
+      "_vt": [ "CONTAINER", "TEXT" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "ProblemList": {
+      "_cv": "11450-4",
+      "_csd": "LN",
+      "_cm": "Problem List",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "Complaint": {
+      "_cv": "1269496002",
+      "_csd": "SCT",
+      "_cm": "Complaint",
+      "_vt": [ "TEXT" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+    {
+    "Concern": {
+      "_cv": "121430",
+      "_csd": "DCM",
+      "_cm": "Concern",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "Disease": {
+      "_cv": "64572001",
+      "_csd": "SCT",
+      "_cm": "Disease",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "HistoryOfDiabetesMellitus": {
+      "_cv": "161445009",
+      "_csd": "SCT",
+      "_cm": "History of Diabetes mellitus"
+    }
+  },
+  {
+    "Therapy": {
+      "_cv": "277132007",
+      "_csd": "SCT",
+      "_cm": "Therapy",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "DiabeticOnInsulin": {
+      "_cv": "170747006",
+      "_csd": "SCT",
+      "_cm": "Diabetic on Insulin"
+    }
+  },
+  {
+    "SocialHistoryContainer": {
+      "_cv": "29762-2",
+      "_csd": "LN",
+      "_cm": "Social History",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SocialHistoryText": {
+      "_cv": "160476009",
+      "_csd": "SCT",
+      "_cm": "Social History",
+      "_vt": [ "TEXT" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "TobaccoSmokingBehavior": {
+      "_cv": "365981007",
+      "_csd": "SCT",
+      "_cm": "Tobacco Smoking Behavior",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "FormerSmoker": {
+      "_cv": "8517006",
+      "_csd": "SCT",
+      "_cm": "Former Smoker"
+    }
+  },
+  {
+    "PastSurgicalHistory": {
+      "_cv": "10167-5",
+      "_csd": "LN",
+      "_cm": "Past Surgical History",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SurgicalProcedure": {
+      "_cv": "387713003",
+      "_csd": "SCT",
+      "_cm": "Surgical Procedure",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CoronaryArteryBypassGraft": {
+      "_cv": "232717009",
+      "_csd": "SCT",
+      "_cm": "Coronary artery bypass graft"
+    }
+  },
+  {
+    "ProcedureDateTime": {
+      "_cv": "122146",
+      "_csd": "DCM",
+      "_cm": "Procedure DateTime",
+      "_vt": [ "DATETIME" ],
+      "_rel": [ "HAS PROPERTIES" ]
+    }
+  },
+  {
+    "RelevantDiagnosticTestsLaboratoryData": {
+      "_cv": "30954-2",
+      "_csd": "LN",
+      "_cm": "Relevant Diagnostic Tests and/or Laboratory Data",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "DiagnosticIntent": {
+      "_cv": "261004008",
+      "_csd": "SCT",
+      "_cm": "Diagnostic intent",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CardiacCatheterizationCoronaryAngiogram": {
+      "_cv": "419416005",
+      "_csd": "SCT",
+      "_cm": "Cardiac catheterization coronary angiogram"
+    }
+  },
+  {
+    "CholesterolHDL": {
+      "_cv": "2086-7",
+      "_csd": "LN",
+      "_cm": "Cholesterol.in HDL",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CholesterolLDL": {
+      "_cv": "2089-1",
+      "_csd": "LN",
+      "_cm": "Cholesterol.in LDL",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "mgperdl": {
+      "_cv": "mg/dl",
+      "_csd": "UCUM",
+      "_cm": "mg/dl"
+    }
+  },
+  {
+    "HistoryOfMedicationUse": {
+      "_cv": "10160-0",
+      "_csd": "LN",
+      "_cm": "History of Medication Use",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "MedicationType": {
+      "_cv": "111516",
+      "_csd": "DCM",
+      "_cm": "Medication Type",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+  	"Metoprolol": {
+      "_cv": "372826007",
+      "_csd": "SCT",
+      "_cm": "Metoprolol"
+    }
+  },
+  {
+    "Dosage": {
+      "_cv": "260911001",
+      "_csd": "SCT",
+      "_cm": "Dosage",
+      "_vt": [ "NUM" ],
+      "_rel": [ "HAS PROPERTIES" ]
+    }
+  },
+  {
+    "mgperday": {
+      "_cv": "mg/d",
+      "_csd": "UCUM",
+      "_cm": "mg/day"
+    }
+  },
+  {
+    "Status": {
+      "_cv": "33999-4",
+      "_csd": "LN",
+      "_cm": "Status",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS PROPERTIES" ]
+    }
+  },
+  {
+    "InProgress": {
+      "_cv": "385651009",
+      "_csd": "SCT",
+      "_cm": "In progress"
+    }
+  },
+  {
+    "HistoryOfMedicalDeviceUse": {
+      "_cv": "46264-8",
+      "_csd": "LN",
+      "_cm": "History of medical device use",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "MedicalDeviceUsed": {
+      "_cv": "121436",
+      "_csd": "DCM",
+      "_cm": "Medical Device Used",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CardiacPacemaker": {
+      "_cv": "14106009",
+      "_csd": "SCT",
+      "_cm": "Cardiac pacemaker"
+    }
+  },
+  {
+    "DateTimeStarted": {
+      "_cv": "111526",
+      "_csd": "DCM",
+      "_cm": "DateTime Started",
+      "_vt": [ "DATETIME" ],
+      "_rel": [ "HAS PROPERTIES" ]
+    }
+  },
+  {
+    "CurrentProcedureDescriptions": {
+      "_cv": "55111-9",
+      "_csd": "LN",
+      "_cm": "Current Procedure Descriptions",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "ProcedureDescription": {
+      "_cv": "121065",
+      "_csd": "DCM",
+      "_cm": "Procedure Description",
+      "_vt": [ "TEXT" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CardiacGating": {
+      "_cv": "RID11248",
+      "_csd": "RADLEX",
+      "_cm": "Cardiac Gating",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "ProspectiveGating": {
+      "_cv": "109081",
+      "_csd": "DCM",
+      "_cm": "Prospective gating"
+    }
+  },
+  {
+    "Findings": {
+      "_cv": "59776-5",
+      "_csd": "LN",
+      "_cm": "Findings",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "AnalysisPerformed": {
+      "_cv": "111004",
+      "_csd": "DCM",
+      "_cm": "Analysis Performed",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "VascularMorphologicalAnalysis": {
+      "_cv": "122605",
+      "_csd": "DCM",
+      "_cm": "Vascular Morphological Analysis"
+    }
+  },
+  {
+    "CalciumScoringAnalysis": {
+      "_cv": "122603",
+      "_csd": "DCM",
+      "_cm": "Calcium Scoring Analysis"
+    }
+  },
+  {
+    "CoronaryArteryCalciumScore": {
+      "_cv": "450360000",
+      "_csd": "SCT",
+      "_cm": "Coronary artery calcium score",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "nounits": {
+      "_cv": "1",
+      "_csd": "UCUM",
+      "_cm": "no units"
+    }
+  },
+  {
+    "MeasurementMethod": {
+      "_cv": "370129005",
+      "_csd": "SCT",
+      "_cm": "Measurement Method",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "AgatstonScoringMethod": {
+      "_cv": "112055",
+      "_csd": "DCM",
+      "_cm": "Agatston Scoring Method"
+    }
+  },
+  {
+    "CoronaryArteryStructure": {
+      "_cv": "41801008",
+      "_csd": "SCT",
+      "_cm": "Coronary Artery Structure",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "FindingSite": {
+      "_cv": "363698007",
+      "_csd": "SCT",
+      "_cm": "Finding Site",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "LeftMainCoronaryArtery": {
+      "_cv": "3227004",
+      "_csd": "SCT",
+      "_cm": "Left Main Coronary Artery"
+    }
+  },
+  {
+    "LumenDiameterStenosis": {
+      "_cv": "408715008",
+      "_csd": "SCT",
+      "_cm": "Lumen Diameter Stenosis",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "percent": {
+      "_cv": "%",
+      "_csd": "UCUM",
+      "_cm": "%"
+    }
+  },
+  {
+    "VentricularAnalysis": {
+      "_cv": "122601",
+      "_csd": "DCM",
+      "_cm": "Ventricular Analysis"
+    }
+  },
+  {
+    "HeartRate": {
+      "_cv": "8867-4",
+      "_csd": "LN",
+      "_cm": "Heart Rate",
+      "_vt": [ "NUM" ],
+      "_rel": [ "HAS OBS CONTEXT" ]
+    }
+  },
+  {
+    "BPM": {
+      "_cv": "{H.B.}/min",
+      "_csd": "UCUM",
+      "_cm": "BPM"
+    }
+  },
+  {
+    "LeftVentricle": {
+      "_cv": "87878005",
+      "_csd": "SCT",
+      "_cm": "Left Ventricle"
+    }
+  },
+  {
+    "AbsoluteValuesOfVentricularMeasurements": {
+      "_cv": "122608",
+      "_csd": "DCM",
+      "_cm": "Absolute Values Of Ventricular Measurements",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "LeftVentricularEjectionFractionByCT": {
+      "_cv": "8810-4",
+      "_csd": "LN",
+      "_cm": "Left ventricular ejection fraction by CT",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "VolumeBasedMethod": {
+      "_cv": "122652",
+      "_csd": "DCM",
+      "_cm": "Volume Based Method"
+    }
+  },
+  {
+    "ThickeningAnalysis": {
+      "_cv": "122607",
+      "_csd": "DCM",
+      "_cm": "Thickening Analysis"
+    }
+  },
+  {
+    "LeftVentricleApicalSeptalSegment": {
+      "_cv": "264845002",
+      "_csd": "SCT",
+      "_cm": "left ventricle apical septal segment"
+    }
+  },
+  {
+    "WallThickness": {
+      "_cv": "122445",
+      "_csd": "DCM",
+      "_cm": "Wall Thickness",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "mm": {
+      "_cv": "mm",
+      "_csd": "UCUM",
+      "_cm": "mm"
+    }
+  },
+  {
+    "CardiacCyclePoint": {
+      "_cv": "272518008",
+      "_csd": "SCT",
+      "_cm": "Cardiac Cycle Point",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "EndDiastolic": {
+      "_cv": "416190007",
+      "_csd": "SCT",
+      "_cm": "End-Diastolic"
+    }
+  },
+  {
+    "EndSystolic": {
+      "_cv": "109070",
+      "_csd": "DCM",
+      "_cm": "End-Systolic"
+    }
+  },
+  {
+    "WallThicknessRatio": {
+      "_cv": "122624",
+      "_csd": "DCM",
+      "_cm": "Wall Thickness Ratio end-systolic to end-diastolic",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "CardiacWallMotion": {
+      "_cv": "60797005",
+      "_csd": "SCT",
+      "_cm": "Cardiac Wall Motion",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SevereHypokinesis": {
+      "_cv": "371870001",
+      "_csd": "SCT",
+      "_cm": "Severe Hypokinesis"
+    }
+  },
+  {
+    "AssociatedMorphology": {
+      "_cv": "116676008",
+      "_csd": "SCT",
+      "_cm": "Associated Morphology",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "ThinningMyocardium": {
+      "_cv": "122114",
+      "_csd": "DCM",
+      "_cm": "Thinning Myocardium"
+    }
+  },
+  {
+    "MyocardialPerfusionAnalysis": {
+      "_cv": "122602",
+      "_csd": "DCM",
+      "_cm": "Myocardial Perfusion Analysis"
+    }
+  },
+  {
+    "TopographicalModifier": {
+      "_cv": "106233006",
+      "_csd": "SCT",
+      "_cm": "Topographical Modifier",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "Endocardial": {
+      "_cv": "304059001",
+      "_csd": "SCT",
+      "_cm": "endocardial"
+    }
+  },
+  {
+    "PatientState": {
+      "_cv": "109054",
+      "_csd": "DCM",
+      "_cm": "Patient State",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS ACQ CONTEXT" ]
+    }
+  },
+  {
+    "CardiacStressState": {
+      "_cv": "432655005",
+      "_csd": "SCT",
+      "_cm": "Cardiac Stress State"
+    }
+  },
+  {
+    "DrugAdministered": {
+      "_cv": "122083",
+      "_csd": "DCM",
+      "_cm": "Drug administered",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS ACQ CONTEXT" ]
+    }
+  },
+  {
+    "Dipyridamole": {
+      "_cv": "66859009",
+      "_csd": "SCT",
+      "_cm": "Dipyridamole"
+    }
+  },
+  {
+    "BestIllustrationOfFinding": {
+      "_cv": "121080",
+      "_csd": "DCM",
+      "_cm": "Best illustration of finding",
+      "_vt": [ "IMAGE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SignalTimeToPeak": {
+      "_cv": "122634",
+      "_csd": "DCM",
+      "_cm": "Signal Time to Peak",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "seconds": {
+      "_cv": "s",
+      "_csd": "UCUM",
+      "_cm": "s"
+    }
+  },
+  {
+    "ImageInterval": {
+      "_cv": "122640",
+      "_csd": "DCM",
+      "_cm": "Image Interval",
+      "_vt": [ "NUM" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "milliseconds": {
+      "_cv": "ms",
+      "_csd": "UCUM",
+      "_cm": "ms"
+    }
+  },
+  {
+    "MeasurementGroup": {
+      "_cv": "125007",
+      "_csd": "DCM",
+      "_cm": "Measurement Group",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "LateContrastEnhancement": {
+      "_cv": "122664",
+      "_csd": "DCM",
+      "_cm": "Late Contrast Enhancement",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "No": {
+      "_cv": "373067005",
+      "_csd": "SCT",
+      "_cm": "No"
+    }
+  },
+  {
+    "TimeAfterStartOfInjectionOfContrastBolus": {
+      "_cv": "122665",
+      "_csd": "DCM",
+      "_cm": "Time after start of injection of contrast bolus",
+      "_vt": [ "NUM" ],
+      "_rel": [ "HAS ACQ CONTEXT" ]
+    }
+  },
+  {
+    "Conclusions": {
+      "_cv": "55110-1",
+      "_csd": "LN",
+      "_cm": "Conclusions",
+      "_vt": [ "CONTAINER" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "ConclusionText": {
+      "_cv": "121077",
+      "_csd": "DCM",
+      "_cm": "Conclusion",
+      "_vt": [ "TEXT" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SourceOfMeasurement": {
+      "_cv": "121112",
+      "_csd": "DCM",
+      "_cm": "Source of Measurement",
+      "_vt": [ "IMAGE" ],
+      "_rel": [ "INFERRED FROM" ]
+    }
+  },
+  {
+    "CoronaryArteryDiseaseAssessment": {
+      "_cv": "130720",
+      "_csd": "DCM",
+      "_cm": "Coronary Artery Disease Assessment",
+      "_vt": [ "CODE" ],
+      "_rel": [ "CONTAINS" ]
+    }
+  },
+  {
+    "SevereStenosis": {
+      "_cv": "130727",
+      "_csd": "DCM",
+      "_cm": "4 - Severe stenosis"
+    }
+  },
+  {
+    "CoronaryArteryDiseaseAssessmentModifier": {
+      "_cv": "130721",
+      "_csd": "DCM",
+      "_cm": "Coronary Artery Disease Assessment Modifier",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "VulnerablePlaque": {
+      "_cv": "130735",
+      "_csd": "DCM",
+      "_cm": "V - Vulnerable plaque"
+    }
+  },
+  {
+    "CoronaryArteryDiseaseStenosisAssessmentModifier": {
+      "_cv": "130722",
+      "_csd": "DCM",
+      "_cm": "Coronary Artery Disease Stenosis Assessment Modifier",
+      "_vt": [ "CODE" ],
+      "_rel": [ "HAS CONCEPT MOD" ]
+    }
+  },
+  {
+    "SevereStenosis4B": {
+      "_cv": "130729",
+      "_csd": "DCM",
+      "_cm": "4B - Severe stenosis"
+    }
+  }
+]

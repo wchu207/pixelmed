@@ -1,0 +1,9 @@
+.DS_Store
+.project
+.classpath
+.gradle
+.settings
+.idea
+.temp*
+/*.log
+/out

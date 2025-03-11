@@ -1,0 +1,432 @@
+[
+  {
+    "SpecificCharacterSet": "ISO_IR 100",
+    "InstanceCreationDate": "20241202",
+    "InstanceCreationTime": "0717",
+    "SOPClassUID": "EnhancedSRStorage",
+    "SOPInstanceUID": "1.3.6.1.4.1.5962.1.1.0.0.0.1733141866.35299.0",
+    "StudyDate": "20241202",
+    "SeriesDate": "20241202",
+    "ContentDate": "20241202",
+    "StudyTime": "0717",
+    "ContentTime": "0717",
+    "AccessionNumber": null,
+    "Modality": "SR",
+    "Manufacturer": "PixelMed",
+    "InstitutionAddress": "",
+    "ReferringPhysicianName": {
+      "Value": [
+        {
+          "Alphabetic": "Dr. Referring"
+        }
+      ]
+    },
+    "StationName": "Station 1",
+    "StudyDescription": "CT CV Report",
+    "SeriesDescription": "Reports",
+    "InstitutionalDepartmentName": "Department",
+    "ManufacturerModelName": "",
+    "ReferencedPerformedProcedureStepSequence": null,
+    "PatientName": {
+      "Value": [
+        {
+          "Alphabetic": "Test^TID3900"
+        }
+      ]
+    },
+    "PatientID": "TEST3900",
+    "PatientBirthDate": "19010101",
+    "PatientSex": "F",
+    "PatientAge": "087Y",
+    "PatientWeight": "52.21",
+    "DeviceSerialNumber": "999999",
+    "SoftwareVersions": "1",
+    "StudyInstanceUID": "1.3.6.1.4.1.5962.1.2.0.1733141866.35299.0",
+    "SeriesInstanceUID": "1.3.6.1.4.1.5962.1.3.0.0.1733141866.35299.0",
+    "StudyID": "1",
+    "SeriesNumber": "1",
+    "InstanceNumber": "1",
+    "RequestAttributesSequence": {
+      "Value": [
+        {
+          "RequestedProcedureDescription": "CT Heart",
+          "ScheduledProcedureStepDescription": "CT Heart",
+          "ScheduledProcedureStepID": "1"
+        }
+      ]
+    },
+    "PerformedProcedureCodeSequence": null,
+    "CompletionFlag": "COMPLETE",
+    "VerificationFlag": "UNVERIFIED",
+    "CardiovascularAnalysisReport": [
+      {
+        "_tmr": "DCMR",
+        "_tid": "3900"
+      },
+      [
+        { "ProcedureReported": "CardiovascularCT" },
+        { "LanguageOfContentItemAndDescendants": "English" },
+        { "ObserverType": "Device" },
+        { "DeviceObserverUID": "1.3.6.1.4.1.5962.3.1" },
+        {
+          "PatientCharacteristics": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3602"
+			  },
+			  [
+				{ "SubjectAge": [ { "_units": "a" }, "36" ] },
+				{ "SubjectSex": "Female" },
+				{ "PatientHeight": [ { "_units": "cm" }, "175" ] },
+				{ "PatientWeight": [ { "_units": "kg" }, "75" ] }
+			  ]
+          ]
+        },
+        {
+          "History": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3802"
+			  },
+			  [
+			  	{ "History": "Chest pain" },
+				{
+					"ProblemList": [
+						[
+							{ "Complaint": "Chest pain" },
+							{
+								"Concern": [
+									{
+										"_tmr": "DCMR",
+										"_tid": "3829"
+									},
+									[
+										{ "Disease": "HistoryOfDiabetesMellitus" },
+										{ "Therapy": "DiabeticOnInsulin" }
+									]
+								]
+							}
+						]
+					]
+				},
+				{
+					"SocialHistoryContainer": [
+						[
+							{ "SocialHistoryText": "Former heavy smoker 3 packs/day for 50 years until 5 years ago" },
+							{ "TobaccoSmokingBehavior": "FormerSmoker" }
+						]
+					]
+				},
+				{
+					"PastSurgicalHistory": [
+						[
+							{
+								"SurgicalProcedure": [
+									"CoronaryArteryBypassGraft",
+									[
+										{ "ProcedureDateTime": "20210904" }
+									]
+								]
+							}
+						]
+					]
+				},
+				{
+					"RelevantDiagnosticTestsLaboratoryData": [
+						[
+							{
+								"DiagnosticIntent": [
+									"CardiacCatheterizationCoronaryAngiogram",
+									[
+										{ "ProcedureDateTime": "20241127" }
+									]
+								]
+							},
+							{ "CholesterolHDL": [ { "_units": "mgperdl" }, "13.2" ] },
+							{ "CholesterolLDL": [ { "_units": "mgperdl" }, "193" ] }
+						]
+					]
+				},
+				{
+					"HistoryOfMedicationUse": [
+						[
+							{
+								"MedicationType": [
+									"Metoprolol",
+									[
+										{ "Dosage": [ { "_units": "mgperday" }, "100" ] },
+										{ "Status": "InProgress" }
+									]
+								]
+							}
+						]
+					]
+				},
+				{
+					"HistoryOfMedicalDeviceUse": [
+						[
+							{
+								"MedicalDeviceUsed": [
+									"CardiacPacemaker",
+									[
+										{ "DateTimeStarted": "20020426" }
+									]
+								]
+							}
+						]
+					]
+				}
+			  ]
+		  ]
+		},
+        {
+          "CurrentProcedureDescriptions": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3901"
+			  },
+			  [
+				{ "ProcedureDescription": "CTA Gated" },
+				{ "CardiacGating": "ProspectiveGating" }
+			  ]
+          ]
+        },
+        {
+          "Findings": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3902"
+			  },
+			  [
+				{ "AnalysisPerformed": "VascularMorphologicalAnalysis" },
+				{
+				  "Findings": [
+					  {
+						"_tmr": "DCMR",
+						"_tid": "3905"
+					  },
+					  [
+						{ "AnalysisPerformed": "CalciumScoringAnalysis" },
+						{
+							"CoronaryArteryCalciumScore": [
+							  { "_units": "nounits" },
+							  "450",
+							  [
+							  	{ "MeasurementMethod": "AgatstonScoringMethod" }
+							  ]
+							]
+						}
+					  ]
+				  ]
+				},
+				{
+				  "CoronaryArteryStructure": [
+					  {
+						"_tmr": "DCMR",
+						"_tid": "3906"
+					  },
+					  [
+						{
+						  "Findings": [
+							  [
+								{ "FindingSite": "LeftMainCoronaryArtery" },
+								{
+								  "Findings": [
+									  [
+										{ "LumenDiameterStenosis": [ { "_units": "percent" }, "87" ] }
+									  ]
+								  ]
+								}
+							  ]
+						  ]
+						}
+					  ]
+				  ]
+				}
+			  ]
+          ]
+        },
+        {
+          "Findings": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3920"
+			  },
+			  [
+				{ "AnalysisPerformed": "VentricularAnalysis" },
+				{ "HeartRate": [ { "_units": "BPM" }, "112" ] },
+				{
+				  "Findings": [
+					  [
+						{ "FindingSite": "LeftVentricle" },
+						{
+						  "AbsoluteValuesOfVentricularMeasurements": [
+							  [
+								{
+									"LeftVentricularEjectionFractionByCT": [
+									  { "_units": "percent" },
+									  "35",
+									  [
+										{ "MeasurementMethod": "VolumeBasedMethod" }
+									  ]
+									]
+								}
+							  ]
+						  ]
+						}
+					  ]
+				  ]
+				},
+				{
+				  "Findings": [
+					  {
+						"_tmr": "DCMR",
+						"_tid": "3925"
+					  },
+					  [
+						{ "AnalysisPerformed": "ThickeningAnalysis" },
+						{
+						  "Findings": [
+							  [
+								{ "FindingSite": "LeftVentricleApicalSeptalSegment" },
+								{
+									"WallThickness": [
+									  { "_units": "mm" },
+									  "3.5",
+									  [
+										{ "CardiacCyclePoint": "EndDiastolic" }
+									  ]
+									]
+								},
+								{
+									"WallThickness": [
+									  { "_units": "mm" },
+									  "5.5",
+									  [
+										{ "CardiacCyclePoint": "EndSystolic" }
+									  ]
+									]
+								},
+								{
+									"WallThicknessRatio": [
+									  { "_units": "percent" },
+									  "20"
+									]
+								},
+								{ "CardiacWallMotion": "SevereHypokinesis" },
+								{ "AssociatedMorphology": "ThinningMyocardium" }
+							  ]
+						  ]
+						}
+					  ]
+				  ]
+				},
+				{
+				  "Findings": [
+					  {
+						"_tmr": "DCMR",
+						"_tid": "3926"
+					  },
+					  [
+						{ "AnalysisPerformed": "MyocardialPerfusionAnalysis" },
+						{
+						  "Findings": [
+							  [
+								{ "FindingSite": [
+									"LeftVentricleApicalSeptalSegment",
+										[
+											{ "TopographicalModifier": "Endocardial" }
+										]
+									]
+								},
+								{ "PatientState": "CardiacStressState" },
+								{ "DrugAdministered": "Dipyridamole" },
+								{
+								  "BestIllustrationOfFinding": [
+									{
+									  "_class": "CTImageStorage",
+									  "_instance": "1.3.6.1.4.1.14519.5.2.1.8421.4008.767475413701844560980492237110"
+									}
+								  ]
+								},
+								{
+									"SignalTimeToPeak": [
+									  { "_units": "seconds" },
+									  "0.3"
+									]
+								},
+								{
+									"ImageInterval": [
+									  { "_units": "milliseconds" },
+									  "100"
+									]
+								},
+								{
+								  "MeasurementGroup": [
+									  [
+										{
+											"SignalTimeToPeak": [
+											  { "_units": "seconds" },
+											  "0.3"
+											]
+										}
+									  ]
+								  ]
+								},
+								{ "LateContrastEnhancement": [
+										"No",
+										[
+											{
+												"TimeAfterStartOfInjectionOfContrastBolus": [
+												  { "_units": "seconds" },
+												  "37.9"
+												]
+											}
+										]
+									]
+								}
+							  ]
+						  ]
+						}
+					  ]
+				  ]
+				}
+			  ]
+		  ]
+	    },
+	    {
+          "Conclusions": [
+			  {
+				"_tmr": "DCMR",
+				"_tid": "3927"
+			  },
+			  [
+				{ "ConclusionText": [
+					"Bad stuff",
+					[
+						{
+						  "SourceOfMeasurement": [
+							{
+							  "_class": "CTImageStorage",
+							  "_instance": "1.3.6.1.4.1.14519.5.2.1.8421.4008.767475413701844560980492237110"
+							}
+						  ]
+						}
+					]
+				  ]
+				},
+				{ "CoronaryArteryDiseaseAssessment": [
+					"SevereStenosis",
+					[
+					  { "CoronaryArteryDiseaseAssessmentModifier": "VulnerablePlaque" },
+					  { "CoronaryArteryDiseaseStenosisAssessmentModifier": "SevereStenosis4B" }
+					]
+				  ]
+				}
+			  ]
+		  ]
+	    }
+      ]
+    ]
+  }
+]
