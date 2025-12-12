@@ -10,9 +10,7 @@ import com.pixelmed.display.DialogMessageLogger;		// used in main method for tes
 import com.pixelmed.display.SafeFileChooser;
 import com.pixelmed.display.SafeProgressBarUpdaterThread;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 import java.io.File;
 import java.io.BufferedInputStream;
@@ -21,6 +19,8 @@ import java.io.IOException;
 
 import java.awt.Component;
 import java.awt.FileDialog;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 import javax.swing.JFileChooser;
 import javax.swing.JProgressBar;
@@ -51,6 +51,8 @@ public class MediaImporter {
 	protected String mediaDirectoryPath;
 	protected MessageLogger logger;
 	protected JProgressBar progressBar;
+	protected ConcurrentMap<String, String> outputNameMap;
+	protected ConcurrentMap<String, String> fileToId;
 	
 	/**
 	 * @param	s	message to log
@@ -71,6 +73,7 @@ public class MediaImporter {
 		mediaDirectoryPath=null;
 		this.logger=logger;
 		this.progressBar=null;
+		fileToId = new ConcurrentHashMap<>();
 	}
 	
 	/**
@@ -83,6 +86,15 @@ public class MediaImporter {
 		this.mediaDirectoryPath=null;
 		this.logger=logger;
 		this.progressBar=progressBar;
+		fileToId = new ConcurrentHashMap<>();
+	}
+
+	public MediaImporter(MessageLogger logger, JProgressBar progressBar, ConcurrentMap<String, String> outputNameMap) {
+		this.mediaDirectoryPath=null;
+		this.logger=logger;
+		this.progressBar=progressBar;
+		this.outputNameMap = outputNameMap;
+		fileToId = new ConcurrentHashMap<>();
 	}
 
 	/**
@@ -95,8 +107,12 @@ public class MediaImporter {
 		this.mediaDirectoryPath=mediaDirectoryPath;
 		this.logger=logger;
 		this.progressBar=null;
+		fileToId = new ConcurrentHashMap<>();
 	}
-	
+
+
+
+
 	/**
 	 * <p>Construct an importer that will looked for files in the specified path.</p>
 	 *
@@ -208,10 +224,14 @@ public class MediaImporter {
 	
 	protected final static AttributeList.ReadTerminationStrategy terminateAfterIdentifyingGroup = new OurReadTerminationStrategy();
 
-	public void importDicomFiles(String[] pathNames) throws IOException, DicomException {
+	public void importDicomFiles(String[] pathNames, Map<String, String> outputNameMap) throws IOException, DicomException {
 		for (String pathName : pathNames) {
-			importDicomFiles(pathName);
+			importDicomFiles(pathName, outputNameMap);
 		}
+	}
+
+	public void importDicomFiles(String[] pathNames) throws IOException, DicomException {
+		importDicomFiles(pathNames, null);
 	}
 	/**
 	 * <p>Read a DICOMDIR file, and then import any DICOM files that it references.</p>
@@ -227,6 +247,9 @@ public class MediaImporter {
 	 * @throws		DicomException		thrown if the DICOMDIR file cannot be parsed
 	 */
 	public void importDicomFiles(String pathName) throws IOException, DicomException {
+		importDicomFiles(pathName, null);
+	}
+	public void importDicomFiles(String pathName, Map<String, String> outputNameMap) throws IOException, DicomException {
 		slf4jlogger.debug("importDicomFiles(): pathName = {}",pathName);
 		if (progressBar != null) {
 			//ThreadUtilities.checkIsEventDispatchThreadElseException();
@@ -260,6 +283,7 @@ public class MediaImporter {
 				}
 			}
 			if (dicomdirFile != null) {
+				String patientId = dicomdirFile.getParentFile().getName();
 				slf4jlogger.debug("importDicomFiles(): Found DICOMDIR at = {}",dicomdirFile);
 				logLn("Found DICOMDIR at: "+dicomdirFile);
 				DicomInputStream i = new DicomInputStream(new BufferedInputStream(new FileInputStream(dicomdirFile)));
@@ -322,6 +346,7 @@ public class MediaImporter {
 						}
 						if (goodToGo) {
 							//logLn("Is a suitable DICOMDIR referenced file: "+mediaFileName);
+							fileToId.put(mediaFileName, patientId);
 							doSomethingWithDicomFileOnMedia(mediaFileName,transferSyntaxUID,sopClassUID);
 						}
 						else {
@@ -421,7 +446,7 @@ public class MediaImporter {
 		}
 		logLn("Media import complete");
 	}
-	
+
 	/**
 	 * <p>Do something with the unwanted (possibly DICOM file) that has been encountered.</p>
 	 *
@@ -459,7 +484,7 @@ public class MediaImporter {
 	protected void doSomethingWithDicomFileOnMedia(String mediaFileName,String transferSyntaxUID,String sopClassUID) {
 		doSomethingWithDicomFileOnMedia(mediaFileName);
 	}
-	
+
 	/**
 	 * <p>Do something with the referenced DICOM file that has been encountered.</p>
 	 *

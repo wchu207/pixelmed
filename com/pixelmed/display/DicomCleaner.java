@@ -69,6 +69,8 @@ import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.*;
 
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -358,7 +360,9 @@ public class DicomCleaner extends ApplicationFrame {
 	protected String currentRemoteQuerySelectionLevel;
 
 	protected String ourCalledAETitle;		// set when reading network properties; used not just in StorageSCP, but also when creating exported meta information headers
-	
+	protected ConcurrentMap<String, String> nameMap;
+	protected ConcurrentMap<String, String> outputKeyMap;
+
 	protected void setCurrentRemoteQueryInformationModel(String remoteAEForQuery) {
 		currentRemoteQueryInformationModel=null;
 		String stringForTitle="";
@@ -407,7 +411,14 @@ public class DicomCleaner extends ApplicationFrame {
 		return ae;
 	}
 	
-	protected static void importFileIntoDatabase(DatabaseInformationModel database,String dicomFileName,String fileReferenceType,Map<String,Date> earliestDatesIndexedBySourceFilePath) throws FileNotFoundException, IOException, DicomException {
+	protected static void importFileIntoDatabase(
+			DatabaseInformationModel database,
+			String dicomFileName,
+			String fileReferenceType,
+			Map<String,Date> earliestDatesIndexedBySourceFilePath,
+			Map<String,String> fileToId,
+			ConcurrentMap<String, String> nameMap
+	) throws FileNotFoundException, IOException, DicomException {
 		ApplicationEventDispatcher.getApplicationEventDispatcher().processEvent(new StatusChangeEvent("Importing: "+dicomFileName));
 //System.err.println("Importing: "+dicomFileName);
 		FileInputStream fis = new FileInputStream(dicomFileName);
@@ -416,6 +427,12 @@ public class DicomCleaner extends ApplicationFrame {
 		list.read(i,TagFromName.PixelData);
 		i.close();
 		fis.close();
+
+
+		String name = Attribute.getSingleStringValueOrNull(list, TagFromName.PatientName).trim();
+		if (fileToId != null && nameMap != null && !nameMap.containsKey(name) && fileToId.containsKey(dicomFileName)) {
+			nameMap.put(name, fileToId.get(dicomFileName));
+		}
 		database.insertObject(list,dicomFileName,fileReferenceType);
 		if (earliestDatesIndexedBySourceFilePath != null) {
 			Date earliestInObject = ClinicalTrialsAttributes.findEarliestDateTime(list);
@@ -438,7 +455,7 @@ public class DicomCleaner extends ApplicationFrame {
 //System.err.println("Received: "+dicomFileName+" from "+callingAETitle+" in "+transferSyntax);
 				logger.sendLn("Received "+dicomFileName+" from "+localName+" ("+callingAETitle+")");
 				try {
-					importFileIntoDatabase(srcDatabase,dicomFileName,DatabaseInformationModel.FILE_COPIED,earliestDatesIndexedBySourceFilePath);
+					importFileIntoDatabase(srcDatabase,dicomFileName,DatabaseInformationModel.FILE_COPIED,earliestDatesIndexedBySourceFilePath, null, null);
 					srcDatabasePanel.removeAll();
 					new OurSourceDatabaseTreeBrowser(srcDatabase,srcDatabasePanel);
 					srcDatabasePanel.validate();
@@ -782,6 +799,11 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 						String selectHeader = dstDatabase.getStatementStringWithMatchingAttributesForSelectedInformationEntity(list, dstDatabase.getRootInformationEntity());
 						Map<String, String> insertAttributes = dstDatabase.getInsertStatementMapWithAttributeValuesForSelectedInformationEntity(list,dstDatabase.getRootInformationEntity(), cleanedFile.getCanonicalPath(),DatabaseInformationModel.FILE_COPIED);
 						InformationEntity headerType = dstDatabase.getRootInformationEntity();
+						String currentName = Attribute.getSingleStringValueOrNull(list, TagFromName.PatientName).trim();
+						String replacementName = null;
+						if(nameMap.containsKey(currentName)) {
+							replacementName = nameMap.get(currentName);
+						}
 						list.removeGroupLengthAttributes();
 						// did not decompress, so do not need to change ImagePixelModule attributes or insert lossy compression history
 
@@ -810,6 +832,9 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 						}
 						if (replacePatientNameCheckBox.isSelected()) {
 							String newName = replacementPatientNameTextField.getText().trim();
+							if (newName == null || newName.isEmpty() && replacementName != null) {
+								newName = replacementName;
+							}
 							{ AttributeTag tag = TagFromName.PatientName; list.remove(tag); Attribute a = new PersonNameAttribute(tag); a.addValue(newName); list.put(tag,a); }
 						}
 						if (replacePatientIDCheckBox.isSelected()) {
@@ -915,7 +940,10 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 //startTime=currentTime;
 						logger.sendLn("Cleaned "+dicomFileName+" into "+cleanedFile.getCanonicalPath());
 						String insertHeader = dstDatabase.getInsertStatementStringWithAttributeValuesForSelectedInformationEntity(list, dstDatabase.getRootInformationEntity(), cleanedFile.getCanonicalPath(), DatabaseInformationModel.FILE_COPIED, insertAttributes);
-						dstDatabase.insertObject(list,cleanedFile.getCanonicalPath(),DatabaseInformationModel.FILE_COPIED, selectHeader, insertHeader, headerType);
+						String primaryKey = dstDatabase.insertObject(list,cleanedFile.getCanonicalPath(),DatabaseInformationModel.FILE_COPIED, selectHeader, insertHeader, headerType);
+						if (primaryKey != null && (replacePatientNameCheckBox.isSelected() && replacementPatientNameTextField.getText().trim().isEmpty())) {
+							outputKeyMap.put(primaryKey, replacementName);
+						}
 //currentTime = System.currentTimeMillis();
 //System.err.println("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): inserting cleaned object in database took = "+(currentTime-startTime)+" ms");
 //startTime=currentTime;
@@ -1005,15 +1033,15 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 	protected class OurMediaImporter extends MediaImporter {
 		boolean acceptAnyTransferSyntax;
 		
-		public OurMediaImporter(MessageLogger logger,JProgressBar progressBar,boolean acceptAnyTransferSyntax) {
-			super(logger,progressBar);
+		public OurMediaImporter(MessageLogger logger,JProgressBar progressBar,boolean acceptAnyTransferSyntax, ConcurrentMap<String, String> nameMap) {
+			super(logger,progressBar, nameMap);
 			this.acceptAnyTransferSyntax = acceptAnyTransferSyntax;
 		}
 		
 		protected void doSomethingWithDicomFileOnMedia(String mediaFileName) {
 			try {
 				logger.sendLn("Importing DICOM file: "+mediaFileName);
-				importFileIntoDatabase(srcDatabase,mediaFileName,DatabaseInformationModel.FILE_REFERENCED,earliestDatesIndexedBySourceFilePath);
+				importFileIntoDatabase(srcDatabase,mediaFileName,DatabaseInformationModel.FILE_REFERENCED,earliestDatesIndexedBySourceFilePath, fileToId, nameMap);
 			}
 			catch (Exception e) {
 				slf4jlogger.error("Importing DICOM file {} failed",mediaFileName,e);
@@ -1052,18 +1080,19 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 	protected class ImportWorker implements Runnable {
 		MediaImporter importer;
 		DatabaseInformationModel srcDatabase;
+		Map<String, String> nameMap;
 		JPanel srcDatabasePanel;
 		String[] pathNames;
 
-		ImportWorker(String pathName,DatabaseInformationModel srcDatabase,JPanel srcDatabasePanel) {
-			importer = new OurMediaImporter(logger,progressBarUpdater.getProgressBar(),acceptAnyTransferSyntaxCheckBox.isSelected());
+		ImportWorker(String pathName,DatabaseInformationModel srcDatabase,JPanel srcDatabasePanel, ConcurrentMap<String, String> nameMap) {
+			importer = new OurMediaImporter(logger,progressBarUpdater.getProgressBar(),acceptAnyTransferSyntaxCheckBox.isSelected(), nameMap);
 			this.srcDatabase=srcDatabase;
 			this.srcDatabasePanel=srcDatabasePanel;
 			this.pathNames= new String[] {pathName};
 		}
 
-		ImportWorker(String[] pathNames,DatabaseInformationModel srcDatabase,JPanel srcDatabasePanel) {
-			importer = new OurMediaImporter(logger,progressBarUpdater.getProgressBar(),acceptAnyTransferSyntaxCheckBox.isSelected());
+		ImportWorker(String[] pathNames,DatabaseInformationModel srcDatabase,JPanel srcDatabasePanel, ConcurrentMap<String, String> nameMap) {
+			importer = new OurMediaImporter(logger,progressBarUpdater.getProgressBar(),acceptAnyTransferSyntaxCheckBox.isSelected(), nameMap);
 			this.srcDatabase=srcDatabase;
 			this.srcDatabasePanel=srcDatabasePanel;
 			this.pathNames=pathNames;
@@ -1112,7 +1141,7 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 //System.err.println("DicomCleaner.ImportActionListener.actionPerformed(): back with APPROVE_OPTION");
 					importDirectoryPath=chooser.getCurrentDirectory().getAbsolutePath();	// keep around for next time
 					String[] pathNames = Arrays.stream(chooser.getSelectedFiles()).map(s -> s.getAbsolutePath()).toArray(String[]::new);
-					new Thread(new ImportWorker(pathNames,srcDatabase,srcDatabasePanel)).start();
+					new Thread(new ImportWorker(pathNames,srcDatabase,srcDatabasePanel, nameMap)).start();
 				}
 			} catch (Exception e) {
 				ApplicationEventDispatcher.getApplicationEventDispatcher().processEvent(new StatusChangeEvent("Importing failed: "+e));
@@ -1245,7 +1274,11 @@ slf4jlogger.info("DicomCleaner.copyFromOriginalToCleanedPerformingAction(): epoc
 		private void recursivelyExportDatabaseRecords(DatabaseTreeRecord[] records, File root) {
 			for (DatabaseTreeRecord record : records) {
 				Vector recordsToExport = new Vector<String>();
-				File childDir = new File(root, record.toString().replaceAll("[^a-zA-Z0-9-_\\.]", "_"));
+				String dirName = record.toString().replaceAll("[^a-zA-Z0-9-_\\.]", "_");
+				if (outputKeyMap.containsKey(record.getLocalPrimaryKeyValue())) {
+					dirName = outputKeyMap.get(record.getLocalPrimaryKeyValue());
+				}
+				File childDir = new File(root, dirName);
 				if (record.getChildCount() > 0) {
 					try {
 						childDir.mkdir();
@@ -2335,13 +2368,16 @@ System.err.println("properties="+properties);
 				mainPanel.add(statusBarPanel);
 			}
 		}
+
+		nameMap = new ConcurrentHashMap<String, String>();
+		outputKeyMap = new ConcurrentHashMap<String, String>();
 		Container content = getContentPane();
 		content.add(mainPanel);
 		pack();
 		setVisible(true);
 		
 		if (pathName != null && pathName.length() > 0) {
-			new Thread(new ImportWorker(pathName,srcDatabase,srcDatabasePanel)).start();
+			new Thread(new ImportWorker(pathName,srcDatabase,srcDatabasePanel, nameMap)).start();
 		}
 	}
 

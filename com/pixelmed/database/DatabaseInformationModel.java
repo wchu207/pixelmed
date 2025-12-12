@@ -813,12 +813,13 @@ public abstract class DatabaseInformationModel {
 	 * @param	fileReferenceType	"C" for copied (i.e., delete on purge), "R" for referenced (i.e., do not delete on purge)
 	 * @throws	DicomException	thrown if there are problems extracting the DICOM attributes
 	 */
-	public void insertObject(AttributeList list,String fileName,String fileReferenceType) throws DicomException {
-		insertObject(list,fileName,fileReferenceType, null, null, null);
+	public String insertObject(AttributeList list,String fileName,String fileReferenceType) throws DicomException {
+		return insertObject(list,fileName,fileReferenceType, null, null, null);
 	}
-	public void insertObject(AttributeList list,String fileName,String fileReferenceType, String selectHeader, String insertHeader, InformationEntity headerType) throws DicomException {
+	public String insertObject(AttributeList list,String fileName,String fileReferenceType, String selectHeader, String insertHeader, InformationEntity headerType) throws DicomException {
 		slf4jlogger.debug("DatabaseInformationModel.insertObject(): fileName = "+fileName);
 		// iterate through information entities, extracting matching keys, checking for a match, inserting new if not ...
+		String primaryKey = null;
 		try {
 			InformationEntity ie = rootInformationEntity;
 			String localParentReference = null;
@@ -888,6 +889,7 @@ public abstract class DatabaseInformationModel {
 					b.append(",");
 					b.append(Long.toString(System.currentTimeMillis()));	// no quotes, since INTEGER
 					if (insertHeader != null && headerType != null && ie == headerType) {
+						primaryKey = entityPrimaryKey;
 						b.append(insertHeader);
 					} else {
 						extendInsertStatementStringWithAttributeValuesForSelectedInformationEntity(b,list,ie,fileName,fileReferenceType);
@@ -907,6 +909,7 @@ public abstract class DatabaseInformationModel {
 				localParentReference=entityPrimaryKey;
 				ie=getChildTypeForParent(ie,list);
 			}
+			return primaryKey;
 		}
 		catch (Exception e) {
 			slf4jlogger.error("Rethrowing database exception during insertObject as DicomException", e);
